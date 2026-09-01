@@ -19,6 +19,8 @@ export type SiteContent = {
     cta: string;
   };
   platforms: string[];
+  valuePropsEyebrow: string;
+  valuePropsHeadline: string;
   valueProps: {
     title: string;
     description: string;
@@ -48,6 +50,22 @@ export type SiteContent = {
     columns: [string, string, string];
     rows: { label: string; values: [string, string, string] }[];
   };
+  estimator: {
+    eyebrow: string;
+    headline: string;
+    description: string;
+    budgetLabel: string;
+    perMonth: string;
+    results: {
+      leads: string;
+      cpl: string;
+      revenue: string;
+    };
+    roasCaption: string;
+    disclaimer: string;
+    note: string;
+    cta: string;
+  };
   trust: {
     eyebrow: string;
     headline: string;
@@ -58,6 +76,18 @@ export type SiteContent = {
     eyebrow: string;
     headline: string;
     items: { name: string; role: string; initial: string; text: string; timeAgo: string }[];
+  };
+  team: {
+    eyebrow: string;
+    headline: string;
+    intro: string;
+    members: {
+      name: string;
+      role: string;
+      location: string;
+      bio: string;
+      tags: string[];
+    }[];
   };
   antiPositioning: {
     headline: string;

@@ -11,6 +11,8 @@ export const es: SiteContent = {
       { label: "Inicio", href: "#home" },
       { label: "Qué hacemos", href: "#services" },
       { label: "Cómo funciona", href: "#how-it-works" },
+      { label: "Estimador", href: "#estimator" },
+      { label: "Equipo", href: "#team" },
       { label: "Por qué Roasly", href: "#why-roasly" },
       { label: "FAQ", href: "#faq" },
       { label: "Contacto", href: "#contact" },
@@ -25,6 +27,8 @@ export const es: SiteContent = {
     cta: "Reservar un diagnóstico gratuito",
   },
   platforms: ["Google Ads", "Meta Ads", "Bing Ads", "TikTok Ads"],
+  valuePropsEyebrow: "Qué hacemos",
+  valuePropsHeadline: "Un sistema de captación completo, no anuncios sueltos",
   valueProps: [
     {
       title: "Un sistema completo, con las creatividades incluidas",
@@ -144,6 +148,24 @@ export const es: SiteContent = {
       },
     ],
   },
+  estimator: {
+    eyebrow: "Estima tu potencial",
+    headline: "Lo que tu presupuesto puede generar de verdad",
+    description:
+      "Mueve el control sobre tu presupuesto publicitario mensual. Obtienes al instante una horquilla realista de leads, coste por lead y facturación, calculada sobre la media de las cuentas que gestionamos hoy en Israel.",
+    budgetLabel: "Presupuesto publicitario mensual",
+    perMonth: "/ mes",
+    results: {
+      leads: "Leads estimados / mes",
+      cpl: "Coste por lead",
+      revenue: "Facturación potencial / mes",
+    },
+    roasCaption: "Sobre la base de un ROAS de 3 a 5x, la media observada en nuestras cuentas.",
+    disclaimer:
+      "Estimación orientativa, no una promesa. Tus resultados reales dependen de tu sector, tu oferta y tu mercado. El diagnóstico gratuito te da cifras precisas para tu negocio.",
+    note: "Diagnóstico gratuito · Respuesta en 24h · Sin compromiso",
+    cta: "Recibir mi plan con cifras",
+  },
   trust: {
     eyebrow: "Nuestros compromisos",
     headline: "Lo que te garantizamos, sin excepciones",
@@ -201,6 +223,21 @@ export const es: SiteContent = {
         initial: "L",
         text: "Diagnóstico claro desde la primera llamada, sin jerga innecesaria. El sistema de captación funciona solo ahora, con ajustes constantes.",
         timeAgo: "hace 3 meses",
+      },
+    ],
+  },
+  team: {
+    eyebrow: "Nuestro equipo",
+    headline: "Un solo interlocutor, del diagnóstico a la optimización",
+    intro:
+      "Sin account manager junior, sin subcontratación opaca. Hablas directamente con la persona que construye y pilota tu sistema de captación.",
+    members: [
+      {
+        name: "Yohan Benamou",
+        role: "Fundador",
+        location: "Tel Aviv, Israel",
+        bio: "Desde Tel Aviv, acompaño a empresas y autónomos de habla hispana, francesa y hebrea que quieren un sistema de captación claro, no promesas. Landing page, campañas de Google Ads y Meta Ads, tracking, CRM y dashboard en tiempo real: construyo todo el sistema contigo y lo optimizo cada semana con datos reales. Cuando llamas, hablas con la persona que gestiona de verdad tus campañas.",
+        tags: ["Google Ads", "Meta Ads", "Tracking y CRM", "FR · ES · HE"],
       },
     ],
   },

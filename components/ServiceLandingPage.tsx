@@ -63,27 +63,26 @@ export default function ServiceLandingPage({
       <main>
         <section className="relative overflow-hidden bg-ink text-paper">
           <div
-            className="pointer-events-none absolute inset-0 opacity-25"
+            className="pointer-events-none absolute inset-0 opacity-40 [background-size:200%_200%] animate-gradientShift"
             style={{
               background:
-                "radial-gradient(circle at 10% 10%, #2F9E6E 0%, transparent 40%), radial-gradient(circle at 90% 30%, #E8A33D 0%, transparent 35%)",
+                "radial-gradient(55% 55% at 10% 10%, rgba(59,110,246,0.5) 0%, transparent 60%), radial-gradient(45% 45% at 90% 25%, rgba(95,227,255,0.25) 0%, transparent 55%)",
             }}
             aria-hidden
           />
-          <div className="relative mx-auto max-w-3xl px-6 py-20 md:py-28">
-            <p className="font-mono text-xs uppercase tracking-kicker text-amber">
+          <div className="relative mx-auto max-w-3xl px-6 py-24 md:py-32">
+            <p className="font-mono text-xs uppercase tracking-kicker text-blue-soft">
               {landing.kicker}
             </p>
-            <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl">
+            <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl">
               {landing.h1}
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper/75">
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper/70">
               {landing.intro}
             </p>
             <a
               href="#contact"
-              className="mt-9 inline-block rounded-full px-7 py-3.5 text-sm font-semibold text-ink transition-transform hover:scale-[1.03]"
-              style={{ backgroundImage: "linear-gradient(90deg, #5B8DEF, #E8A33D)" }}
+              className="mt-9 inline-block rounded-full bg-gradient-to-r from-blue-bright to-blue-soft px-7 py-3.5 text-sm font-semibold text-white shadow-[0_18px_45px_-14px_rgba(59,110,246,0.75)] transition-transform hover:scale-[1.03]"
             >
               {content.hero.cta}
             </a>

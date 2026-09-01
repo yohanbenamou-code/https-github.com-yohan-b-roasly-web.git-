@@ -13,50 +13,50 @@ export default function Footer({
   content: SiteContent;
 }) {
   return (
-    <footer className="bg-paper border-t border-ink/10">
-      <div className="mx-auto max-w-6xl px-6 py-12">
-        <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+    <footer className="border-t border-white/10 bg-ink text-paper">
+      <div className="mx-auto max-w-6xl px-6 py-14">
+        <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
-            <Logo className="text-xl" />
-            <p className="mt-2 text-sm leading-relaxed text-ink/60">
+            <Logo className="text-xl text-paper" onDark />
+            <p className="mt-3 text-sm leading-relaxed text-paper/55">
               {content.footer.tagline}
             </p>
           </div>
 
-          <nav className="flex flex-col gap-2">
+          <nav className="flex flex-col gap-2.5">
             {content.nav.links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-ink/60 hover:text-ink"
+                className="text-sm text-paper/55 transition-colors hover:text-paper"
               >
                 {link.label}
               </a>
             ))}
           </nav>
 
-          <nav className="flex flex-col gap-2">
+          <nav className="flex flex-col gap-2.5">
             {serviceLinks[locale].map((link) => (
               <Link
                 key={link.href}
                 href={`/${locale}/${link.href}`}
-                className="text-sm text-ink/60 hover:text-ink"
+                className="text-sm text-paper/55 transition-colors hover:text-paper"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          <div className="font-mono text-sm text-ink/60">
+          <div className="font-mono text-sm text-paper/55">
             <p>
               {content.footer.contactLabel.email}:{" "}
-              <a href={`mailto:${contact.email}`} className="ltr-nums hover:text-ink">
+              <a href={`mailto:${contact.email}`} className="ltr-nums transition-colors hover:text-paper">
                 {contact.email}
               </a>
             </p>
             <p className="mt-1">
               {content.footer.contactLabel.whatsapp}:{" "}
-              <a href={contact.whatsappHref} className="ltr-nums hover:text-ink">
+              <a href={contact.whatsappHref} className="ltr-nums transition-colors hover:text-paper">
                 {contact.whatsapp}
               </a>
             </p>
@@ -65,8 +65,10 @@ export default function Footer({
                 <Link
                   key={l}
                   href={`/${l}`}
-                  className={`rounded-full px-2.5 py-1 text-xs ${
-                    l === locale ? "bg-ink text-paper" : "text-ink/50 hover:text-ink"
+                  className={`rounded-full px-2.5 py-1 text-xs transition-colors ${
+                    l === locale
+                      ? "bg-white/15 text-paper"
+                      : "text-paper/45 hover:text-paper"
                   }`}
                 >
                   {l === "he" ? "עב" : l.toUpperCase()}
@@ -76,7 +78,7 @@ export default function Footer({
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-3 border-t border-ink/10 pt-6 text-xs text-ink/45 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-paper/40 sm:flex-row sm:items-center sm:justify-between">
           <p>{content.footer.copyright}</p>
           <div className="flex gap-4">
             {content.footer.legal.map((item) => (

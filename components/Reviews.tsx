@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import type { SiteContent } from "@/lib/content/types";
 
-const avatarColors = ["#4F9EF5", "#7C6FF0", "#F13C7A", "#E8A33D", "#2F9E6E", "#4F9EF5"];
+const avatarColors = ["#3B6EF6", "#6E9BFF", "#5FE3FF", "#2FB98A", "#3B6EF6", "#6E9BFF"];
 
 function Stars() {
   return (
@@ -41,14 +41,14 @@ export default function Reviews({ content }: { content: SiteContent }) {
   }
 
   return (
-    <section className="bg-paper-raised">
-      <div className="mx-auto max-w-6xl px-6 py-20">
+    <section className="bg-paper">
+      <div className="mx-auto max-w-6xl px-6 py-24">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="font-mono text-xs uppercase tracking-kicker text-ink/50">
+            <p className="font-mono text-xs uppercase tracking-kicker text-blue">
               {content.reviews.eyebrow}
             </p>
-            <h2 className="mt-4 max-w-xl font-display text-3xl font-extrabold leading-tight sm:text-4xl">
+            <h2 className="mt-4 max-w-xl font-display text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-[2.6rem]">
               {content.reviews.headline}
             </h2>
           </div>
@@ -56,7 +56,7 @@ export default function Reviews({ content }: { content: SiteContent }) {
             <button
               onClick={() => scrollBy(-320)}
               aria-label="Précédent"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-ink/15 text-ink/50 transition-colors hover:border-ink/30 hover:text-ink"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-line-strong text-ink/50 transition-colors hover:border-blue hover:text-blue"
             >
               <svg viewBox="0 0 20 20" className="h-4 w-4 rtl:rotate-180" fill="none">
                 <path d="M12 4l-6 6 6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -65,7 +65,7 @@ export default function Reviews({ content }: { content: SiteContent }) {
             <button
               onClick={() => scrollBy(320)}
               aria-label="Suivant"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-ink/15 text-ink/50 transition-colors hover:border-ink/30 hover:text-ink"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-line-strong text-ink/50 transition-colors hover:border-blue hover:text-blue"
             >
               <svg viewBox="0 0 20 20" className="h-4 w-4 rtl:rotate-180" fill="none">
                 <path d="M8 4l6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -82,7 +82,7 @@ export default function Reviews({ content }: { content: SiteContent }) {
           {content.reviews.items.map((review, i) => (
             <div
               key={review.name}
-              className="flex w-[260px] shrink-0 flex-col rounded-card border border-ink/10 bg-paper p-4"
+              className="flex w-[280px] shrink-0 flex-col rounded-card border border-line bg-paper-raised p-5 transition-colors hover:border-blue/30"
               style={{ scrollSnapAlign: "start" }}
             >
               <div className="flex items-center justify-between gap-2">

@@ -39,7 +39,7 @@ export default function ContactForm({ content }: { content: SiteContent }) {
   }
 
   const inputClasses =
-    "w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-paper placeholder:text-paper/40 outline-none transition-colors focus:border-amber focus:bg-white/10";
+    "w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-paper placeholder:text-paper/40 outline-none transition-colors focus:border-blue-soft focus:bg-white/10";
 
   return (
     <form onSubmit={handleSubmit} className="mt-10 grid gap-4 text-start sm:grid-cols-2">
@@ -76,8 +76,7 @@ export default function ContactForm({ content }: { content: SiteContent }) {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="w-full rounded-full px-7 py-3.5 text-sm font-semibold text-ink transition-transform hover:scale-[1.02] disabled:opacity-60 disabled:hover:scale-100 sm:w-auto"
-          style={{ backgroundImage: "linear-gradient(90deg, #5B8DEF, #E8A33D)" }}
+          className="w-full rounded-full bg-gradient-to-r from-blue-bright to-blue-soft px-7 py-3.5 text-sm font-semibold text-white shadow-[0_16px_40px_-14px_rgba(59,110,246,0.7)] transition-transform hover:scale-[1.02] disabled:opacity-60 disabled:hover:scale-100 sm:w-auto"
         >
           {status === "sending" ? form.sending : form.submit}
         </button>

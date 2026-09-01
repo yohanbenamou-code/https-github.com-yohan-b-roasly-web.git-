@@ -7,7 +7,8 @@ import ValueProps from "@/components/ValueProps";
 import Stats from "@/components/Stats";
 import HowItWorks from "@/components/HowItWorks";
 import DashboardShowcase from "@/components/DashboardShowcase";
-import ComparisonTable from "@/components/ComparisonTable";
+import Estimator from "@/components/Estimator";
+import Team from "@/components/Team";
 import Trust from "@/components/Trust";
 import Reviews from "@/components/Reviews";
 import AntiPositioning from "@/components/AntiPositioning";
@@ -45,7 +46,8 @@ export default async function HomePage({
         <Stats content={content} />
         <HowItWorks content={content} />
         <DashboardShowcase content={content} />
-        <ComparisonTable content={content} />
+        <Estimator content={content} locale={locale} />
+        <Team content={content} locale={locale} />
         <Trust content={content} />
         <Reviews content={content} />
         <AntiPositioning content={content} />

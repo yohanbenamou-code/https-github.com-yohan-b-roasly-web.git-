@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Heebo, JetBrains_Mono } from "next/font/google";
+import { Heebo, JetBrains_Mono, Sora } from "next/font/google";
 import "../globals.css";
 import { locales, localeTags, isRtl, siteUrl, assertValidLocale, type Locale } from "@/lib/i18n";
 import { getContent } from "@/lib/content";
@@ -7,6 +7,13 @@ import { getContent } from "@/lib/content";
 const heebo = Heebo({
   subsets: ["latin", "hebrew"],
   variable: "--font-heebo",
+  display: "swap",
+});
+
+const sora = Sora({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-display",
   display: "swap",
 });
 
@@ -98,7 +105,7 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html lang={localeTags[locale]} dir={dir} className={`${heebo.variable} ${mono.variable}`}>
+    <html lang={localeTags[locale]} dir={dir} className={`${heebo.variable} ${sora.variable} ${mono.variable}`}>
       <head>
         <script
           type="application/ld+json"

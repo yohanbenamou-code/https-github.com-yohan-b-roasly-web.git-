@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { SiteContent } from "@/lib/content/types";
+import Reveal from "./Reveal";
 
 type ChannelKey = "meta" | "google" | "global";
 
@@ -22,8 +23,8 @@ const channels: Channel[] = [
   {
     key: "meta",
     name: "Meta Ads",
-    accent: "#7C6FF0",
-    accentSoft: "rgba(124,111,240,0.18)",
+    accent: "#6E9BFF",
+    accentSoft: "rgba(110,155,255,0.18)",
     leads: 186,
     cpl: "₪34",
     spend: "₪6,320",
@@ -38,8 +39,8 @@ const channels: Channel[] = [
   {
     key: "google",
     name: "Google Ads",
-    accent: "#4F9EF5",
-    accentSoft: "rgba(79,158,245,0.18)",
+    accent: "#3B6EF6",
+    accentSoft: "rgba(59,110,246,0.18)",
     leads: 214,
     cpl: "₪29",
     spend: "₪5,980",
@@ -54,8 +55,8 @@ const channels: Channel[] = [
   {
     key: "global",
     name: "Vue globale",
-    accent: "#E8A33D",
-    accentSoft: "rgba(232,163,61,0.18)",
+    accent: "#5FE3FF",
+    accentSoft: "rgba(95,227,255,0.18)",
     leads: 400,
     cpl: "₪31",
     spend: "₪12,300",
@@ -69,7 +70,7 @@ const channels: Channel[] = [
   },
 ];
 
-const barPalette = ["#4F9EF5", "#7C6FF0", "#F13C7A", "#E8A33D", "#2F9E6E", "#4F9EF5", "#7C6FF0"];
+const barPalette = ["#3B6EF6", "#6E9BFF", "#5FE3FF", "#3B6EF6", "#2FB98A", "#6E9BFF", "#5FE3FF"];
 
 function useCountUp(target: number, key: string) {
   const [value, setValue] = useState(0);
@@ -129,21 +130,29 @@ export default function DashboardShowcase({ content }: { content: SiteContent })
   const maxWeek = Math.max(...active.week);
 
   return (
-    <section className="bg-ink text-paper">
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-[0.9fr_1.1fr]">
-        <div>
-          <p className="font-mono text-xs uppercase tracking-kicker text-amber">
+    <section className="relative overflow-hidden bg-ink text-paper">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-30 [background-size:200%_200%] animate-gradientShift"
+        style={{
+          background:
+            "radial-gradient(50% 50% at 85% 15%, rgba(59,110,246,0.4) 0%, transparent 60%), radial-gradient(45% 45% at 10% 90%, rgba(95,227,255,0.22) 0%, transparent 55%)",
+        }}
+        aria-hidden
+      />
+      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 py-24 md:grid-cols-[0.9fr_1.1fr]">
+        <Reveal>
+          <p className="font-mono text-xs uppercase tracking-kicker text-blue-soft">
             {content.dashboard.eyebrow}
           </p>
-          <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight sm:text-4xl">
+          <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight sm:text-[2.6rem]">
             {content.dashboard.headline}
           </h2>
-          <p className="mt-5 max-w-md text-base leading-relaxed text-paper/70">
+          <p className="mt-5 max-w-md text-base leading-relaxed text-paper/65">
             {content.dashboard.description}
           </p>
-        </div>
+        </Reveal>
 
-        <div className="overflow-hidden rounded-card border border-white/10 bg-ink-soft shadow-[0_40px_80px_-30px_rgba(0,0,0,0.7)]">
+        <div className="overflow-hidden rounded-xl2 border border-white/10 bg-ink-soft shadow-liftDark">
           <div className="flex items-center gap-2 border-b border-white/10 bg-black/20 px-4 py-3">
             <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
             <span className="h-2.5 w-2.5 rounded-full bg-white/15" />

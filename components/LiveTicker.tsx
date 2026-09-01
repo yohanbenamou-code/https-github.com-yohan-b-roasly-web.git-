@@ -100,7 +100,13 @@ function useCountUp(target: number, active: boolean) {
   return value;
 }
 
-function PlatformPanel({ platform }: { platform: Platform }) {
+function PlatformPanel({
+  platform,
+  leadsLabel,
+}: {
+  platform: Platform;
+  leadsLabel: string;
+}) {
   const leads = useCountUp(platform.leads, true);
 
   return (
@@ -120,7 +126,7 @@ function PlatformPanel({ platform }: { platform: Platform }) {
           {leads}
         </span>
         <span className="font-mono text-[11px] uppercase tracking-kicker text-paper/45">
-          leads / mois
+          {leadsLabel}
         </span>
       </div>
 
@@ -144,6 +150,7 @@ function PlatformPanel({ platform }: { platform: Platform }) {
 
 export default function LiveTicker({
   liveLabel,
+  leadsLabel = "leads / mois",
 }: {
   liveLabel: string;
   leadsLabel?: string;
@@ -179,12 +186,12 @@ export default function LiveTicker({
   return (
     <div className="relative w-full max-w-md">
       <span
-        className="pointer-events-none absolute -top-10 -end-8 h-40 w-40 rounded-full opacity-30 blur-3xl animate-blobMove"
+        className="pointer-events-none absolute -top-10 -end-8 h-40 w-40 rounded-full opacity-40 blur-3xl animate-blobMove"
         style={{ background: active.accent }}
         aria-hidden
       />
       <span
-        className="pointer-events-none absolute -bottom-8 -start-10 h-32 w-32 rounded-full bg-amber/30 blur-3xl animate-blobMove"
+        className="pointer-events-none absolute -bottom-8 -start-10 h-32 w-32 rounded-full bg-blue/30 blur-3xl animate-blobMove"
         style={{ animationDelay: "-4s" }}
         aria-hidden
       />
@@ -200,7 +207,7 @@ export default function LiveTicker({
         +180 leads/mois
       </div>
 
-      <div className="relative w-full rounded-card border border-white/10 bg-ink-soft/80 backdrop-blur-sm shadow-[0_30px_60px_-20px_rgba(0,0,0,0.6)]">
+      <div className="relative w-full rounded-xl2 border border-white/10 bg-ink-soft/80 backdrop-blur-md shadow-liftDark">
         <div className="flex items-center justify-between border-b border-white/10 px-5 py-3">
           <div className="flex gap-1.5">
             {platforms.map((p, i) => (
@@ -226,7 +233,7 @@ export default function LiveTicker({
         </div>
 
         <div className="px-5 py-5">
-          <PlatformPanel key={active.key} platform={active} />
+          <PlatformPanel key={active.key} platform={active} leadsLabel={leadsLabel} />
         </div>
       </div>
       </div>
