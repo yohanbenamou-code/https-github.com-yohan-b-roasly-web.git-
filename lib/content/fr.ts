@@ -2,9 +2,9 @@ import type { SiteContent } from "./types";
 
 export const fr: SiteContent = {
   meta: {
-    title: "Roasly | Agence Marketing Digital à Tel Aviv & en Israël | Google Ads, Meta Ads",
+    title: "Agence de marketing digital à Tel Aviv & en Israël | Roasly",
     description:
-      "Agence de marketing digital basée à Tel Aviv, au service des entrepreneurs et entreprises francophones dans toute Israël. Google Ads, Meta Ads, Bing Ads, TikTok Ads : système complet avec dashboard en temps réel. Diagnostic gratuit.",
+      "Agence de marketing digital à Tel Aviv, au service des entreprises et indépendants francophones, hispanophones et hébréophones dans toute Israël. Google Ads, Meta Ads, Bing Ads, TikTok Ads : système d'acquisition complet avec dashboard en temps réel. Diagnostic gratuit.",
   },
   nav: {
     links: [
@@ -21,6 +21,7 @@ export const fr: SiteContent = {
   },
   hero: {
     kicker: "Roasly — Agence de marketing digital à Tel Aviv",
+    h1: "Agence de marketing digital à Tel Aviv & en Israël",
     headline: "Plus de clients. En Israël et au-delà.",
     subheadline:
       "On construit un système d'acquisition complet, pas des promesses marketing. Landing page, campagnes, tracking, CRM et un dashboard connecté : vous voyez chaque shekel investi, chaque lead généré. Sans surprises.",
@@ -147,6 +148,10 @@ export const fr: SiteContent = {
         values: ["Aucun", "6 à 12 mois", "Aucun, mais aucun suivi non plus"],
       },
     ],
+  },
+  seoLinks: {
+    eyebrow: "Zones & services",
+    headline: "Roasly, votre agence de marketing digital partout en Israël",
   },
   estimator: {
     eyebrow: "Estimez votre potentiel",

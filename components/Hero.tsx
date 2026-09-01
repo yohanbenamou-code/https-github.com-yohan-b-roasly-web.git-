@@ -54,11 +54,15 @@ export default function Hero({
             {content.hero.kicker}
           </p>
 
-          <h1 className="mt-7 text-balance font-display text-[2.6rem] font-extrabold leading-[1.04] tracking-tight [hyphens:none] sm:text-[3.4rem] lg:text-[4rem]">
-            <Headline text={content.hero.headline} />
+          <h1 className="mt-6 max-w-xl font-display text-lg font-semibold leading-snug text-paper/85 sm:text-xl">
+            {content.hero.h1}
           </h1>
 
-          <p className="mt-7 max-w-xl text-lg leading-relaxed text-paper/70">
+          <p className="mt-3 text-balance font-display text-[2.5rem] font-extrabold leading-[1.04] tracking-tight [hyphens:none] sm:text-[3.3rem] lg:text-[3.9rem]">
+            <Headline text={content.hero.headline} />
+          </p>
+
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-paper/70">
             {content.hero.subheadline}
           </p>
 

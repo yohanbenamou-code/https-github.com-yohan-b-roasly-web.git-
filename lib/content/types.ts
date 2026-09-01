@@ -14,9 +14,14 @@ export type SiteContent = {
   };
   hero: {
     kicker: string;
+    h1: string;
     headline: string;
     subheadline: string;
     cta: string;
+  };
+  seoLinks: {
+    eyebrow: string;
+    headline: string;
   };
   platforms: string[];
   valuePropsEyebrow: string;

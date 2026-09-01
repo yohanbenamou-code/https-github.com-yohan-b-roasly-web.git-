@@ -23,38 +23,38 @@ export default async function OgImage({
           flexDirection: "column",
           justifyContent: "center",
           padding: "80px",
-          background: "#14182A",
+          background: "#0A0E1A",
           backgroundImage:
-            "radial-gradient(circle at 15% 20%, rgba(47,158,110,0.35) 0%, transparent 45%), radial-gradient(circle at 85% 80%, rgba(232,163,61,0.35) 0%, transparent 45%)",
+            "radial-gradient(circle at 12% 15%, rgba(59,110,246,0.5) 0%, transparent 45%), radial-gradient(circle at 88% 85%, rgba(95,227,255,0.28) 0%, transparent 45%)",
         }}
       >
         <div style={{ display: "flex", fontSize: 40, fontWeight: 800, letterSpacing: -1 }}>
-          <span style={{ color: "#5B8DEF" }}>ROAS</span>
-          <span style={{ color: "#E9ECE7" }}>LY</span>
+          <span style={{ color: "#6E9BFF" }}>ROAS</span>
+          <span style={{ color: "#FFFFFF" }}>LY</span>
         </div>
         <div
           style={{
             display: "flex",
-            marginTop: 40,
-            fontSize: 52,
+            marginTop: 44,
+            fontSize: 56,
             fontWeight: 800,
-            color: "#E9ECE7",
-            lineHeight: 1.15,
-            maxWidth: 950,
+            color: "#FFFFFF",
+            lineHeight: 1.12,
+            maxWidth: 980,
           }}
         >
-          {content.hero.headline}
+          {content.hero.h1}
         </div>
         <div
           style={{
             display: "flex",
-            marginTop: 28,
+            marginTop: 26,
             fontSize: 26,
-            color: "rgba(233,236,231,0.7)",
-            maxWidth: 850,
+            color: "rgba(255,255,255,0.7)",
+            maxWidth: 880,
           }}
         >
-          {content.hero.kicker}
+          {content.hero.subheadline.split(". ")[0]}.
         </div>
       </div>
     ),

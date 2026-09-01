@@ -13,6 +13,7 @@ import Trust from "@/components/Trust";
 import Reviews from "@/components/Reviews";
 import AntiPositioning from "@/components/AntiPositioning";
 import Faq from "@/components/Faq";
+import SeoLinks from "@/components/SeoLinks";
 import FinalCta from "@/components/FinalCta";
 import Footer from "@/components/Footer";
 
@@ -52,6 +53,7 @@ export default async function HomePage({
         <Reviews content={content} />
         <AntiPositioning content={content} />
         <Faq content={content} />
+        <SeoLinks content={content} locale={locale} />
         <FinalCta content={content} />
       </main>
       <Footer locale={locale} content={content} />

@@ -43,6 +43,7 @@ export async function generateMetadata({
   languages["x-default"] = `${siteUrl}/${locales[0]}`;
 
   return {
+    metadataBase: new URL(siteUrl),
     title: content.meta.title,
     description: content.meta.description,
     alternates: {
@@ -74,34 +75,70 @@ export default async function LocaleLayout({
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "@id": `${siteUrl}/#organization`,
-    name: "Roasly",
-    url: siteUrl,
-    telephone: "+972-58-741-8789",
-    areaServed: [
-      { "@type": "City", name: "Tel Aviv" },
-      { "@type": "Country", name: "Israel" },
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": `${siteUrl}/#organization`,
+        name: "Roasly",
+        alternateName: "Roasly Ads",
+        description: content.meta.description,
+        url: `${siteUrl}/${locale}`,
+        image: `${siteUrl}/${locale}/opengraph-image`,
+        logo: `${siteUrl}/${locale}/icon`,
+        telephone: "+972-58-741-8789",
+        email: "yohan.b@roaslyads.com",
+        priceRange: "$$",
+        areaServed: [
+          { "@type": "City", name: "Tel Aviv" },
+          { "@type": "City", name: "Jerusalem" },
+          { "@type": "Country", name: "Israel" },
+        ],
+        serviceType: [
+          "Agence de marketing digital",
+          "Google Ads",
+          "Meta Ads",
+          "Bing Ads",
+          "TikTok Ads",
+        ],
+        knowsLanguage: ["fr", "es", "he"],
+        knowsAbout: [
+          "Marketing digital",
+          "Agence marketing digital Tel Aviv",
+          "Agence marketing digital Israël",
+          "Google Ads",
+          "Meta Ads",
+          "Bing Ads",
+          "TikTok Ads",
+          "Acquisition de leads",
+        ],
+        founder: {
+          "@type": "Person",
+          name: "Yohan Benamou",
+          jobTitle: content.team.members[0]?.role ?? "Fondateur",
+        },
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Tel Aviv",
+          addressCountry: "IL",
+        },
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+972-58-741-8789",
+          email: "yohan.b@roaslyads.com",
+          contactType: "sales",
+          areaServed: "IL",
+          availableLanguage: ["French", "Spanish", "Hebrew"],
+        },
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        url: siteUrl,
+        name: "Roasly",
+        inLanguage: localeTags[locale],
+        publisher: { "@id": `${siteUrl}/#organization` },
+      },
     ],
-    availableLanguage: ["fr", "es", "he"],
-    knowsAbout: ["Google Ads", "Meta Ads", "Bing Ads", "TikTok Ads", "Marketing digital", "Agence marketing digital Tel Aviv"],
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Tel Aviv",
-      addressCountry: "IL",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      bestRating: "5",
-      reviewCount: content.reviews.items.length,
-    },
-    review: content.reviews.items.map((item) => ({
-      "@type": "Review",
-      author: { "@type": "Person", name: item.name },
-      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-      reviewBody: item.text,
-    })),
   };
 
   return (
