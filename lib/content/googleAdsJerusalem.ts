@@ -2,157 +2,196 @@ import type { Locale } from "@/lib/i18n";
 import type { LandingContent } from "./landingTypes";
 
 const fr: LandingContent = {
-  metaTitle: "Agence Google Ads à Jérusalem | Gestion de Campagnes | Roasly",
+  metaTitle: "Agence Google Ads à Jérusalem | Campagnes Search multilingues | Roasly",
   metaDescription:
-    "Agence spécialisée en gestion de campagnes Google Ads à Jérusalem. Diagnostic gratuit, dashboard en temps réel, sans engagement long terme. Pour entreprises et indépendants francophones en Israël.",
+    "Agence Google Ads à Jérusalem : campagnes Search calibrées pour un marché moins concurrentiel qu'à Tel Aviv mais plus fragmenté, avec ciblage par quartier, par communauté et par langue. Diagnostic gratuit, dashboard en temps réel, sans engagement.",
   kicker: "Google Ads à Jérusalem",
   h1: "Votre agence Google Ads à Jérusalem",
   intro:
-    "Roasly gère des campagnes Google Ads pour des entreprises, cabinets et indépendants basés à Jérusalem. Recherche, Shopping, Display, YouTube : chaque campagne tient compte des spécificités du marché de Jérusalem et se connecte à un dashboard en temps réel.",
+    "À Jérusalem, le volume de recherche sur un mot-clé donné est souvent plus faible qu'à Tel Aviv, mais la concurrence sur les enchères l'est aussi. L'enjeu n'est pas d'acheter le plus de clics possible, c'est d'aller chercher les bonnes requêtes, dans la bonne langue, auprès de la bonne communauté. Roasly construit des campagnes Search pensées pour cette réalité.",
   sections: [
     {
-      title: "Un marché différent de Tel Aviv",
-      body: "Jérusalem regroupe une audience très diverse : familles religieuses et laïques, institutions, professions libérales, visiteurs et touristes. Une campagne pensée pour Tel Aviv ne convertit pas de la même façon à Jérusalem. Nous ajustons le ciblage géographique, les horaires de diffusion et le ton des annonces en fonction de cette réalité locale.",
+      title: "Un marché de recherche fragmenté, pas un petit marché",
+      body: "Jérusalem, c'est plusieurs audiences qui cohabitent : familles israéliennes, communautés religieuses, olim anglophones et francophones, étudiants, visiteurs. Chacune cherche différemment. Une seule campagne « Jérusalem » dilue le budget ; nous segmentons par zone (centre-ville, Rehavia, Baka, Katamon, Talpiot, Guivat Shaül) et par profil pour que chaque shekel aille sur une requête qui a un sens pour votre activité.",
     },
     {
-      title: "Ce qu'on met en place",
-      body: "Audit de votre compte existant ou création depuis zéro, structure de campagnes par intention de recherche, pages de destination optimisées pour la conversion, suivi des conversions relié à votre CRM, et optimisation hebdomadaire des enchères et des mots-clés négatifs.",
+      title: "Hébreu, anglais, français : trois marchés de recherche dans une même ville",
+      body: "Une clinique ou un cabinet à Jérusalem est souvent cherché en hébreu par les habitants et en anglais ou en français par les nouveaux arrivants. Ces requêtes n'ont ni le même volume, ni le même coût, ni la même intention. Nous créons des campagnes distinctes par langue, avec des annonces et des pages de destination écrites pour chaque public, pas traduites à la va-vite.",
     },
     {
-      title: "Combien coûte une campagne Google Ads à Jérusalem",
-      body: "Le coût par clic dépend de votre secteur et du niveau de concurrence sur vos mots-clés. Nous définissons le budget publicitaire avec vous selon vos objectifs de leads, pas selon un forfait générique. Le seul coût fixe est celui de la gestion, discuté lors du diagnostic gratuit.",
+      title: "Des cycles de décision plus longs à accompagner",
+      body: "Sur beaucoup de secteurs à Jérusalem (immobilier pour olim, éducation, santé, services juridiques), la personne compare pendant des semaines avant de contacter. Nous couvrons le parcours : Search sur les requêtes précises, remarketing léger pour rester présent, et un suivi CRM pour ne perdre aucun contact entre le premier clic et l'appel.",
+    },
+    {
+      title: "Calendrier local : Shabbat, fêtes, saisons touristiques",
+      body: "À Jérusalem, la diffusion ne se pilote pas 7 j/7 à l'identique. Selon votre secteur, les recherches chutent le vendredi après-midi et le samedi, remontent le dimanche, et bougent fortement autour des fêtes et des périodes de tourisme. Nous ajustons les horaires et les budgets sur ces cycles plutôt que de laisser tourner une diffusion uniforme.",
+    },
+    {
+      title: "Combien coûte Google Ads à Jérusalem",
+      body: "En général, le coût par clic est plus abordable qu'à Tel Aviv, sauf sur des niches très demandées comme l'immobilier pour olim. On définit le budget avec vous à partir d'un objectif de leads, pas d'un forfait. Le seul coût fixe est celui de la gestion, présenté lors du diagnostic gratuit, sans engagement de durée.",
     },
     {
       title: "Secteurs que nous accompagnons à Jérusalem",
-      body: "Cabinets d'avocats et de comptabilité, cliniques et professions de santé, institutions éducatives et de formation, hébergements et services touristiques, artisans et prestataires de services locaux.",
+      body: "Cabinets d'avocats et de comptabilité, cliniques et professions de santé, agents immobiliers spécialisés olim, écoles, séminaires et organismes de formation, hébergements et services aux visiteurs, associations et institutions.",
     },
   ],
   bullets: [
-    "Compte Google Ads à votre nom, vous en restez propriétaire",
-    "Ciblage adapté à la diversité du marché de Jérusalem",
-    "Optimisation chaque semaine, pas une fois par trimestre",
-    "Sans engagement long terme",
+    "Campagnes segmentées par quartier et par communauté, pas une seule campagne « Jérusalem »",
+    "Search distinct en hébreu, anglais et français selon votre audience",
+    "Diffusion adaptée au calendrier local : Shabbat, fêtes, saisons touristiques",
+    "Compte à votre nom, suivi hebdomadaire, sans engagement de durée",
   ],
   ctaHeadline: "Parlons de vos campagnes Google Ads à Jérusalem",
   faq: [
     {
-      question: "Une campagne pensée pour Tel Aviv peut-elle fonctionner à Jérusalem ?",
+      question: "Y a-t-il assez de volume de recherche à Jérusalem pour que Google Ads soit rentable ?",
       answer:
-        "Rarement telle quelle. Les habitudes de recherche, les horaires et le ton des annonces qui fonctionnent à Tel Aviv ne convertissent pas toujours à Jérusalem. Nous ajustons chaque campagne à la réalité locale.",
+        "Pour la plupart des secteurs de services, oui. Le volume par mot-clé est plus faible qu'à Tel Aviv, mais la concurrence aussi. On vise des requêtes précises à forte intention plutôt que du trafic large, et on vous dit lors du diagnostic si le potentiel est suffisant pour votre activité.",
     },
     {
-      question: "Faut-il cibler en hébreu, en français ou en anglais à Jérusalem ?",
+      question: "Dois-je cibler en hébreu, en anglais ou en français à Jérusalem ?",
       answer:
-        "Cela dépend de votre audience. Jérusalem regroupe des communautés très diverses ; nous définissons la ou les langues de ciblage avec vous lors du diagnostic gratuit.",
+        "Souvent les trois, mais dans des campagnes séparées. Les habitants cherchent en hébreu, une partie des olim en anglais ou en français. Nous définissons la répartition avec vous et écrivons des annonces propres à chaque langue.",
     },
     {
-      question: "Puis-je garder mon compte Google Ads existant ?",
+      question: "Faut-il couper les campagnes pendant Shabbat et les fêtes ?",
       answer:
-        "Oui. Nous auditons votre compte actuel et reprenons sa gestion, ou le restructurons si nécessaire, sans perdre votre historique de données.",
+        "Rarement les couper entièrement, plutôt réduire les enchères et le budget quand les recherches baissent, et les remonter au bon moment. Cela dépend du secteur : pour certains, la demande reste stable le samedi soir.",
+    },
+    {
+      question: "Puis-je reprendre un compte Google Ads déjà géré par une autre agence à Jérusalem ?",
+      answer:
+        "Oui. Nous auditons le compte, gardons l'historique de données et le restructurons si nécessaire. Le compte reste ouvert à votre nom, vous en gardez la propriété.",
     },
   ],
 };
 
 const es: LandingContent = {
-  metaTitle: "Agencia Google Ads en Jerusalén | Gestión de Campañas | Roasly",
+  metaTitle: "Agencia Google Ads en Jerusalén | Campañas Search multilingües | Roasly",
   metaDescription:
-    "Agencia especializada en gestión de campañas Google Ads en Jerusalén. Diagnóstico gratuito, dashboard en tiempo real, sin permanencia. Para empresas y autónomos hispanohablantes en Israel.",
+    "Agencia Google Ads en Jerusalén: campañas de Search calibradas para un mercado menos competido que Tel Aviv pero más fragmentado, con segmentación por barrio, comunidad e idioma. Diagnóstico gratuito, dashboard en tiempo real, sin permanencia.",
   kicker: "Google Ads en Jerusalén",
   h1: "Tu agencia de Google Ads en Jerusalén",
   intro:
-    "Roasly gestiona campañas de Google Ads para empresas, despachos y autónomos con base en Jerusalén. Búsqueda, Shopping, Display, YouTube: cada campaña tiene en cuenta las particularidades del mercado de Jerusalén y se conecta a un dashboard en tiempo real.",
+    "En Jerusalén, el volumen de búsqueda de una palabra clave suele ser menor que en Tel Aviv, pero la competencia en las pujas también. El reto no es comprar el máximo de clics posible, sino ir a por las búsquedas correctas, en el idioma correcto y ante la comunidad correcta. Roasly construye campañas de Search pensadas para esa realidad.",
   sections: [
     {
-      title: "Un mercado distinto al de Tel Aviv",
-      body: "Jerusalén reúne una audiencia muy diversa: familias religiosas y laicas, instituciones, profesiones liberales, visitantes y turistas. Una campaña pensada para Tel Aviv no convierte igual en Jerusalén. Ajustamos la segmentación geográfica, los horarios de difusión y el tono de los anuncios según esta realidad local.",
+      title: "Un mercado de búsqueda fragmentado, no un mercado pequeño",
+      body: "Jerusalén son varias audiencias que conviven: familias israelíes, comunidades religiosas, olim de habla inglesa y francesa, estudiantes, visitantes. Cada una busca de forma distinta. Una única campaña «Jerusalén» diluye el presupuesto; segmentamos por zona (centro, Rehavia, Baka, Katamon, Talpiot, Guivat Shaul) y por perfil para que cada shekel vaya a una búsqueda con sentido para tu negocio.",
     },
     {
-      title: "Lo que ponemos en marcha",
-      body: "Auditoría de tu cuenta existente o creación desde cero, estructura de campañas por intención de búsqueda, landing pages optimizadas para conversión, seguimiento de conversiones conectado a tu CRM, y optimización semanal de pujas y palabras clave negativas.",
+      title: "Hebreo, inglés, español: tres mercados de búsqueda en una misma ciudad",
+      body: "Una clínica o un despacho en Jerusalén se busca a menudo en hebreo por los residentes y en inglés o español por los recién llegados. Esas búsquedas no tienen el mismo volumen, ni el mismo coste, ni la misma intención. Creamos campañas separadas por idioma, con anuncios y landing pages escritas para cada público, no traducidas deprisa.",
     },
     {
-      title: "Cuánto cuesta una campaña de Google Ads en Jerusalén",
-      body: "El coste por clic depende de tu sector y del nivel de competencia en tus palabras clave. Definimos el presupuesto publicitario contigo según tus objetivos de leads, no según una tarifa genérica. El único coste fijo es el de la gestión, que se define en el diagnóstico gratuito.",
+      title: "Ciclos de decisión más largos que hay que acompañar",
+      body: "En muchos sectores de Jerusalén (inmobiliario para olim, educación, salud, servicios legales) la persona compara durante semanas antes de contactar. Cubrimos el recorrido: Search en las búsquedas precisas, un remarketing ligero para seguir presente y un seguimiento en el CRM para no perder ningún contacto entre el primer clic y la llamada.",
+    },
+    {
+      title: "Calendario local: Shabat, festividades, temporadas turísticas",
+      body: "En Jerusalén la difusión no se pilota 7 días iguales. Según tu sector, las búsquedas caen el viernes por la tarde y el sábado, suben el domingo y se mueven mucho en festividades y temporadas de turismo. Ajustamos horarios y presupuestos a esos ciclos en lugar de dejar una difusión uniforme.",
+    },
+    {
+      title: "Cuánto cuesta Google Ads en Jerusalén",
+      body: "En general el coste por clic es más asequible que en Tel Aviv, salvo en nichos muy demandados como el inmobiliario para olim. Definimos el presupuesto contigo a partir de un objetivo de leads, no de una tarifa. El único coste fijo es el de la gestión, que se presenta en el diagnóstico gratuito, sin permanencia.",
     },
     {
       title: "Sectores que acompañamos en Jerusalén",
-      body: "Despachos de abogados y contables, clínicas y profesiones de salud, instituciones educativas y de formación, alojamientos y servicios turísticos, autónomos y negocios locales de servicios.",
+      body: "Despachos de abogados y contables, clínicas y profesiones de salud, agentes inmobiliarios especializados en olim, colegios, seminarios y centros de formación, alojamientos y servicios para visitantes, asociaciones e instituciones.",
     },
   ],
   bullets: [
-    "Cuenta de Google Ads a tu nombre, sigues siendo el propietario",
-    "Segmentación adaptada a la diversidad del mercado de Jerusalén",
-    "Optimización cada semana, no una vez al trimestre",
-    "Sin permanencia a largo plazo",
+    "Campañas segmentadas por barrio y comunidad, no una sola campaña «Jerusalén»",
+    "Search separado en hebreo, inglés y español según tu audiencia",
+    "Difusión adaptada al calendario local: Shabat, festividades, temporadas turísticas",
+    "Cuenta a tu nombre, revisión semanal, sin permanencia",
   ],
   ctaHeadline: "Hablemos de tus campañas de Google Ads en Jerusalén",
   faq: [
     {
-      question: "¿Una campaña pensada para Tel Aviv puede funcionar en Jerusalén?",
+      question: "¿Hay suficiente volumen de búsqueda en Jerusalén para que Google Ads sea rentable?",
       answer:
-        "Raramente tal cual. Los hábitos de búsqueda, los horarios y el tono de los anuncios que funcionan en Tel Aviv no siempre convierten en Jerusalén. Ajustamos cada campaña a la realidad local.",
+        "Para la mayoría de sectores de servicios, sí. El volumen por palabra clave es menor que en Tel Aviv, pero la competencia también. Apuntamos a búsquedas precisas de alta intención en vez de tráfico amplio, y te decimos en el diagnóstico si el potencial es suficiente para tu negocio.",
     },
     {
-      question: "¿Hay que segmentar en hebreo, español o inglés en Jerusalén?",
+      question: "¿Debo segmentar en hebreo, inglés o español en Jerusalén?",
       answer:
-        "Depende de tu audiencia. Jerusalén reúne comunidades muy diversas; definimos el idioma o idiomas de segmentación contigo en el diagnóstico gratuito.",
+        "A menudo los tres, pero en campañas separadas. Los residentes buscan en hebreo, parte de los olim en inglés o español. Definimos el reparto contigo y escribimos anuncios propios de cada idioma.",
     },
     {
-      question: "¿Puedo mantener mi cuenta de Google Ads actual?",
+      question: "¿Hay que apagar las campañas durante Shabat y las festividades?",
       answer:
-        "Sí. Auditamos tu cuenta actual y asumimos su gestión, o la reestructuramos si hace falta, sin perder tu histórico de datos.",
+        "Rara vez apagarlas del todo; más bien bajar pujas y presupuesto cuando las búsquedas caen y volver a subirlos en el momento adecuado. Depende del sector: en algunos la demanda se mantiene el sábado por la noche.",
+    },
+    {
+      question: "¿Puedo traspasar una cuenta de Google Ads que ya gestiona otra agencia en Jerusalén?",
+      answer:
+        "Sí. Auditamos la cuenta, conservamos el histórico de datos y la reestructuramos si hace falta. La cuenta sigue a tu nombre y mantienes la propiedad.",
     },
   ],
 };
 
 const he: LandingContent = {
-  metaTitle: "סוכנות Google Ads בירושלים | ניהול קמפיינים | Roasly",
+  metaTitle: "סוכנות Google Ads בירושלים | קמפייני Search רב-לשוניים | Roasly",
   metaDescription:
-    "סוכנות המתמחה בניהול קמפיינים ב-Google Ads בירושלים. אבחון חינם, דאשבורד בזמן אמת, בלי התחייבות לטווח ארוך. לעסקים ועצמאים בישראל.",
+    "סוכנות Google Ads בירושלים: קמפייני Search המכוילים לשוק פחות תחרותי מתל אביב אך מפוצל יותר, עם מיקוד לפי שכונה, קהילה ושפה. אבחון חינם, דאשבורד בזמן אמת, בלי התחייבות.",
   kicker: "Google Ads בירושלים",
   h1: "סוכנות ה-Google Ads שלכם בירושלים",
   intro:
-    "Roasly מנהלת קמפיינים ב-Google Ads עבור עסקים, משרדים ועצמאים בירושלים. חיפוש, Shopping, Display, YouTube: כל קמפיין מתחשב במאפיינים הייחודיים של שוק ירושלים ומחובר לדאשבורד בזמן אמת.",
+    "בירושלים, נפח החיפוש על מילת מפתח נתונה נמוך לרוב מזה שבתל אביב, אבל גם התחרות על ההצעות. האתגר הוא לא לקנות כמה שיותר קליקים, אלא להגיע אל השאילתות הנכונות, בשפה הנכונה, מול הקהילה הנכונה. Roasly בונה קמפייני Search שחשובים למציאות הזו.",
   sections: [
     {
-      title: "שוק שונה מתל אביב",
-      body: "ירושלים מאגדת קהל מגוון מאוד: משפחות דתיות וחילוניות, מוסדות, בעלי מקצועות חופשיים, מבקרים ותיירים. קמפיין שנבנה עבור תל אביב לא ממיר באותה צורה בירושלים. אנחנו מתאימים את המיקוד הגיאוגרפי, שעות ההצגה והטון של המודעות בהתאם למציאות המקומית הזו.",
+      title: "שוק חיפוש מפוצל, לא שוק קטן",
+      body: "ירושלים היא כמה קהלים שחיים זה לצד זה: משפחות ישראליות, קהילות דתיות, עולים דוברי אנגלית וצרפתית, סטודנטים, מבקרים. כל אחד מחפש אחרת. קמפיין אחד בשם \"ירושלים\" מדלל את התקציב; אנחנו מחלקים לפי אזור (מרכז העיר, רחביה, בקעה, קטמון, תלפיות, גבעת שאול) ולפי פרופיל, כדי שכל שקל ילך לשאילתה עם משמעות לעסק שלכם.",
     },
     {
-      title: "מה אנחנו מקימים",
-      body: "בדיקת החשבון הקיים שלכם או בנייה מאפס, מבנה קמפיינים לפי כוונת חיפוש, דפי נחיתה שמותאמים להמרה, מעקב המרות המחובר ל-CRM שלכם, ואופטימיזציה שבועית של הצעות המחיר ומילות המפתח השליליות.",
+      title: "עברית, אנגלית, צרפתית: שלושה שוקי חיפוש בעיר אחת",
+      body: "קליניקה או משרד בירושלים מחופשים לרוב בעברית על ידי התושבים ובאנגלית או בצרפתית על ידי העולים החדשים. לשאילתות האלה אין אותו נפח, אותה עלות או אותה כוונה. אנחנו יוצרים קמפיינים נפרדים לפי שפה, עם מודעות ודפי נחיתה שנכתבים לכל קהל, לא מתורגמים בחיפזון.",
     },
     {
-      title: "כמה עולה קמפיין Google Ads בירושלים",
-      body: "העלות לקליק תלויה בתחום שלכם וברמת התחרות על מילות המפתח. אנחנו קובעים את תקציב הפרסום יחד איתכם לפי יעדי הלידים שלכם, לא לפי תעריף גנרי. העלות הקבועה היחידה היא עלות הניהול, שנקבעת באבחון החינם.",
+      title: "מחזורי החלטה ארוכים יותר שצריך ללוות",
+      body: "בהרבה תחומים בירושלים (נדל\"ן לעולים, חינוך, בריאות, שירותים משפטיים) האדם משווה במשך שבועות לפני שהוא פונה. אנחנו מכסים את המסע: Search על השאילתות המדויקות, רימרקטינג קל כדי להישאר נוכחים, ומעקב CRM כדי לא לאבד אף פנייה בין הקליק הראשון לשיחה.",
+    },
+    {
+      title: "לוח שנה מקומי: שבת, חגים, עונות תיירות",
+      body: "בירושלים ההפצה לא מתנהלת שבעה ימים באותה צורה. לפי התחום, החיפושים יורדים בשישי אחר הצהריים ובשבת, עולים בראשון, וזזים חזק סביב חגים ותקופות תיירות. אנחנו מתאימים שעות ותקציבים למחזורים האלה במקום להשאיר הפצה אחידה.",
+    },
+    {
+      title: "כמה עולה Google Ads בירושלים",
+      body: "בדרך כלל העלות לקליק נוחה יותר מתל אביב, למעט נישות מבוקשות מאוד כמו נדל\"ן לעולים. אנחנו קובעים את התקציב יחד איתכם מתוך יעד לידים, לא מתוך מחיר קבוע. העלות הקבועה היחידה היא עלות הניהול, שמוצגת באבחון החינם, בלי התחייבות לתקופה.",
     },
     {
       title: "תחומים שאנחנו מלווים בירושלים",
-      body: "משרדי עורכי דין ורואי חשבון, קליניקות ומקצועות בריאות, מוסדות חינוך והכשרה, אירוח ושירותי תיירות, בעלי מקצוע ושירותים מקומיים.",
+      body: "משרדי עורכי דין ורואי חשבון, קליניקות ומקצועות בריאות, מתווכים המתמחים בעולים, בתי ספר, סמינרים ומוסדות הכשרה, אירוח ושירותים למבקרים, עמותות ומוסדות.",
     },
   ],
   bullets: [
-    "חשבון Google Ads על שמכם, אתם נשארים הבעלים",
-    "מיקוד מותאם למגוון הייחודי של שוק ירושלים",
-    "אופטימיזציה כל שבוע, לא פעם ברבעון",
-    "בלי התחייבות לטווח ארוך",
+    "קמפיינים מחולקים לפי שכונה וקהילה, לא קמפיין אחד בשם \"ירושלים\"",
+    "Search נפרד בעברית, אנגלית וצרפתית לפי הקהל שלכם",
+    "הפצה מותאמת ללוח השנה המקומי: שבת, חגים, עונות תיירות",
+    "חשבון על שמכם, מעקב שבועי, בלי התחייבות לתקופה",
   ],
-  ctaHeadline: "בואו נדבר על קמפיינים ב-Google Ads בירושלים",
+  ctaHeadline: "בואו נדבר על קמפייני ה-Google Ads שלכם בירושלים",
   faq: [
     {
-      question: "האם קמפיין שנבנה עבור תל אביב יכול לעבוד גם בירושלים?",
+      question: "האם יש מספיק נפח חיפוש בירושלים כדי ש-Google Ads יהיה משתלם?",
       answer:
-        "לעיתים רחוקות כפי שהוא. הרגלי החיפוש, שעות ההצגה והטון של המודעות שעובדים בתל אביב לא תמיד ממירים בירושלים. אנחנו מתאימים כל קמפיין למציאות המקומית.",
+        "לרוב תחומי השירות, כן. הנפח למילת מפתח נמוך מתל אביב, אבל גם התחרות. אנחנו מכוונים לשאילתות מדויקות עם כוונה גבוהה במקום לתנועה רחבה, ואומרים לכם באבחון אם הפוטנציאל מספיק לעסק שלכם.",
     },
     {
-      question: "האם צריך למקד בעברית, בצרפתית או באנגלית בירושלים?",
+      question: "האם למקד בעברית, באנגלית או בצרפתית בירושלים?",
       answer:
-        "תלוי בקהל שלכם. ירושלים מאגדת קהילות מגוונות מאוד; אנחנו קובעים יחד איתכם את השפה או השפות למיקוד באבחון החינם.",
+        "לעיתים קרובות בשלושתן, אבל בקמפיינים נפרדים. התושבים מחפשים בעברית, חלק מהעולים באנגלית או בצרפתית. אנחנו קובעים את החלוקה יחד איתכם וכותבים מודעות ייחודיות לכל שפה.",
     },
     {
-      question: "האם אפשר לשמור על חשבון ה-Google Ads הקיים שלי?",
+      question: "האם צריך לכבות את הקמפיינים בשבת ובחגים?",
       answer:
-        "כן. אנחנו בודקים את החשבון הנוכחי שלכם וממשיכים לנהל אותו, או בונים אותו מחדש אם צריך, בלי לאבד את היסטוריית הנתונים.",
+        "לעיתים רחוקות לכבות לגמרי; יותר נכון להוריד הצעות מחיר ותקציב כשהחיפושים יורדים ולהעלות אותם בזמן הנכון. תלוי בתחום: בחלקם הביקוש נשמר במוצאי שבת.",
+    },
+    {
+      question: "האם אפשר להעביר חשבון Google Ads שכבר מנוהל על ידי סוכנות אחרת בירושלים?",
+      answer:
+        "כן. אנחנו בודקים את החשבון, שומרים את היסטוריית הנתונים ובונים אותו מחדש אם צריך. החשבון נשאר על שמכם ואתם שומרים על הבעלות.",
     },
   ],
 };

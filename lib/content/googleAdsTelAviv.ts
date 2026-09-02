@@ -3,181 +3,196 @@ import type { LandingContent } from "./landingTypes";
 export type { LandingContent };
 
 const fr: LandingContent = {
-  metaTitle: "Agence Google Ads à Tel Aviv | Gestion de Campagnes | Roasly",
+  metaTitle: "Agence Google Ads à Tel Aviv | Gestion de campagnes Search & PMax | Roasly",
   metaDescription:
-    "Agence spécialisée en gestion de campagnes Google Ads à Tel Aviv. Diagnostic gratuit, dashboard en temps réel, sans engagement long terme. Pour entreprises et indépendants francophones en Israël.",
+    "Agence Google Ads à Tel Aviv : campagnes Search, Performance Max et Shopping structurées par intention de recherche, sur un marché où le coût par clic est parmi les plus élevés d'Israël. Diagnostic gratuit, dashboard en temps réel, sans engagement.",
   kicker: "Google Ads à Tel Aviv",
   h1: "Votre agence Google Ads à Tel Aviv",
   intro:
-    "Roasly gère des campagnes Google Ads pour des entreprises et indépendants basés à Tel Aviv et dans toute Israël. Recherche, Shopping, Display, YouTube : chaque campagne est construite autour de votre marché local et connectée à un dashboard en temps réel.",
+    "Google Ads capte les gens qui cherchent déjà ce que vous vendez. À Tel Aviv, le problème n'est pas le volume de recherches, il est ailleurs : le coût par clic est parmi les plus élevés du pays et vos concurrents enchérissent souvent sur les mêmes mots-clés que vous. Roasly construit des campagnes qui vont chercher les requêtes qui convertissent, pas celles qui font grimper la facture.",
   sections: [
     {
-      title: "Pourquoi une agence locale à Tel Aviv",
-      body: "Le marché israélien a ses propres habitudes de recherche, ses concurrents et son coût par clic. Une agence qui connaît Tel Aviv structure vos campagnes différemment qu'une agence générique à l'étranger : ciblage géographique précis, horaires d'affichage adaptés, mots-clés en français, hébreu ou anglais selon votre audience.",
+      title: "Un marché de recherche cher, une structure qui doit être serrée",
+      body: "À Tel Aviv, un compte mal structuré brûle son budget en quelques jours : trop de mots-clés larges, pas de listes de mots-clés négatifs, un seul groupe d'annonces pour dix intentions différentes. Nous repartons de la structure : campagnes séparées par intention (marque, concurrents, problème, solution), correspondances de mots-clés maîtrisées, et un travail hebdomadaire sur les termes de recherche réels pour couper ce qui coûte sans rapporter.",
     },
     {
-      title: "Ce qu'on met en place",
-      body: "Audit de votre compte existant ou création depuis zéro, structure de campagnes par intention de recherche, pages de destination optimisées pour la conversion, suivi des conversions relié à votre CRM, et optimisation hebdomadaire des enchères et des mots-clés négatifs.",
+      title: "Search, Performance Max, Shopping : le bon format selon votre activité",
+      body: "Un cabinet de services ne se pilote pas comme un e-commerce. Pour la génération de leads, on privilégie le Search avec un suivi des conversions propre. Pour la vente en ligne, on ajoute Shopping et Performance Max, mais encadrés : flux produit soigné, exclusions, et segmentation par groupe d'audience pour garder la main sur ce que l'algorithme dépense.",
     },
     {
-      title: "Transparence sur le budget",
-      body: "Vous voyez exactement combien coûte chaque clic, chaque lead, et où va votre budget quotidien, via un dashboard connecté directement à votre compte Google Ads. Pas de rapport PDF en retard, pas de boîte noire.",
+      title: "Cibler par langue, pas seulement par ville",
+      body: "À Tel Aviv, votre audience cherche en hébreu, en anglais ou en français selon qui elle est. Nous séparons les campagnes par langue pour écrire des annonces qui sonnent juste dans chacune, ajuster les enchères selon la valeur réelle de chaque segment, et éviter de payer le prix fort pour des clics qui ne vous ressemblent pas.",
     },
     {
-      title: "Combien coûte une campagne Google Ads à Tel Aviv",
-      body: "Le coût par clic varie fortement selon votre secteur : quelques shekels pour des mots-clés locaux peu concurrentiels, davantage pour des secteurs comme l'immobilier ou le juridique. Nous fixons le budget publicitaire avec vous selon vos objectifs de leads, pas selon un forfait générique. Le seul coût fixe est celui de la gestion, discuté lors du diagnostic gratuit.",
+      title: "Suivi des conversions : savoir quel mot-clé rapporte vraiment",
+      body: "Beaucoup de comptes Google Ads à Tel Aviv optimisent à l'aveugle parce que le suivi des conversions est cassé ou incomplet. Nous connectons les formulaires, les appels et le CRM, pour que chaque lead soit rattaché au mot-clé, à l'annonce et à la campagne qui l'a généré. C'est cette donnée, visible dans votre dashboard, qui pilote les décisions.",
     },
     {
-      title: "Quels résultats attendre, et en combien de temps",
-      body: "Les premières semaines servent à collecter des données réelles : quels mots-clés convertissent, quelles audiences réagissent, quelles annonces performent. La baisse du coût par lead se joue en général entre la 4ᵉ et la 8ᵉ semaine, une fois les enchères et les mots-clés négatifs ajustés sur la base de ces données.",
+      title: "Combien coûte Google Ads à Tel Aviv",
+      body: "Le coût par clic va de quelques shekels pour des requêtes locales de niche à beaucoup plus dans l'immobilier, le juridique ou le médical. On fixe le budget publicitaire avec vous à partir d'un objectif de coût par lead, pas d'un forfait. Le seul coût fixe est celui de la gestion, présenté lors du diagnostic gratuit, sans engagement de durée.",
     },
     {
       title: "Secteurs que nous accompagnons à Tel Aviv",
-      body: "Cliniques dentaires et professions de santé, cabinets d'avocats et d'expertise comptable, agences immobilières, instituts de beauté, coachs et formateurs, artisans et prestataires de services locaux. Chaque campagne est structurée autour des mots-clés et de la saisonnalité propres à votre secteur.",
+      body: "Cliniques dentaires et esthétiques, cabinets d'avocats et d'expertise comptable, agences immobilières, SaaS et start-ups B2B, prestataires de services aux entreprises. Autant de secteurs où la demande de recherche existe déjà à Tel Aviv, et où la différence se joue sur la structure du compte et la qualité du suivi.",
     },
   ],
   bullets: [
-    "Compte Google Ads à votre nom, vous en restez propriétaire",
-    "Structure de campagnes adaptée au marché israélien",
-    "Optimisation chaque semaine, pas une fois par trimestre",
-    "Sans engagement long terme",
+    "Compte Google Ads ouvert à votre nom, données et historique conservés si vous partez",
+    "Campagnes séparées par intention et par langue (hébreu, anglais, français)",
+    "Suivi des conversions relié au CRM : chaque lead rattaché à son mot-clé",
+    "Revue hebdomadaire des termes de recherche et des enchères, sans engagement de durée",
   ],
-  ctaHeadline: "Parlons de vos campagnes Google Ads à Tel Aviv",
+  ctaHeadline: "Parlons de la structure de votre compte Google Ads à Tel Aviv",
   faq: [
     {
-      question: "Faut-il un budget minimum pour lancer Google Ads à Tel Aviv ?",
+      question: "Mon compte Google Ads dépense beaucoup à Tel Aviv sans générer de leads. Que faites-vous en premier ?",
       answer:
-        "Non, il n'y a pas de minimum imposé par Roasly. Le budget se fixe selon vos objectifs de leads et le niveau de concurrence sur vos mots-clés à Tel Aviv, discuté lors du diagnostic gratuit.",
+        "Un audit de la structure et du suivi des conversions. Dans la plupart des cas, le budget part sur des requêtes trop larges sans mots-clés négatifs, et une partie des conversions n'est pas mesurée. On corrige ces deux points avant de toucher aux enchères.",
     },
     {
-      question: "Puis-je garder mon compte Google Ads existant ?",
+      question: "Faut-il faire du Performance Max à Tel Aviv ?",
       answer:
-        "Oui. Nous auditons votre compte actuel et reprenons sa gestion, ou le restructurons si nécessaire, sans repartir de zéro ni perdre votre historique de données.",
+        "Pour l'e-commerce, souvent oui, mais encadré par des exclusions et une bonne donnée produit. Pour la génération de leads, on commence généralement par du Search bien suivi, et on ajoute Performance Max seulement quand les conversions sont fiables.",
     },
     {
-      question: "Gérez-vous aussi le Shopping et YouTube Ads à Tel Aviv ?",
+      question: "En combien de temps le coût par lead baisse-t-il ?",
       answer:
-        "Oui, en fonction de votre activité. Recherche, Shopping, Display et YouTube sont intégrés au même système et au même dashboard, pas gérés séparément.",
+        "Les deux à trois premières semaines servent à accumuler des données de recherche réelles. La baisse nette du coût par lead se joue en général entre la 4ᵉ et la 8ᵉ semaine, une fois les termes de recherche nettoyés et les enchères ajustées.",
+    },
+    {
+      question: "Gérez-vous aussi Google Ads pour une audience anglophone ou francophone à Tel Aviv ?",
+      answer:
+        "Oui. Nous construisons des campagnes distinctes par langue, avec des annonces et des pages de destination adaptées, plutôt qu'une seule campagne traduite mot à mot.",
     },
   ],
 };
 
 const es: LandingContent = {
-  metaTitle: "Agencia Google Ads en Tel Aviv | Gestión de Campañas | Roasly",
+  metaTitle: "Agencia Google Ads en Tel Aviv | Campañas Search y PMax | Roasly",
   metaDescription:
-    "Agencia especializada en gestión de campañas Google Ads en Tel Aviv. Diagnóstico gratuito, dashboard en tiempo real, sin permanencia. Para empresas y autónomos hispanohablantes en Israel.",
+    "Agencia Google Ads en Tel Aviv: campañas de Search, Performance Max y Shopping estructuradas por intención de búsqueda, en un mercado donde el coste por clic está entre los más altos de Israel. Diagnóstico gratuito, dashboard en tiempo real, sin permanencia.",
   kicker: "Google Ads en Tel Aviv",
   h1: "Tu agencia de Google Ads en Tel Aviv",
   intro:
-    "Roasly gestiona campañas de Google Ads para empresas y autónomos con base en Tel Aviv y en toda Israel. Búsqueda, Shopping, Display, YouTube: cada campaña se construye alrededor de tu mercado local y conectada a un dashboard en tiempo real.",
+    "Google Ads capta a quien ya está buscando lo que vendes. En Tel Aviv el problema no es el volumen de búsquedas: el coste por clic está entre los más altos del país y tu competencia suele pujar por las mismas palabras clave que tú. Roasly construye campañas que van a por las búsquedas que convierten, no las que disparan la factura.",
   sections: [
     {
-      title: "Por qué una agencia local en Tel Aviv",
-      body: "El mercado israelí tiene sus propios hábitos de búsqueda, competidores y coste por clic. Una agencia que conoce Tel Aviv estructura tus campañas de forma distinta a una agencia genérica en el extranjero: segmentación geográfica precisa, horarios de anuncios adaptados, palabras clave en español, hebreo o inglés según tu audiencia.",
+      title: "Un mercado de búsqueda caro exige una estructura ajustada",
+      body: "En Tel Aviv, una cuenta mal estructurada quema el presupuesto en días: demasiadas palabras clave amplias, sin listas de negativas, un solo grupo de anuncios para diez intenciones distintas. Empezamos por la estructura: campañas separadas por intención (marca, competidores, problema, solución), concordancias controladas y una revisión semanal de los términos de búsqueda reales para cortar lo que cuesta sin aportar.",
     },
     {
-      title: "Lo que ponemos en marcha",
-      body: "Auditoría de tu cuenta existente o creación desde cero, estructura de campañas por intención de búsqueda, landing pages optimizadas para conversión, seguimiento de conversiones conectado a tu CRM, y optimización semanal de pujas y palabras clave negativas.",
+      title: "Search, Performance Max, Shopping: el formato adecuado según tu negocio",
+      body: "Un despacho de servicios no se pilota como un e-commerce. Para generación de leads priorizamos Search con un seguimiento de conversiones limpio. Para venta online añadimos Shopping y Performance Max, pero acotados: feed de producto cuidado, exclusiones y segmentación por grupo de audiencia para mantener el control de lo que gasta el algoritmo.",
     },
     {
-      title: "Transparencia sobre el presupuesto",
-      body: "Ves exactamente cuánto cuesta cada clic, cada lead, y a dónde va tu presupuesto diario, a través de un dashboard conectado directamente a tu cuenta de Google Ads. Sin informes en PDF con retraso, sin caja negra.",
+      title: "Segmentar por idioma, no solo por ciudad",
+      body: "En Tel Aviv tu audiencia busca en hebreo, en inglés o en español según quién sea. Separamos las campañas por idioma para escribir anuncios que suenen bien en cada uno, ajustar las pujas según el valor real de cada segmento y no pagar el precio alto por clics que no encajan.",
     },
     {
-      title: "Cuánto cuesta una campaña de Google Ads en Tel Aviv",
-      body: "El coste por clic varía mucho según tu sector: unos pocos shekels para palabras clave locales poco competidas, más en sectores como inmobiliario o legal. Fijamos el presupuesto publicitario contigo según tus objetivos de leads, no según una tarifa genérica. El único coste fijo es el de la gestión, que se define en el diagnóstico gratuito.",
+      title: "Seguimiento de conversiones: saber qué palabra clave rinde de verdad",
+      body: "Muchas cuentas de Google Ads en Tel Aviv optimizan a ciegas porque el seguimiento de conversiones está roto o incompleto. Conectamos formularios, llamadas y CRM para que cada lead quede vinculado a la palabra clave, el anuncio y la campaña que lo generó. Ese dato, visible en tu dashboard, es el que guía las decisiones.",
     },
     {
-      title: "Qué resultados esperar, y en cuánto tiempo",
-      body: "Las primeras semanas sirven para recopilar datos reales: qué palabras clave convierten, qué audiencias responden, qué anuncios rinden mejor. La bajada del coste por lead suele darse entre la semana 4 y la 8, una vez ajustadas las pujas y las palabras clave negativas con esos datos.",
+      title: "Cuánto cuesta Google Ads en Tel Aviv",
+      body: "El coste por clic va de unos pocos shekels en búsquedas locales de nicho a mucho más en inmobiliario, legal o médico. Fijamos el presupuesto publicitario contigo a partir de un objetivo de coste por lead, no de una tarifa cerrada. El único coste fijo es el de la gestión, que se presenta en el diagnóstico gratuito, sin permanencia.",
     },
     {
       title: "Sectores que acompañamos en Tel Aviv",
-      body: "Clínicas dentales y profesiones de salud, despachos de abogados y contables, agencias inmobiliarias, centros de estética, coaches y formadores, autónomos y negocios locales de servicios. Cada campaña se estructura según las palabras clave y la estacionalidad propias de tu sector.",
+      body: "Clínicas dentales y estéticas, despachos de abogados y contables, agencias inmobiliarias, SaaS y startups B2B, proveedores de servicios para empresas. Sectores donde la demanda de búsqueda ya existe en Tel Aviv y donde la diferencia está en la estructura de la cuenta y la calidad del seguimiento.",
     },
   ],
   bullets: [
-    "Cuenta de Google Ads a tu nombre, sigues siendo el propietario",
-    "Estructura de campañas adaptada al mercado israelí",
-    "Optimización cada semana, no una vez al trimestre",
-    "Sin permanencia a largo plazo",
+    "Cuenta de Google Ads a tu nombre; datos e histórico se quedan contigo si te vas",
+    "Campañas separadas por intención y por idioma (hebreo, inglés, español)",
+    "Seguimiento de conversiones conectado al CRM: cada lead ligado a su palabra clave",
+    "Revisión semanal de términos de búsqueda y pujas, sin permanencia",
   ],
-  ctaHeadline: "Hablemos de tus campañas de Google Ads en Tel Aviv",
+  ctaHeadline: "Hablemos de la estructura de tu cuenta de Google Ads en Tel Aviv",
   faq: [
     {
-      question: "¿Hace falta un presupuesto mínimo para lanzar Google Ads en Tel Aviv?",
+      question: "Mi cuenta de Google Ads gasta mucho en Tel Aviv sin generar leads. ¿Qué hacéis primero?",
       answer:
-        "No, Roasly no impone un mínimo. El presupuesto se fija según tus objetivos de leads y el nivel de competencia en tus palabras clave en Tel Aviv, que se define en el diagnóstico gratuito.",
+        "Una auditoría de la estructura y del seguimiento de conversiones. En la mayoría de casos el presupuesto se va en búsquedas demasiado amplias sin negativas, y parte de las conversiones no se está midiendo. Corregimos esos dos puntos antes de tocar las pujas.",
     },
     {
-      question: "¿Puedo mantener mi cuenta de Google Ads actual?",
+      question: "¿Hay que hacer Performance Max en Tel Aviv?",
       answer:
-        "Sí. Auditamos tu cuenta actual y asumimos su gestión, o la reestructuramos si hace falta, sin empezar de cero ni perder tu histórico de datos.",
+        "Para e-commerce, a menudo sí, pero acotado con exclusiones y un buen feed de producto. Para generación de leads solemos empezar por Search bien medido y añadir Performance Max solo cuando las conversiones son fiables.",
     },
     {
-      question: "¿Gestionáis también Shopping y YouTube Ads en Tel Aviv?",
+      question: "¿En cuánto tiempo baja el coste por lead?",
       answer:
-        "Sí, según tu negocio. Búsqueda, Shopping, Display y YouTube se integran en el mismo sistema y el mismo dashboard, no se gestionan por separado.",
+        "Las dos o tres primeras semanas sirven para acumular datos de búsqueda reales. La bajada clara del coste por lead se da normalmente entre la semana 4 y la 8, una vez limpios los términos de búsqueda y ajustadas las pujas.",
+    },
+    {
+      question: "¿Gestionáis Google Ads para una audiencia anglófona o hispanohablante en Tel Aviv?",
+      answer:
+        "Sí. Construimos campañas separadas por idioma, con anuncios y landing pages propias, en lugar de una sola campaña traducida palabra por palabra.",
     },
   ],
 };
 
 const he: LandingContent = {
-  metaTitle: "סוכנות Google Ads בתל אביב | ניהול קמפיינים | Roasly",
+  metaTitle: "סוכנות Google Ads בתל אביב | קמפייני Search ו-PMax | Roasly",
   metaDescription:
-    "סוכנות המתמחה בניהול קמפיינים ב-Google Ads בתל אביב. אבחון חינם, דאשבורד בזמן אמת, בלי התחייבות לטווח ארוך. לעסקים ועצמאים בישראל.",
+    "סוכנות Google Ads בתל אביב: קמפייני Search, Performance Max ו-Shopping הבנויים לפי כוונת חיפוש, בשוק שבו העלות לקליק מהגבוהות בישראל. אבחון חינם, דאשבורד בזמן אמת, בלי התחייבות.",
   kicker: "Google Ads בתל אביב",
   h1: "סוכנות ה-Google Ads שלכם בתל אביב",
   intro:
-    "Roasly מנהלת קמפיינים ב-Google Ads עבור עסקים ועצמאים מתל אביב ומכל רחבי ישראל. חיפוש, Shopping, Display, YouTube: כל קמפיין נבנה סביב השוק המקומי שלכם ומחובר לדאשבורד בזמן אמת.",
+    "Google Ads מגיע לאנשים שכבר מחפשים את מה שאתם מוכרים. בתל אביב הבעיה היא לא נפח החיפושים: העלות לקליק מהגבוהות בארץ, והמתחרים שלכם לרוב מציעים על אותן מילות מפתח כמוכם. Roasly בונה קמפיינים שהולכים אל השאילתות שממירות, לא אל אלה שמנפחות את החשבון.",
   sections: [
     {
-      title: "למה סוכנות מקומית בתל אביב",
-      body: "לשוק הישראלי יש הרגלי חיפוש, מתחרים ועלות לקליק משלו. סוכנות שמכירה את תל אביב בונה את הקמפיינים שלכם אחרת מסוכנות גנרית בחו״ל: מיקוד גיאוגרפי מדויק, שעות הצגה מותאמות, מילות מפתח בעברית, צרפתית או אנגלית לפי הקהל שלכם.",
+      title: "שוק חיפוש יקר דורש מבנה הדוק",
+      body: "בתל אביב, חשבון בנוי לא נכון שורף את התקציב תוך ימים: יותר מדי מילות מפתח רחבות, בלי רשימות מילים שליליות, קבוצת מודעות אחת לעשר כוונות שונות. אנחנו מתחילים מהמבנה: קמפיינים נפרדים לפי כוונה (מותג, מתחרים, בעיה, פתרון), התאמות מילות מפתח מבוקרות, ועבודה שבועית על שאילתות החיפוש בפועל כדי לחתוך את מה שעולה בלי להחזיר.",
     },
     {
-      title: "מה אנחנו מקימים",
-      body: "בדיקת החשבון הקיים שלכם או בנייה מאפס, מבנה קמפיינים לפי כוונת חיפוש, דפי נחיתה שמותאמים להמרה, מעקב המרות המחובר ל-CRM שלכם, ואופטימיזציה שבועית של הצעות המחיר ומילות המפתח השליליות.",
+      title: "Search, Performance Max, Shopping: הפורמט הנכון לפי העסק שלכם",
+      body: "משרד שירותים לא מנוהל כמו חנות אונליין. לייצור לידים אנחנו מעדיפים Search עם מעקב המרות נקי. למכירה אונליין מוסיפים Shopping ו-Performance Max, אבל בגבולות: פיד מוצר מוקפד, החרגות, וחלוקה לפי קבוצת קהל כדי לשמור שליטה על מה שהאלגוריתם מוציא.",
     },
     {
-      title: "שקיפות על התקציב",
-      body: "אתם רואים בדיוק כמה עולה כל קליק, כל ליד, ולאן הולך התקציב היומי שלכם, דרך דאשבורד המחובר ישירות לחשבון ה-Google Ads שלכם. בלי דוחות PDF באיחור, בלי קופסה שחורה.",
+      title: "מיקוד לפי שפה, לא רק לפי עיר",
+      body: "בתל אביב הקהל שלכם מחפש בעברית, באנגלית או בצרפתית לפי מי שהוא. אנחנו מפרידים את הקמפיינים לפי שפה כדי לכתוב מודעות שנשמעות נכון בכל אחת, להתאים הצעות מחיר לפי הערך האמיתי של כל פלח, ולא לשלם מחיר גבוה על קליקים שלא מתאימים לכם.",
     },
     {
-      title: "כמה עולה קמפיין Google Ads בתל אביב",
-      body: "העלות לקליק משתנה מאוד לפי התחום: כמה שקלים בודדים למילות מפתח מקומיות עם תחרות נמוכה, יותר בתחומים כמו נדל\"ן או משפטים. אנחנו קובעים את תקציב הפרסום יחד איתכם לפי יעדי הלידים שלכם, לא לפי תעריף גנרי. העלות הקבועה היחידה היא עלות הניהול, שנקבעת באבחון החינם.",
+      title: "מעקב המרות: לדעת איזו מילת מפתח באמת מחזירה",
+      body: "הרבה חשבונות Google Ads בתל אביב מבצעים אופטימיזציה בעיוורון כי מעקב ההמרות שבור או חלקי. אנחנו מחברים טפסים, שיחות ו-CRM, כך שכל ליד משויך למילת המפתח, למודעה ולקמפיין שיצרו אותו. הנתון הזה, שגלוי בדאשבורד שלכם, הוא שמנהל את ההחלטות.",
     },
     {
-      title: "לאילו תוצאות לצפות, ותוך כמה זמן",
-      body: "השבועות הראשונים משמשים לאיסוף נתונים אמיתיים: אילו מילות מפתח ממירות, אילו קהלים מגיבים, אילו מודעות מביאות תוצאות. הירידה בעלות לליד בדרך כלל קורית בין השבוע ה-4 לשבוע ה-8, אחרי התאמת הצעות המחיר ומילות המפתח השליליות על סמך הנתונים האלה.",
+      title: "כמה עולה Google Ads בתל אביב",
+      body: "העלות לקליק נעה בין כמה שקלים בשאילתות מקומיות נישתיות להרבה יותר בנדל\"ן, משפטים או רפואה. אנחנו קובעים את תקציב הפרסום יחד איתכם מתוך יעד של עלות לליד, לא מתוך מחיר קבוע. העלות הקבועה היחידה היא עלות הניהול, שמוצגת באבחון החינם, בלי התחייבות לתקופה.",
     },
     {
       title: "תחומים שאנחנו מלווים בתל אביב",
-      body: "קליניקות שיניים ומקצועות בריאות, משרדי עורכי דין ורואי חשבון, סוכנויות נדל\"ן, מכוני יופי, מאמנים ומדריכים, בעלי מקצוע ושירותים מקומיים. כל קמפיין נבנה סביב מילות המפתח והעונתיות הייחודיות לתחום שלכם.",
+      body: "קליניקות שיניים ואסתטיקה, משרדי עורכי דין ורואי חשבון, סוכנויות נדל\"ן, SaaS וסטארטאפים B2B, ספקי שירותים לעסקים. תחומים שבהם ביקוש החיפוש כבר קיים בתל אביב, וההבדל נקבע במבנה החשבון ובאיכות המעקב.",
     },
   ],
   bullets: [
-    "חשבון Google Ads על שמכם, אתם נשארים הבעלים",
-    "מבנה קמפיינים מותאם לשוק הישראלי",
-    "אופטימיזציה כל שבוע, לא פעם ברבעון",
-    "בלי התחייבות לטווח ארוך",
+    "חשבון Google Ads על שמכם; נתונים והיסטוריה נשארים אצלכם אם תעזבו",
+    "קמפיינים נפרדים לפי כוונה ולפי שפה (עברית, אנגלית, צרפתית)",
+    "מעקב המרות מחובר ל-CRM: כל ליד קשור למילת המפתח שלו",
+    "סקירה שבועית של שאילתות חיפוש והצעות מחיר, בלי התחייבות",
   ],
-  ctaHeadline: "בואו נדבר על קמפיינים ב-Google Ads בתל אביב",
+  ctaHeadline: "בואו נדבר על מבנה חשבון ה-Google Ads שלכם בתל אביב",
   faq: [
     {
-      question: "האם צריך תקציב מינימלי כדי להתחיל Google Ads בתל אביב?",
+      question: "חשבון ה-Google Ads שלי מוציא הרבה בתל אביב בלי לייצר לידים. מה אתם עושים קודם?",
       answer:
-        "לא, אין מינימום שנקבע על ידי Roasly. התקציב נקבע לפי יעדי הלידים שלכם ורמת התחרות על מילות המפתח שלכם בתל אביב, בהתאם לאבחון החינם.",
+        "בדיקה של המבנה ושל מעקב ההמרות. ברוב המקרים התקציב הולך על שאילתות רחבות מדי בלי מילים שליליות, וחלק מההמרות פשוט לא נמדד. אנחנו מתקנים את שני הדברים האלה לפני שנוגעים בהצעות המחיר.",
     },
     {
-      question: "האם אפשר לשמור על חשבון ה-Google Ads הקיים שלי?",
+      question: "האם כדאי לעשות Performance Max בתל אביב?",
       answer:
-        "כן. אנחנו בודקים את החשבון הנוכחי שלכם וממשיכים לנהל אותו, או בונים אותו מחדש אם צריך, בלי להתחיל מאפס ובלי לאבד את היסטוריית הנתונים.",
+        "לאיקומרס, לרוב כן, אבל עם החרגות ופיד מוצר טוב. לייצור לידים אנחנו בדרך כלל מתחילים מ-Search נמדד היטב, ומוסיפים Performance Max רק כשההמרות אמינות.",
     },
     {
-      question: "האם אתם מנהלים גם Shopping ו-YouTube Ads בתל אביב?",
+      question: "תוך כמה זמן העלות לליד יורדת?",
       answer:
-        "כן, בהתאם לעסק שלכם. חיפוש, Shopping, Display ו-YouTube משולבים באותה מערכת ובאותו דאשבורד, לא מנוהלים בנפרד.",
+        "השבועיים-שלושה הראשונים משמשים לצבירת נתוני חיפוש אמיתיים. הירידה הברורה בעלות לליד קורית בדרך כלל בין השבוע ה-4 לשבוע ה-8, אחרי ניקוי שאילתות החיפוש והתאמת הצעות המחיר.",
+    },
+    {
+      question: "האם אתם מנהלים Google Ads לקהל דובר אנגלית או צרפתית בתל אביב?",
+      answer:
+        "כן. אנחנו בונים קמפיינים נפרדים לפי שפה, עם מודעות ודפי נחיתה משלהם, במקום קמפיין אחד מתורגם מילה במילה.",
     },
   ],
 };

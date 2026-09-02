@@ -2,157 +2,196 @@ import type { Locale } from "@/lib/i18n";
 import type { LandingContent } from "./landingTypes";
 
 const fr: LandingContent = {
-  metaTitle: "Agence Meta Ads à Jérusalem | Facebook & Instagram Ads | Roasly",
+  metaTitle: "Agence Meta Ads à Jérusalem | Facebook & Instagram, ciblage communautaire | Roasly",
   metaDescription:
-    "Agence spécialisée en gestion de campagnes Meta Ads (Facebook et Instagram) à Jérusalem. Diagnostic gratuit, dashboard en temps réel, sans engagement long terme. Pour entreprises et indépendants francophones en Israël.",
+    "Agence Meta Ads à Jérusalem : Facebook et Instagram Ads avec un ciblage fin par quartier, communauté et langue, et des créas culturellement pertinentes. Diagnostic gratuit, dashboard en temps réel, sans engagement.",
   kicker: "Meta Ads à Jérusalem",
   h1: "Votre agence Meta Ads à Jérusalem",
   intro:
-    "Roasly gère des campagnes Facebook et Instagram Ads pour des entreprises et indépendants basés à Jérusalem. Chaque campagne tient compte de la diversité des communautés de la ville, avec des créas adaptées et un dashboard en temps réel.",
+    "À Jérusalem, un même visuel Meta peut convertir dans un quartier et être ignoré dans le quartier voisin. La ville n'est pas une audience, c'est une mosaïque de communautés qui ne consomment pas Instagram et Facebook de la même façon. Roasly construit des campagnes segmentées finement, avec des créas qui parlent à chaque public sans le heurter.",
   sections: [
     {
-      title: "Une audience à segmenter avec soin",
-      body: "Jérusalem regroupe des communautés très différentes en termes d'habitudes de consommation de réseaux sociaux. Une campagne Meta Ads efficace ici demande un ciblage plus fin qu'à Tel Aviv : par quartier, par centre d'intérêt et par langue, pour éviter de gaspiller du budget sur une audience qui ne convertira jamais.",
+      title: "Segmenter la mosaïque, pas diffuser à « Jérusalem »",
+      body: "Familles laïques, publics religieux et haredi, olim anglophones et francophones, jeunes et étudiants : ces groupes vivent parfois à quelques rues d'écart et n'ont ni les mêmes usages, ni les mêmes horaires, ni les mêmes attentes visuelles. Nous découpons les campagnes par zone (Rehavia, Baka, Katamon, Nahlaot, quartiers religieux) et par centre d'intérêt pour ne pas dépenser sur une audience qui ne convertira jamais.",
     },
     {
-      title: "Ce qu'on met en place",
-      body: "Structure de campagnes par objectif (notoriété, trafic, conversion), création de textes et visuels adaptés à chaque audience, pixel Meta connecté à votre site et à votre CRM, tests A/B continus sur les créas et les audiences, et optimisation hebdomadaire des budgets.",
+      title: "Des créas culturellement justes",
+      body: "Ce qui fonctionne sur un feed à Tel Aviv peut passer à côté, voire déranger, dans certaines communautés de Jérusalem. Nous adaptons le message, la langue, le choix des images et le ton selon l'audience ciblée, plutôt que de pousser une seule créa générique à toute la ville. C'est souvent ce qui fait la différence entre un budget gaspillé et un coût par lead maîtrisé.",
     },
     {
-      title: "Combien coûte une campagne Meta Ads à Jérusalem",
-      body: "Le coût par résultat dépend de votre secteur et de la précision de votre ciblage. Nous définissons le budget avec vous selon vos objectifs de leads ou de ventes, pas selon un forfait générique. Le seul coût fixe est celui de la gestion, discuté lors du diagnostic gratuit.",
+      title: "Toucher les olim là où ils sont vraiment actifs",
+      body: "Les nouveaux arrivants anglophones et francophones de Jérusalem se regroupent sur des pages et groupes Facebook très spécifiques, et sur Instagram autour de comptes communautaires. Nous ciblons par langue et par affinité, avec des annonces écrites dans leur langue et des pages de destination qui répondent à leurs questions concrètes.",
+    },
+    {
+      title: "Retargeting et CRM pour des décisions qui prennent du temps",
+      body: "Éducation, santé, immobilier, services aux institutions : à Jérusalem, on compare et on consulte avant de s'engager. Le pixel Meta et l'API de conversions connectés à votre CRM permettent de rester présent auprès des personnes intéressées et de mesurer le vrai coût par lead qualifié, pas seulement le coût par clic.",
+    },
+    {
+      title: "Combien coûte Meta Ads à Jérusalem",
+      body: "Avec un ciblage propre, le coût par résultat est souvent plus contenu qu'à Tel Aviv, parce que la pression sur les enchères est moindre. On fixe le budget avec vous selon vos objectifs. Le seul coût fixe est celui de la gestion, présenté lors du diagnostic gratuit, sans engagement de durée.",
     },
     {
       title: "Secteurs que nous accompagnons à Jérusalem",
-      body: "Institutions éducatives et de formation, cliniques et professions de santé, hébergements et services touristiques, commerces locaux, associations et organisations à but non lucratif.",
+      body: "Écoles, séminaires et organismes de formation, cliniques et professions de santé, hébergements et services aux visiteurs, commerces de quartier, associations, institutions religieuses et culturelles, agents immobiliers spécialisés olim.",
     },
   ],
   bullets: [
-    "Compte Meta Business à votre nom, vous en restez propriétaire",
-    "Ciblage fin adapté à la diversité de Jérusalem",
-    "Optimisation chaque semaine, pas une fois par trimestre",
-    "Sans engagement long terme",
+    "Campagnes segmentées par quartier, communauté et langue",
+    "Créas adaptées au message et à la sensibilité de chaque audience",
+    "Ciblage des communautés d'olim anglophones et francophones",
+    "Retargeting et suivi CRM pour des cycles de décision longs, sans engagement",
   ],
-  ctaHeadline: "Parlons de vos campagnes Meta Ads à Jérusalem",
+  ctaHeadline: "Parlons de votre ciblage Meta Ads à Jérusalem",
   faq: [
     {
-      question: "Le ciblage Meta Ads est-il plus compliqué à Jérusalem qu'à Tel Aviv ?",
+      question: "Le ciblage Meta est-il vraiment différent à Jérusalem par rapport à Tel Aviv ?",
       answer:
-        "Plus fin, pas plus compliqué. La diversité des communautés à Jérusalem demande un ciblage par quartier, centre d'intérêt et langue plus précis, pour éviter de gaspiller du budget sur une audience qui ne convertira jamais.",
+        "Oui, dans la logique. À Tel Aviv, on mise beaucoup sur des audiences larges et la créa. À Jérusalem, la segmentation par quartier, communauté et langue reste déterminante pour ne pas gaspiller du budget sur des personnes hors cible.",
     },
     {
-      question: "Faut-il des créas différentes selon les communautés à Jérusalem ?",
+      question: "Faut-il des visuels différents selon les communautés ?",
       answer:
-        "Souvent oui. Nous adaptons le message, la langue et parfois les visuels selon l'audience ciblée, plutôt que de diffuser une seule créa générique à tout Jérusalem.",
+        "Souvent oui. Le choix des images, la langue et le ton changent selon que l'on s'adresse à un public laïque, religieux, anglophone ou francophone. Nous produisons les déclinaisons nécessaires plutôt qu'une créa unique.",
     },
     {
-      question: "Combien de temps avant de voir des résultats sur Meta Ads à Jérusalem ?",
+      question: "Peut-on toucher efficacement les nouveaux arrivants francophones de Jérusalem sur Meta ?",
       answer:
-        "Les premières données arrivent en 1 à 2 semaines. L'optimisation réelle du coût par résultat se joue plutôt sur les 4 à 6 semaines suivantes, une fois les audiences et créas ajustées.",
+        "Oui. Ils sont très actifs sur des groupes et comptes communautaires précis. Nous ciblons par langue et affinité, avec des annonces et des pages en français qui répondent à leurs besoins d'installation.",
+    },
+    {
+      question: "En combien de temps voit-on des résultats sur Meta Ads à Jérusalem ?",
+      answer:
+        "Les premières données arrivent en une à deux semaines. L'optimisation du coût par résultat se joue surtout sur les 4 à 6 semaines suivantes, le temps d'affiner les segments et les créas gagnantes par audience.",
     },
   ],
 };
 
 const es: LandingContent = {
-  metaTitle: "Agencia Meta Ads en Jerusalén | Facebook e Instagram Ads | Roasly",
+  metaTitle: "Agencia Meta Ads en Jerusalén | Facebook e Instagram, segmentación por comunidad | Roasly",
   metaDescription:
-    "Agencia especializada en gestión de campañas Meta Ads (Facebook e Instagram) en Jerusalén. Diagnóstico gratuito, dashboard en tiempo real, sin permanencia. Para empresas y autónomos hispanohablantes en Israel.",
+    "Agencia Meta Ads en Jerusalén: Facebook e Instagram Ads con segmentación fina por barrio, comunidad e idioma, y creatividades culturalmente pertinentes. Diagnóstico gratuito, dashboard en tiempo real, sin permanencia.",
   kicker: "Meta Ads en Jerusalén",
   h1: "Tu agencia de Meta Ads en Jerusalén",
   intro:
-    "Roasly gestiona campañas de Facebook e Instagram Ads para empresas y autónomos con base en Jerusalén. Cada campaña tiene en cuenta la diversidad de las comunidades de la ciudad, con creatividades adaptadas y un dashboard en tiempo real.",
+    "En Jerusalén, un mismo visual de Meta puede convertir en un barrio y ser ignorado en el de al lado. La ciudad no es una audiencia, es un mosaico de comunidades que no consumen Instagram y Facebook igual. Roasly construye campañas segmentadas con precisión, con creatividades que hablan a cada público sin chocar con él.",
   sections: [
     {
-      title: "Una audiencia que hay que segmentar con cuidado",
-      body: "Jerusalén reúne comunidades muy distintas en cuanto a hábitos de consumo de redes sociales. Una campaña de Meta Ads eficaz aquí requiere una segmentación más fina que en Tel Aviv: por barrio, por interés y por idioma, para no desperdiciar presupuesto en una audiencia que nunca va a convertir.",
+      title: "Segmentar el mosaico, no difundir a «Jerusalén»",
+      body: "Familias laicas, públicos religiosos y haredíes, olim de habla inglesa y francesa, jóvenes y estudiantes: estos grupos viven a veces a pocas calles y no tienen los mismos usos, ni los mismos horarios, ni las mismas expectativas visuales. Dividimos las campañas por zona (Rehavia, Baka, Katamon, Nahlaot, barrios religiosos) y por interés para no gastar en una audiencia que nunca va a convertir.",
     },
     {
-      title: "Lo que ponemos en marcha",
-      body: "Estructura de campañas por objetivo (notoriedad, tráfico, conversión), creación de textos y visuales adaptados a cada audiencia, píxel de Meta conectado a tu web y a tu CRM, tests A/B continuos de creatividades y audiencias, y optimización semanal de presupuestos.",
+      title: "Creatividades culturalmente adecuadas",
+      body: "Lo que funciona en un feed de Tel Aviv puede no encajar, o incluso incomodar, en ciertas comunidades de Jerusalén. Adaptamos el mensaje, el idioma, la elección de imágenes y el tono según la audiencia, en lugar de empujar una sola creatividad genérica a toda la ciudad. Ahí suele estar la diferencia entre un presupuesto desperdiciado y un coste por lead controlado.",
     },
     {
-      title: "Cuánto cuesta una campaña de Meta Ads en Jerusalén",
-      body: "El coste por resultado depende de tu sector y de la precisión de tu segmentación. Definimos el presupuesto contigo según tus objetivos de leads o ventas, no según una tarifa genérica. El único coste fijo es el de la gestión, que se define en el diagnóstico gratuito.",
+      title: "Llegar a los olim donde están realmente activos",
+      body: "Los recién llegados de habla inglesa y francesa de Jerusalén se agrupan en páginas y grupos de Facebook muy específicos, y en Instagram alrededor de cuentas comunitarias. Segmentamos por idioma y afinidad, con anuncios escritos en su idioma y landing pages que responden a sus preguntas concretas.",
+    },
+    {
+      title: "Retargeting y CRM para decisiones que llevan tiempo",
+      body: "Educación, salud, inmobiliario, servicios a instituciones: en Jerusalén se compara y se consulta antes de comprometerse. El píxel de Meta y la API de conversiones conectados a tu CRM permiten seguir presente ante las personas interesadas y medir el coste real por lead cualificado, no solo el coste por clic.",
+    },
+    {
+      title: "Cuánto cuesta Meta Ads en Jerusalén",
+      body: "Con una segmentación limpia, el coste por resultado suele ser más contenido que en Tel Aviv, porque la presión en las pujas es menor. Fijamos el presupuesto contigo según tus objetivos. El único coste fijo es el de la gestión, que se presenta en el diagnóstico gratuito, sin permanencia.",
     },
     {
       title: "Sectores que acompañamos en Jerusalén",
-      body: "Instituciones educativas y de formación, clínicas y profesiones de salud, alojamientos y servicios turísticos, comercios locales, asociaciones y organizaciones sin ánimo de lucro.",
+      body: "Colegios, seminarios y centros de formación, clínicas y profesiones de salud, alojamientos y servicios para visitantes, comercios de barrio, asociaciones, instituciones religiosas y culturales, agentes inmobiliarios especializados en olim.",
     },
   ],
   bullets: [
-    "Cuenta de Meta Business a tu nombre, sigues siendo el propietario",
-    "Segmentación fina adaptada a la diversidad de Jerusalén",
-    "Optimización cada semana, no una vez al trimestre",
-    "Sin permanencia a largo plazo",
+    "Campañas segmentadas por barrio, comunidad e idioma",
+    "Creatividades adaptadas al mensaje y la sensibilidad de cada audiencia",
+    "Segmentación de las comunidades de olim de habla inglesa y francesa",
+    "Retargeting y seguimiento en CRM para ciclos de decisión largos, sin permanencia",
   ],
-  ctaHeadline: "Hablemos de tus campañas de Meta Ads en Jerusalén",
+  ctaHeadline: "Hablemos de tu segmentación de Meta Ads en Jerusalén",
   faq: [
     {
-      question: "¿La segmentación en Meta Ads es más complicada en Jerusalén que en Tel Aviv?",
+      question: "¿La segmentación en Meta es de verdad distinta en Jerusalén frente a Tel Aviv?",
       answer:
-        "Más fina, no más complicada. La diversidad de comunidades en Jerusalén exige una segmentación por barrio, interés e idioma más precisa, para no desperdiciar presupuesto en una audiencia que nunca va a convertir.",
+        "Sí, en la lógica. En Tel Aviv se apuesta mucho por audiencias amplias y la creatividad. En Jerusalén, la segmentación por barrio, comunidad e idioma sigue siendo determinante para no gastar en personas fuera de objetivo.",
     },
     {
-      question: "¿Hacen falta creatividades distintas según las comunidades en Jerusalén?",
+      question: "¿Hacen falta visuales distintos según las comunidades?",
       answer:
-        "A menudo sí. Adaptamos el mensaje, el idioma y a veces los visuales según la audiencia objetivo, en lugar de mostrar una sola creatividad genérica a toda Jerusalén.",
+        "A menudo sí. La elección de imágenes, el idioma y el tono cambian según nos dirijamos a un público laico, religioso, anglófono o francófono. Producimos las variaciones necesarias en lugar de una creatividad única.",
     },
     {
-      question: "¿Cuánto tiempo hasta ver resultados en Meta Ads en Jerusalén?",
+      question: "¿Se puede llegar bien a los recién llegados hispanohablantes de Jerusalén en Meta?",
       answer:
-        "Los primeros datos llegan en 1 a 2 semanas. La optimización real del coste por resultado se juega en las 4 a 6 semanas siguientes, una vez ajustadas las audiencias y creatividades.",
+        "Sí. Son muy activos en grupos y cuentas comunitarias concretas. Segmentamos por idioma y afinidad, con anuncios y páginas en español que responden a sus necesidades de instalación.",
+    },
+    {
+      question: "¿En cuánto tiempo se ven resultados en Meta Ads en Jerusalén?",
+      answer:
+        "Los primeros datos llegan en una o dos semanas. La optimización del coste por resultado se juega sobre todo en las 4 a 6 semanas siguientes, el tiempo de afinar los segmentos y las creatividades ganadoras por audiencia.",
     },
   ],
 };
 
 const he: LandingContent = {
-  metaTitle: "סוכנות Meta Ads בירושלים | פייסבוק ואינסטגרם | Roasly",
+  metaTitle: "סוכנות Meta Ads בירושלים | פייסבוק ואינסטגרם עם מיקוד קהילתי | Roasly",
   metaDescription:
-    "סוכנות המתמחה בניהול קמפיינים ב-Meta Ads (פייסבוק ואינסטגרם) בירושלים. אבחון חינם, דאשבורד בזמן אמת, בלי התחייבות לטווח ארוך. לעסקים ועצמאים בישראל.",
+    "סוכנות Meta Ads בירושלים: פייסבוק ואינסטגרם עם מיקוד מדויק לפי שכונה, קהילה ושפה, וקריאייטיב רלוונטי תרבותית. אבחון חינם, דאשבורד בזמן אמת, בלי התחייבות.",
   kicker: "Meta Ads בירושלים",
   h1: "סוכנות ה-Meta Ads שלכם בירושלים",
   intro:
-    "Roasly מנהלת קמפיינים בפייסבוק ואינסטגרם עבור עסקים ועצמאים בירושלים. כל קמפיין מתחשב במגוון הקהילות בעיר, עם קריאייטיב מותאם ודאשבורד בזמן אמת.",
+    "בירושלים, אותו ויזואל של Meta יכול להמיר בשכונה אחת ולהיות מושתק בשכונה הסמוכה. העיר היא לא קהל אחד, אלא פסיפס של קהילות שלא צורכות אינסטגרם ופייסבוק באותה צורה. Roasly בונה קמפיינים מחולקים בדיוק, עם קריאייטיב שמדבר לכל קהל בלי לפגוע בו.",
   sections: [
     {
-      title: "קהל שדורש מיקוד קפדני",
-      body: "ירושלים מאגדת קהילות שונות מאוד מבחינת הרגלי השימוש ברשתות חברתיות. קמפיין Meta Ads יעיל כאן דורש מיקוד מדויק יותר מאשר בתל אביב: לפי שכונה, לפי תחום עניין ולפי שפה, כדי לא לבזבז תקציב על קהל שלעולם לא ימיר.",
+      title: "לחלק את הפסיפס, לא להפיץ ל\"ירושלים\"",
+      body: "משפחות חילוניות, ציבור דתי וחרדי, עולים דוברי אנגלית וצרפתית, צעירים וסטודנטים: הקבוצות האלה גרות לפעמים במרחק כמה רחובות ואין להן אותם הרגלים, אותן שעות או אותן ציפיות ויזואליות. אנחנו מחלקים את הקמפיינים לפי אזור (רחביה, בקעה, קטמון, נחלאות, שכונות דתיות) ולפי תחום עניין כדי לא להוציא על קהל שלעולם לא ימיר.",
     },
     {
-      title: "מה אנחנו מקימים",
-      body: "מבנה קמפיינים לפי מטרה (מודעות, תנועה, המרה), יצירת טקסטים וויזואלים המותאמים לכל קהל, פיקסל Meta מחובר לאתר ול-CRM שלכם, בדיקות A/B מתמשכות על קריאייטיב וקהלים, ואופטימיזציה שבועית של התקציבים.",
+      title: "קריאייטיב שמדויק תרבותית",
+      body: "מה שעובד בפיד בתל אביב עלול להחטיא, ואף להפריע, בחלק מקהילות ירושלים. אנחנו מתאימים את המסר, השפה, בחירת התמונות והטון לפי הקהל, במקום לדחוף קריאייטיב גנרי אחד לכל העיר. שם לרוב נמצא ההבדל בין תקציב מבוזבז לעלות לליד מבוקרת.",
     },
     {
-      title: "כמה עולה קמפיין Meta Ads בירושלים",
-      body: "העלות לתוצאה תלויה בתחום שלכם ובדיוק המיקוד. אנחנו קובעים את התקציב יחד איתכם לפי יעדי הלידים או המכירות שלכם, לא לפי תעריף גנרי. העלות הקבועה היחידה היא עלות הניהול, שנקבעת באבחון החינם.",
+      title: "להגיע לעולים היכן שהם באמת פעילים",
+      body: "העולים דוברי האנגלית והצרפתית בירושלים מתקבצים בעמודים ובקבוצות פייסבוק מאוד ספציפיות, ובאינסטגרם סביב חשבונות קהילתיים. אנחנו ממקדים לפי שפה וזיקה, עם מודעות שנכתבות בשפה שלהם ודפי נחיתה שעונים על השאלות המעשיות שלהם.",
+    },
+    {
+      title: "רימרקטינג ו-CRM להחלטות שלוקחות זמן",
+      body: "חינוך, בריאות, נדל\"ן, שירותים למוסדות: בירושלים משווים ומתייעצים לפני שמתחייבים. פיקסל Meta ו-Conversions API מחוברים ל-CRM שלכם מאפשרים להישאר נוכחים מול המתעניינים ולמדוד את העלות האמיתית לליד מוסמך, לא רק את העלות לקליק.",
+    },
+    {
+      title: "כמה עולה Meta Ads בירושלים",
+      body: "עם מיקוד נקי, העלות לתוצאה לרוב מרוסנת יותר מתל אביב, כי הלחץ על ההצעות נמוך יותר. אנחנו קובעים את התקציב יחד איתכם לפי היעדים שלכם. העלות הקבועה היחידה היא עלות הניהול, שמוצגת באבחון החינם, בלי התחייבות לתקופה.",
     },
     {
       title: "תחומים שאנחנו מלווים בירושלים",
-      body: "מוסדות חינוך והכשרה, קליניקות ומקצועות בריאות, אירוח ושירותי תיירות, עסקים מקומיים, עמותות וארגונים ללא כוונת רווח.",
+      body: "בתי ספר, סמינרים ומוסדות הכשרה, קליניקות ומקצועות בריאות, אירוח ושירותים למבקרים, עסקי שכונה, עמותות, מוסדות דת ותרבות, מתווכים המתמחים בעולים.",
     },
   ],
   bullets: [
-    "חשבון Meta Business על שמכם, אתם נשארים הבעלים",
-    "מיקוד מדויק המותאם למגוון הייחודי של ירושלים",
-    "אופטימיזציה כל שבוע, לא פעם ברבעון",
-    "בלי התחייבות לטווח ארוך",
+    "קמפיינים מחולקים לפי שכונה, קהילה ושפה",
+    "קריאייטיב מותאם למסר ולרגישות של כל קהל",
+    "מיקוד קהילות העולים דוברי האנגלית והצרפתית",
+    "רימרקטינג ומעקב CRM למחזורי החלטה ארוכים, בלי התחייבות",
   ],
-  ctaHeadline: "בואו נדבר על קמפיינים ב-Meta Ads בירושלים",
+  ctaHeadline: "בואו נדבר על המיקוד שלכם ב-Meta Ads בירושלים",
   faq: [
     {
-      question: "האם המיקוד ב-Meta Ads מסובך יותר בירושלים מאשר בתל אביב?",
+      question: "האם המיקוד ב-Meta באמת שונה בירושלים לעומת תל אביב?",
       answer:
-        "מדויק יותר, לא מסובך יותר. המגוון של הקהילות בירושלים דורש מיקוד לפי שכונה, תחום עניין ושפה בצורה מדויקת יותר, כדי לא לבזבז תקציב על קהל שלעולם לא ימיר.",
+        "כן, בהיגיון. בתל אביב מהמרים הרבה על קהלים רחבים ועל הקריאייטיב. בירושלים, החלוקה לפי שכונה, קהילה ושפה נשארת מכרעת כדי לא להוציא על אנשים מחוץ לקהל היעד.",
     },
     {
-      question: "האם צריך קריאייטיב שונה לפי הקהילות בירושלים?",
+      question: "האם צריך ויזואלים שונים לפי הקהילות?",
       answer:
-        "לרוב כן. אנחנו מתאימים את המסר, השפה ולעיתים את הוויזואלים לפי קהל היעד, במקום להציג קריאייטיב גנרי אחד לכל ירושלים.",
+        "לרוב כן. בחירת התמונות, השפה והטון משתנים לפי הפנייה לקהל חילוני, דתי, דובר אנגלית או צרפתית. אנחנו מפיקים את הגרסאות הדרושות במקום קריאייטיב יחיד.",
     },
     {
-      question: "כמה זמן עד לראות תוצאות ב-Meta Ads בירושלים?",
+      question: "אפשר להגיע ביעילות לעולים החדשים דוברי הצרפתית בירושלים דרך Meta?",
       answer:
-        "הנתונים הראשונים מגיעים תוך שבוע עד שבועיים. האופטימיזציה האמיתית של העלות לתוצאה קורית בעיקר ב-4 עד 6 השבועות שאחריהם, אחרי התאמת הקהלים והקריאייטיב.",
+        "כן. הם מאוד פעילים בקבוצות ובחשבונות קהילתיים מסוימים. אנחנו ממקדים לפי שפה וזיקה, עם מודעות ודפים בצרפתית שעונים על צורכי הקליטה שלהם.",
+    },
+    {
+      question: "תוך כמה זמן רואים תוצאות ב-Meta Ads בירושלים?",
+      answer:
+        "הנתונים הראשונים מגיעים תוך שבוע עד שבועיים. אופטימיזציית העלות לתוצאה קורית בעיקר ב-4 עד 6 השבועות שאחריהם, הזמן לחדד את הפלחים ואת הקריאייטיב המנצח לכל קהל.",
     },
   ],
 };
