@@ -22,6 +22,7 @@ export type SiteContent = {
   seoLinks: {
     eyebrow: string;
     headline: string;
+    body: string;
   };
   platforms: string[];
   valuePropsEyebrow: string;

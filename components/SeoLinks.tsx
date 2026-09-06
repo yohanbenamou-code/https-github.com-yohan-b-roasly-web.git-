@@ -17,13 +17,16 @@ export default function SeoLinks({
   return (
     <section className="bg-paper">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <Reveal className="max-w-2xl">
+        <Reveal className="max-w-3xl">
           <p className="font-mono text-xs uppercase tracking-kicker text-blue">
             {content.seoLinks.eyebrow}
           </p>
           <h2 className="mt-4 font-display text-2xl font-extrabold leading-tight tracking-tight text-ink sm:text-[2rem]">
             {content.seoLinks.headline}
           </h2>
+          <p className="mt-4 text-[15px] leading-relaxed text-ink/60">
+            {content.seoLinks.body}
+          </p>
         </Reveal>
 
         <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

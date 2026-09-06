@@ -89,9 +89,12 @@ export default async function LocaleLayout({
         email: "yohan.b@roaslyads.com",
         priceRange: "$$",
         areaServed: [
+          { "@type": "Country", name: "Israel" },
           { "@type": "City", name: "Tel Aviv" },
           { "@type": "City", name: "Jerusalem" },
-          { "@type": "Country", name: "Israel" },
+          { "@type": "City", name: "Netanya" },
+          { "@type": "City", name: "Haifa" },
+          { "@type": "City", name: "Ashdod" },
         ],
         serviceType: [
           "Agence de marketing digital",
@@ -102,9 +105,11 @@ export default async function LocaleLayout({
         ],
         knowsLanguage: ["fr", "es", "he"],
         knowsAbout: [
-          "Marketing digital",
-          "Agence marketing digital Tel Aviv",
+          "Marketing digital Israël",
           "Agence marketing digital Israël",
+          "Campagnes de marketing digital Israël",
+          "Agence marketing digital Tel Aviv",
+          "Agence marketing digital Jérusalem",
           "Google Ads",
           "Meta Ads",
           "Bing Ads",

@@ -2,9 +2,9 @@ import type { SiteContent } from "./types";
 
 export const es: SiteContent = {
   meta: {
-    title: "Agencia de marketing digital en Tel Aviv y en Israel | Roasly",
+    title: "Agencia de marketing digital en Israel | Google Ads y Meta Ads | Roasly",
     description:
-      "Agencia de marketing digital en Tel Aviv, al servicio de empresas y autónomos de habla hispana, francesa y hebrea en toda Israel. Google Ads, Meta Ads, Bing Ads y TikTok Ads: sistema de captación completo con dashboard en tiempo real. Diagnóstico gratuito.",
+      "Agencia de marketing digital en Israel: campañas de marketing digital de Google Ads, Meta Ads, Bing Ads y TikTok Ads reunidas en un sistema de captación completo, con dashboard en tiempo real. Para empresas y autónomos de habla hispana, francesa y hebrea, de Tel Aviv a Jerusalén. Diagnóstico gratuito.",
   },
   nav: {
     links: [
@@ -20,16 +20,16 @@ export const es: SiteContent = {
     cta: "Reserva tu diagnóstico",
   },
   hero: {
-    kicker: "Roasly — Agencia de marketing digital en Tel Aviv",
-    h1: "Agencia de marketing digital en Tel Aviv y en Israel",
+    kicker: "Roasly — Agencia de marketing digital en Israel",
+    h1: "Agencia de marketing digital en Israel",
     headline: "Más clientes. En Israel y más allá.",
     subheadline:
-      "Construimos un sistema de captación completo, no promesas de marketing. Landing page, campañas, tracking, CRM y un dashboard conectado: ves cada shekel invertido, cada lead generado. Sin sorpresas.",
+      "Construimos un sistema de captación completo para tu mercado en Israel, no promesas de marketing. Landing page, campañas, tracking, CRM y un dashboard conectado: ves cada shekel invertido, cada lead generado. Sin sorpresas.",
     cta: "Reservar un diagnóstico gratuito",
   },
   platforms: ["Google Ads", "Meta Ads", "Bing Ads", "TikTok Ads"],
   valuePropsEyebrow: "Qué hacemos",
-  valuePropsHeadline: "Un sistema de captación completo, no anuncios sueltos",
+  valuePropsHeadline: "Campañas de marketing digital en Israel, gestionadas como un sistema completo",
   valueProps: [
     {
       title: "Un sistema completo, con las creatividades incluidas",
@@ -150,8 +150,9 @@ export const es: SiteContent = {
     ],
   },
   seoLinks: {
-    eyebrow: "Zonas y servicios",
+    eyebrow: "Marketing digital en Israel",
     headline: "Roasly, tu agencia de marketing digital en toda Israel",
+    body: "Gestionamos campañas de marketing digital en toda Israel — Tel Aviv, Jerusalén, Netanya, Haifa, Ashdod, Ra'anana — para empresas y autónomos de habla hispana, francesa y hebrea. Google Ads, Meta Ads, Bing Ads y TikTok Ads: un solo sistema, un solo dashboard, estés donde estés en el país.",
   },
   estimator: {
     eyebrow: "Estima tu potencial",

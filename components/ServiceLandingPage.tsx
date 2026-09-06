@@ -135,6 +135,14 @@ export default function ServiceLandingPage({
               {relatedLabel[locale]}
             </p>
             <ul className="mt-4 flex flex-wrap gap-2.5">
+              <li key="home">
+                <Link
+                  href={`/${locale}`}
+                  className="rounded-full border border-blue/30 bg-paper px-4 py-2 text-sm font-medium text-ink/80 transition-colors hover:border-blue hover:text-ink"
+                >
+                  {content.hero.h1}
+                </Link>
+              </li>
               {related.map((link) => (
                 <li key={link.href}>
                   <Link
