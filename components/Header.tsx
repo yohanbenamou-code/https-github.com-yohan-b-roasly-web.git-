@@ -49,7 +49,10 @@ export default function Header({
 
         <nav className="hidden min-w-0 items-center gap-5 xl:flex">
           {content.nav.links
-            .filter((link) => link.href !== "#home" && link.href !== "#contact")
+            .filter(
+              (link) =>
+                !["#home", "#contact", "#why-roasly"].includes(link.href)
+            )
             .map((link) => (
               <a
                 key={link.href}

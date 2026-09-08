@@ -24,6 +24,32 @@ export type SiteContent = {
     headline: string;
     body: string;
   };
+  caseStudies: {
+    eyebrow: string;
+    headline: string;
+    intro: string;
+    disclaimer: string;
+    challengeLabel: string;
+    actionsLabel: string;
+    proofLabel: string;
+    items: {
+      sector: string;
+      client: string;
+      timeframe: string;
+      platforms: string[];
+      metrics: { value: string; label: string }[];
+      challenge: string;
+      actions: string[];
+      proof: {
+        kind: "meta" | "google" | "crm" | "calendar";
+        title: string;
+        caption: string;
+        headers: [string, string, string];
+        rows: [string, string, string][];
+        footer: [string, string, string];
+      };
+    }[];
+  };
   platforms: string[];
   valuePropsEyebrow: string;
   valuePropsHeadline: string;

@@ -7,6 +7,7 @@ import ValueProps from "@/components/ValueProps";
 import Stats from "@/components/Stats";
 import HowItWorks from "@/components/HowItWorks";
 import DashboardShowcase from "@/components/DashboardShowcase";
+import CaseStudies from "@/components/CaseStudies";
 import Estimator from "@/components/Estimator";
 import Team from "@/components/Team";
 import Trust from "@/components/Trust";
@@ -47,6 +48,7 @@ export default async function HomePage({
         <Stats content={content} />
         <HowItWorks content={content} />
         <DashboardShowcase content={content} />
+        <CaseStudies content={content} />
         <Estimator content={content} locale={locale} />
         <Team content={content} locale={locale} />
         <Trust content={content} />

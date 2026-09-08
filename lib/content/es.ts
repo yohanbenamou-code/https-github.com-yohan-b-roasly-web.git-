@@ -11,6 +11,7 @@ export const es: SiteContent = {
       { label: "Inicio", href: "#home" },
       { label: "Qué hacemos", href: "#services" },
       { label: "Cómo funciona", href: "#how-it-works" },
+      { label: "Casos", href: "#case-studies" },
       { label: "Estimador", href: "#estimator" },
       { label: "Equipo", href: "#team" },
       { label: "Por qué Roasly", href: "#why-roasly" },
@@ -153,6 +154,175 @@ export const es: SiteContent = {
     eyebrow: "Marketing digital en Israel",
     headline: "Roasly, tu agencia de marketing digital en toda Israel",
     body: "Gestionamos campañas de marketing digital en toda Israel — Tel Aviv, Jerusalén, Netanya, Haifa, Ashdod, Ra'anana — para empresas y autónomos de habla hispana, francesa y hebrea. Google Ads, Meta Ads, Bing Ads y TikTok Ads: un solo sistema, un solo dashboard, estés donde estés en el país.",
+  },
+  caseStudies: {
+    eyebrow: "Casos de clientes",
+    headline: "Lo que el sistema ha producido, en condiciones reales",
+    intro:
+      "En cada caso: la restricción de partida, lo que pusimos en marcha y una vista anonimizada de los resultados en la plataforma o el CRM.",
+    disclaimer:
+      "Resultados de campañas reales gestionadas por nuestro equipo. Cifras redondeadas, vistas recreadas y datos de clientes anonimizados o compartidos con su consentimiento.",
+    challengeLabel: "El reto",
+    actionsLabel: "Lo que pusimos en marcha",
+    proofLabel: "Vista de los resultados",
+    items: [
+      {
+        sector: "Inmobiliario — obra nueva",
+        client: "Uplife",
+        timeframe: "En unas semanas",
+        platforms: ["Meta Ads"],
+        metrics: [
+          { value: "≈ 200", label: "Leads compradores cualificados" },
+          { value: "9 ₪", label: "Coste por lead" },
+          { value: "4,6 %", label: "Ratio de clics" },
+        ],
+        challenge:
+          "Vender las viviendas de una promoción de obra nueva a buen ritmo, sin depender del boca a boca ni disparar el presupuesto. En inmobiliario, un lead mal cualificado le cuesta media jornada al equipo comercial.",
+        actions: [
+          "Landing page dedicada a la promoción — planos, precio por m², disponibilidad — conectada a un formulario de cualificación y al CRM.",
+          "Campañas de Meta segmentadas por intención de compra: primera vivienda, inversores, familias que buscan más espacio, cada una con sus creatividades orientadas a la visita.",
+          "Cualificación automática de las solicitudes (presupuesto, plazo, financiación): solo las listas para visitar llegan al equipo comercial, el resto entra en una secuencia de seguimiento.",
+        ],
+        proof: {
+          kind: "meta",
+          title: "Administrador de anuncios",
+          caption: "Resultados anonimizados — Administrador de anuncios de Meta",
+          headers: ["Campaña", "Gastado", "Coste / lead"],
+          rows: [
+            ["Inversores", "612 ₪", "8,10 ₪"],
+            ["Primera vivienda", "548 ₪", "9,40 ₪"],
+            ["Familias — 4 hab.", "431 ₪", "9,80 ₪"],
+            ["Retargeting visitantes", "126 ₪", "6,20 ₪"],
+          ],
+          footer: ["Total — 4 campañas", "1 717 ₪", "8,76 ₪"],
+        },
+      },
+      {
+        sector: "Derecho — despacho de abogados",
+        client: "",
+        timeframe: "Durante toda la campaña",
+        platforms: ["Google Ads"],
+        metrics: [
+          { value: "800+", label: "Solicitudes de consulta cualificadas" },
+          { value: "≈ 7 €", label: "Coste por solicitud" },
+          { value: "hasta 10 %", label: "Ratio de clics en Search" },
+        ],
+        challenge:
+          "Captar a particulares que buscan activamente un abogado en asuntos de alto impacto, en palabras clave donde todos los despachos pujan a la vez, sin que se dispare el coste por solicitud.",
+        actions: [
+          "Campañas de Search estructuradas por tipo de asunto, con anuncios que recogen la consulta exacta tecleada por la persona.",
+          "Palabras clave negativas revisadas cada semana para descartar las búsquedas de información gratuita y concentrar el presupuesto en la intención de contratar.",
+          "Formulario de precualificación (situación, urgencia, elegibilidad) y remarketing ligero sobre los visitantes que no convirtieron.",
+        ],
+        proof: {
+          kind: "google",
+          title: "Google Ads — Campañas",
+          caption: "Resultados anonimizados — Google Ads, por campaña",
+          headers: ["Campaña", "Conv.", "Coste / conv."],
+          rows: [
+            ["Búsqueda — solicitud directa", "345", "9,10 €"],
+            ["Búsqueda — consulta concreta", "261", "5,40 €"],
+            ["Búsqueda — comparación", "151", "6,40 €"],
+            ["Remarketing", "79", "7,30 €"],
+          ],
+          footer: ["Total — 4 campañas", "836", "7,30 €"],
+        },
+      },
+      {
+        sector: "E-commerce salud — férula antirronquidos",
+        client: "Noctalis",
+        timeframe: "En 30 días",
+        platforms: ["Meta Ads"],
+        metrics: [
+          { value: "300+", label: "Leads generados" },
+          { value: "20 ₪", label: "Coste por lead" },
+          { value: "×2,5", label: "Volumen de leads tras iterar la creatividad" },
+        ],
+        challenge:
+          "Vender un producto de salud de gran consumo en un mercado escéptico, donde la promesa debe ser creíble sin prometer de más y donde es el coste del lead lo que decide la rentabilidad.",
+        actions: [
+          "Varios ángulos creativos testeados en paralelo: testimonio de pareja, noche de sueño grabada, comparativa con las soluciones aparatosas, cada uno con su propio gancho.",
+          "Formulario corto y llamada en menos de 2 h con un guion de cualificación (frecuencia de los ronquidos, soluciones ya probadas): se contacta al lead mientras está caliente.",
+          "Bucle de iteración semanal: las creatividades por encima del coste objetivo se cortan y las ganadoras se declinan en nuevas variantes para evitar el desgaste.",
+        ],
+        proof: {
+          kind: "meta",
+          title: "Administrador de anuncios",
+          caption: "Resultados anonimizados — Administrador de anuncios de Meta",
+          headers: ["Creatividad", "Leads", "Coste / lead"],
+          rows: [
+            ["Testimonio de pareja", "112", "18 ₪"],
+            ["Noche de sueño (vídeo)", "94", "21 ₪"],
+            ["Comparativa soluciones", "61", "23 ₪"],
+            ["Carrusel de producto", "38", "26 ₪"],
+          ],
+          footer: ["Total — 30 días", "305", "20 ₪"],
+        },
+      },
+      {
+        sector: "Energía y reforma del hogar",
+        client: "",
+        timeframe: "En varias cuentas, en continuo",
+        platforms: ["Meta Ads", "Google Ads"],
+        metrics: [
+          { value: "2 500+", label: "Leads generados en el vertical" },
+          { value: "÷ 4", label: "Coste por lead frente al punto de partida" },
+          { value: "1,5 M+", label: "Personas alcanzadas" },
+        ],
+        challenge:
+          "Alimentar de solicitudes de presupuesto a varias marcas de energía y reforma, en un mercado donde decenas de anunciantes difunden la misma oferta y donde el coste por lead se duplica en cuanto una creatividad se desgasta.",
+        actions: [
+          "Un sistema de test creativo permanente: ángulos de ahorro, confort y ayuda a la financiación, en formatos cortos, con un presupuesto que se desplaza cada semana hacia lo que aguanta.",
+          "Doble canal Meta + Google: Meta para crear la demanda, Google Search para captar las búsquedas activas («ayuda a la reforma», «presupuesto bomba de calor»).",
+          "Seguimiento de las llamadas y los presupuestos firmados en el dashboard: la optimización se hace sobre el coste de la cita cualificada, no sobre el clic.",
+        ],
+        proof: {
+          kind: "google",
+          title: "Google Ads — Resumen",
+          caption: "Resultados anonimizados — Google Ads, resumen (7 días)",
+          headers: ["Últimos 7 días", "Valor", "Evolución"],
+          rows: [
+            ["Clics", "6 800", "+18 %"],
+            ["Solicitudes de presupuesto", "214", "+31 %"],
+            ["Coste por solicitud", "14 €", "−22 %"],
+            ["Tasa de conversión", "3,1 %", "+0,6 pt"],
+          ],
+          footer: ["Presupuesto del periodo", "2 940 €", "—"],
+        },
+      },
+      {
+        sector: "Salud — clínica dental",
+        client: "",
+        timeframe: "En unos 10 meses",
+        platforms: ["Meta Ads"],
+        metrics: [
+          { value: "400+", label: "Solicitudes de cita" },
+          { value: "desde 30 ₪", label: "Coste por solicitud en las mejores campañas" },
+          { value: "3,4 %", label: "Ratio de clics" },
+        ],
+        challenge:
+          "Llenar la agenda con tratamientos de alto valor (implantes, carillas) cuando el coste por contacto sube rápido y parte de las solicitudes nunca se presentan en la clínica.",
+        actions: [
+          "Rotación creativa continua: vídeos de paciente, antes/después conformes a las reglas de la plataforma, mensajes separados por tipo de tratamiento (implante, estética, urgencia).",
+          "Campañas duplicadas por idioma (hebreo / francés) y formulario que filtra de entrada las solicitudes fuera de zona o de presupuesto.",
+          "Recordatorio rápido y confirmación la víspera de la cita para bajar la tasa de ausencias, con seguimiento en el CRM conectado al dashboard.",
+        ],
+        proof: {
+          kind: "calendar",
+          title: "Agenda — hoy",
+          caption: "Agenda anonimizada — día tipo tras el lanzamiento",
+          headers: ["Hora", "Motivo", "Estado"],
+          rows: [
+            ["09:00", "Consulta implante", "Confirmada"],
+            ["10:30", "Estudio estético", "Confirmada"],
+            ["11:15", "Presupuesto carillas", "Nueva"],
+            ["14:00", "Consulta implante", "Confirmada"],
+            ["16:30", "Revisión postoperatoria", "Confirmada"],
+          ],
+          footer: ["7 citas", "4 pacientes nuevos", "—"],
+        },
+      },
+    ],
   },
   estimator: {
     eyebrow: "Estima tu potencial",
