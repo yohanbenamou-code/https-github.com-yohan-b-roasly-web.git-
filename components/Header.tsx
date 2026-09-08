@@ -47,17 +47,19 @@ export default function Header({
           <Logo className="text-xl text-paper sm:text-[1.4rem]" onDark />
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
-          {content.nav.links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="group relative whitespace-nowrap text-sm text-paper/65 transition-colors hover:text-paper"
-            >
-              {link.label}
-              <span className="absolute -bottom-1.5 start-0 h-px w-0 bg-blue-soft transition-all duration-300 group-hover:w-full" />
-            </a>
-          ))}
+        <nav className="hidden min-w-0 items-center gap-5 xl:flex">
+          {content.nav.links
+            .filter((link) => link.href !== "#home" && link.href !== "#contact")
+            .map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="group relative whitespace-nowrap text-sm text-paper/65 transition-colors hover:text-paper"
+              >
+                {link.label}
+                <span className="absolute -bottom-1.5 start-0 h-px w-0 bg-blue-soft transition-all duration-300 group-hover:w-full" />
+              </a>
+            ))}
         </nav>
 
         <div className="flex shrink-0 items-center gap-2.5">
@@ -91,7 +93,7 @@ export default function Header({
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             aria-label={menuOpen ? "Fermer le menu" : "Ouvrir le menu"}
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/5 text-paper lg:hidden"
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/5 text-paper xl:hidden"
           >
             <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none">
               {menuOpen ? (
@@ -107,7 +109,7 @@ export default function Header({
       {menuOpen && (
         <div
           id="mobile-menu"
-          className="mx-2 mt-1 rounded-card border border-white/10 bg-ink/95 px-5 py-5 backdrop-blur-xl lg:hidden"
+          className="mx-2 mt-1 rounded-card border border-white/10 bg-ink/95 px-5 py-5 backdrop-blur-xl xl:hidden"
         >
           <nav className="flex flex-col divide-y divide-white/5">
             {content.nav.links.map((link) => (

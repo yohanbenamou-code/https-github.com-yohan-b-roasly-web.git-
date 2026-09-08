@@ -47,14 +47,9 @@ export default function Hero({
         aria-hidden
       />
 
-      <div className="relative mx-auto grid max-w-6xl gap-14 px-6 pb-24 pt-24 md:grid-cols-[1.12fr_0.88fr] md:items-center md:pb-32 md:pt-28">
+      <div className="relative mx-auto grid max-w-6xl gap-12 px-6 pb-16 pt-8 md:grid-cols-[1.12fr_0.88fr] md:items-center md:gap-14 md:pb-24 md:pt-10">
         <div className="animate-riseIn">
-          <p className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 font-mono text-[10px] uppercase tracking-kicker text-blue-soft sm:text-[11px]">
-            <span className="h-1.5 w-1.5 rounded-full bg-signal animate-pulseDot" />
-            {content.hero.kicker}
-          </p>
-
-          <h1 className="mt-6 max-w-xl font-display text-lg font-semibold leading-snug text-paper/85 sm:text-xl">
+          <h1 className="max-w-xl font-display text-base font-semibold leading-snug text-paper/85 sm:text-lg">
             {content.hero.h1}
           </h1>
 
@@ -62,11 +57,11 @@ export default function Hero({
             <Headline text={content.hero.headline} />
           </p>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-paper/70">
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-paper/70 sm:text-lg">
             {content.hero.subheadline}
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
               href="#contact"
               className="group relative overflow-hidden rounded-full bg-gradient-to-r from-blue-bright to-blue-soft px-7 py-3.5 text-sm font-semibold text-white shadow-[0_18px_45px_-14px_rgba(59,110,246,0.75)] transition-transform hover:scale-[1.03]"
@@ -82,7 +77,7 @@ export default function Hero({
             </a>
           </div>
 
-          <ul className="mt-11 flex flex-wrap gap-x-7 gap-y-3 border-t border-white/10 pt-7">
+          <ul className="mt-8 flex flex-wrap gap-x-7 gap-y-3 border-t border-white/10 pt-6">
             {content.stats.items.map((item) => (
               <li key={item.label} className="min-w-[7rem]">
                 <p className="font-display text-2xl font-extrabold ltr-nums tabular-nums text-paper">

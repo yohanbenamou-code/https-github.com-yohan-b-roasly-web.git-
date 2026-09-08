@@ -241,8 +241,8 @@ export const fr: SiteContent = {
       {
         name: "Yohan Benamou",
         role: "Fondateur",
-        location: "Tel Aviv, Israël",
-        bio: "Depuis Tel Aviv, j'accompagne les entreprises et indépendants francophones, hispanophones et hébréophones qui veulent un système d'acquisition clair, pas des promesses. Landing page, campagnes Google Ads et Meta Ads, tracking, CRM et dashboard en temps réel : je construis l'ensemble avec vous et je l'optimise chaque semaine sur données réelles. Quand vous appelez, vous parlez à la personne qui gère réellement vos campagnes.",
+        location: "Israël",
+        bio: "J'accompagne les entreprises et indépendants francophones, hispanophones et hébréophones en Israël qui veulent un système d'acquisition clair, pas des promesses. Landing page, campagnes Google Ads et Meta Ads, tracking, CRM et dashboard en temps réel : je construis l'ensemble avec vous et je l'optimise chaque semaine sur données réelles. Quand vous appelez, vous parlez à la personne qui gère réellement vos campagnes.",
         tags: ["Google Ads", "Meta Ads", "Tracking & CRM", "FR · ES · HE"],
       },
     ],

@@ -65,10 +65,6 @@ export default function Team({
                   aria-hidden
                 />
               </div>
-              <div className="absolute -bottom-4 start-4 flex items-center gap-2 rounded-full border border-white/12 bg-ink-soft/90 px-3 py-1.5 font-mono text-[11px] text-signal backdrop-blur-sm">
-                <span className="h-2 w-2 rounded-full bg-signal animate-pulseDot" />
-                {lead.location}
-              </div>
             </div>
 
             <div>
