@@ -11,7 +11,7 @@ export const es: SiteContent = {
       { label: "Inicio", href: "#home" },
       { label: "Qué hacemos", href: "#services" },
       { label: "Cómo funciona", href: "#how-it-works" },
-      { label: "Casos", href: "#case-studies" },
+      { label: "Casos", href: "/cas-clients" },
       { label: "Estimador", href: "#estimator" },
       { label: "Equipo", href: "#team" },
       { label: "Por qué Roasly", href: "#why-roasly" },
@@ -156,6 +156,9 @@ export const es: SiteContent = {
     body: "Gestionamos campañas de marketing digital en toda Israel — Tel Aviv, Jerusalén, Netanya, Haifa, Ashdod, Ra'anana — para empresas y autónomos de habla hispana, francesa y hebrea. Google Ads, Meta Ads, Bing Ads y TikTok Ads: un solo sistema, un solo dashboard, estés donde estés en el país.",
   },
   caseStudies: {
+    metaTitle: "Casos de clientes | Resultados de nuestras campañas | Roasly",
+    metaDescription:
+      "Cinco campañas reales pilotadas por Roasly: inmobiliario, derecho, e-commerce salud, energía, clínica dental. En cada caso, la restricción de partida, lo que pusimos en marcha y una vista de los resultados.",
     eyebrow: "Casos de clientes",
     headline: "Lo que el sistema ha producido, en condiciones reales",
     intro:

@@ -4,6 +4,7 @@ export type ServiceLink = { label: string; href: string };
 
 export const serviceLinks: Record<Locale, ServiceLink[]> = {
   fr: [
+    { label: "Cas clients", href: "cas-clients" },
     { label: "Google Ads à Tel Aviv", href: "google-ads-tel-aviv" },
     { label: "Google Ads à Jérusalem", href: "google-ads-jerusalem" },
     { label: "Meta Ads à Tel Aviv", href: "meta-ads-tel-aviv" },
@@ -15,6 +16,7 @@ export const serviceLinks: Record<Locale, ServiceLink[]> = {
     { label: "Ressources", href: "ressources" },
   ],
   es: [
+    { label: "Casos de clientes", href: "cas-clients" },
     { label: "Google Ads en Tel Aviv", href: "google-ads-tel-aviv" },
     { label: "Google Ads en Jerusalén", href: "google-ads-jerusalem" },
     { label: "Meta Ads en Tel Aviv", href: "meta-ads-tel-aviv" },
@@ -23,6 +25,7 @@ export const serviceLinks: Record<Locale, ServiceLink[]> = {
     { label: "Marketing digital en Jerusalén", href: "marketing-digital-jerusalem" },
   ],
   he: [
+    { label: "לקוחות שלנו", href: "cas-clients" },
     { label: "Google Ads בתל אביב", href: "google-ads-tel-aviv" },
     { label: "Google Ads בירושלים", href: "google-ads-jerusalem" },
     { label: "Meta Ads בתל אביב", href: "meta-ads-tel-aviv" },

@@ -11,7 +11,7 @@ export const he: SiteContent = {
       { label: "בית", href: "#home" },
       { label: "מה אנחנו עושים", href: "#services" },
       { label: "איך זה עובד", href: "#how-it-works" },
-      { label: "לקוחות", href: "#case-studies" },
+      { label: "לקוחות", href: "/cas-clients" },
       { label: "מחשבון", href: "#estimator" },
       { label: "צוות", href: "#team" },
       { label: "למה Roasly", href: "#why-roasly" },
@@ -148,6 +148,9 @@ export const he: SiteContent = {
     body: "אנחנו מנהלים קמפיינים של שיווק דיגיטלי בכל רחבי ישראל — תל אביב, ירושלים, נתניה, חיפה, אשדוד, רעננה — לעסקים ועצמאים דוברי עברית, צרפתית וספרדית. Google Ads, Meta Ads, Bing Ads ו-TikTok Ads: מערכת אחת, דאשבורד אחד, בכל מקום שאתם נמצאים בו בארץ.",
   },
   caseStudies: {
+    metaTitle: "לקוחות שלנו | תוצאות הקמפיינים שלנו | Roasly",
+    metaDescription:
+      "חמישה קמפיינים אמיתיים שנוהלו על ידי Roasly: נדל\"ן, משפט, איקומרס בריאות, אנרגיה, מרפאת שיניים. בכל מקרה: נקודת הפתיחה, מה שהקמנו ותצוגה של התוצאות.",
     eyebrow: "לקוחות שלנו",
     headline: "מה המערכת הפיקה, בתנאים אמיתיים",
     intro:

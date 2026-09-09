@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { locales, type Locale } from "@/lib/i18n";
 import type { SiteContent } from "@/lib/content/types";
 import Logo from "./Logo";
@@ -15,6 +16,13 @@ export default function Header({
 }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === `/${locale}` || pathname === "/";
+
+  // Anchor links (#…) point to the current page on the homepage, and back to the
+  // homepage from any other page. Route links (/…) get the locale prefix.
+  const hrefFor = (raw: string) =>
+    raw.startsWith("/") ? `/${locale}${raw}` : isHome ? raw : `/${locale}${raw}`;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -54,14 +62,14 @@ export default function Header({
                 !["#home", "#contact", "#why-roasly"].includes(link.href)
             )
             .map((link) => (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
+                href={hrefFor(link.href)}
                 className="group relative whitespace-nowrap text-sm text-paper/65 transition-colors hover:text-paper"
               >
                 {link.label}
                 <span className="absolute -bottom-1.5 start-0 h-px w-0 bg-blue-soft transition-all duration-300 group-hover:w-full" />
-              </a>
+              </Link>
             ))}
         </nav>
 
@@ -83,12 +91,12 @@ export default function Header({
             ))}
           </div>
 
-          <a
-            href="#contact"
+          <Link
+            href={hrefFor("#contact")}
             className="hidden items-center justify-center whitespace-nowrap rounded-full bg-gradient-to-r from-blue-bright to-blue-soft px-4 py-2.5 text-sm font-semibold leading-none text-white shadow-[0_10px_30px_-10px_rgba(59,110,246,0.7)] transition-transform hover:scale-[1.04] sm:flex"
           >
             {content.nav.cta}
-          </a>
+          </Link>
 
           <button
             type="button"
@@ -116,23 +124,23 @@ export default function Header({
         >
           <nav className="flex flex-col divide-y divide-white/5">
             {content.nav.links.map((link) => (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
+                href={hrefFor(link.href)}
                 onClick={() => setMenuOpen(false)}
                 className="py-3 text-[15px] text-paper/80 transition-colors hover:text-paper"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
-          <a
-            href="#contact"
+          <Link
+            href={hrefFor("#contact")}
             onClick={() => setMenuOpen(false)}
             className="mt-4 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-bright to-blue-soft px-5 py-3 text-sm font-semibold text-white"
           >
             {content.nav.cta}
-          </a>
+          </Link>
           <div className="mt-4 flex w-fit items-center gap-0.5 rounded-full border border-white/12 p-1 font-mono text-[11px] sm:hidden">
             {locales.map((l) => (
               <Link

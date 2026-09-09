@@ -25,6 +25,8 @@ export type SiteContent = {
     body: string;
   };
   caseStudies: {
+    metaTitle: string;
+    metaDescription: string;
     eyebrow: string;
     headline: string;
     intro: string;

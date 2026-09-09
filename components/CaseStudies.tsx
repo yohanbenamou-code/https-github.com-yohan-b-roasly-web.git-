@@ -126,7 +126,13 @@ function CaseProof({ proof }: { proof: Proof }) {
   );
 }
 
-export default function CaseStudies({ content }: { content: SiteContent }) {
+export default function CaseStudies({
+  content,
+  heading = "section",
+}: {
+  content: SiteContent;
+  heading?: "section" | "none";
+}) {
   const {
     eyebrow,
     headline,
@@ -141,15 +147,17 @@ export default function CaseStudies({ content }: { content: SiteContent }) {
   return (
     <section id="case-studies" className="bg-paper-raised">
       <div className="mx-auto max-w-6xl px-6 py-24">
-        <Reveal className="max-w-2xl">
-          <p className="font-mono text-xs uppercase tracking-kicker text-blue">{eyebrow}</p>
-          <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-[2.6rem]">
-            {headline}
-          </h2>
-          <p className="mt-5 text-base leading-relaxed text-ink/60">{intro}</p>
-        </Reveal>
+        {heading === "section" && (
+          <Reveal className="max-w-2xl">
+            <p className="font-mono text-xs uppercase tracking-kicker text-blue">{eyebrow}</p>
+            <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-[2.6rem]">
+              {headline}
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-ink/60">{intro}</p>
+          </Reveal>
+        )}
 
-        <div className="mt-14 space-y-8">
+        <div className={`${heading === "section" ? "mt-14" : ""} space-y-8`}>
           {items.map((item, i) => (
             <Reveal
               key={item.sector + i}

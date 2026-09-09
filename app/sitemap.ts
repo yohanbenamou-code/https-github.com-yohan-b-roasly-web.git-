@@ -3,6 +3,7 @@ import { locales, localeTags, siteUrl, type Locale } from "@/lib/i18n";
 import { resourceArticles } from "@/lib/content/resources";
 
 const landingPaths = [
+  "cas-clients",
   "google-ads-tel-aviv",
   "google-ads-jerusalem",
   "meta-ads-tel-aviv",
