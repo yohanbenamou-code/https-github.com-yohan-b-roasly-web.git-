@@ -2,9 +2,9 @@ import type { SiteContent } from "./types";
 
 export const es: SiteContent = {
   meta: {
-    title: "Agencia de marketing digital en Israel | Google Ads y Meta Ads | Roasly",
+    title: "Agencia de marketing digital en Israel | Roasly",
     description:
-      "Agencia de marketing digital en Israel: campañas de marketing digital de Google Ads, Meta Ads, Bing Ads y TikTok Ads reunidas en un sistema de captación completo, con dashboard en tiempo real. Para empresas y autónomos de habla hispana, francesa y hebrea, de Tel Aviv a Jerusalén. Diagnóstico gratuito.",
+      "Agencia de marketing digital en Israel: Google Ads, Meta Ads y sistema de adquisición completo con dashboard en tiempo real. Diagnóstico gratuito.",
   },
   nav: {
     links: [

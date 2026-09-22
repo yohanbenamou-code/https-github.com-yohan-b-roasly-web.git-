@@ -1,0 +1,21 @@
+# Roasly
+
+> Agence de marketing digital basée en Israël, spécialisée en Google Ads, Meta Ads, Bing Ads et TikTok Ads. Roasly conçoit un système d'acquisition complet (landing page, tracking, CRM, campagnes) pour les entreprises et indépendants francophones, hispanophones et hébréophones en Israël, avec un dashboard de suivi en temps réel.
+
+## Pages principales
+
+- [Accueil (FR)](https://www.roaslyads.co.il/fr): Présentation de l'agence, méthode en 4 étapes, estimateur de budget, équipe.
+- [Cas clients](https://www.roaslyads.co.il/fr/cas-clients): Résultats réels de campagnes (immobilier, droit, e-commerce, énergie, santé).
+- [Google Ads à Tel Aviv](https://www.roaslyads.co.il/fr/google-ads-tel-aviv)
+- [Google Ads à Jérusalem](https://www.roaslyads.co.il/fr/google-ads-jerusalem)
+- [Meta Ads à Tel Aviv](https://www.roaslyads.co.il/fr/meta-ads-tel-aviv)
+- [Meta Ads à Jérusalem](https://www.roaslyads.co.il/fr/meta-ads-jerusalem)
+- [Marketing digital à Tel Aviv](https://www.roaslyads.co.il/fr/marketing-digital-tel-aviv)
+- [Marketing digital à Jérusalem](https://www.roaslyads.co.il/fr/marketing-digital-jerusalem)
+- [Marketing digital pour avocats](https://www.roaslyads.co.il/fr/marketing-digital-avocats)
+- [Marketing digital pour cliniques dentaires](https://www.roaslyads.co.il/fr/marketing-digital-dentistes)
+
+## Autres langues
+
+- [Español](https://www.roaslyads.co.il/es)
+- [עברית](https://www.roaslyads.co.il/he)

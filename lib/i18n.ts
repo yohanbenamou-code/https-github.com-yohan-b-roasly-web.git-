@@ -30,4 +30,4 @@ export const localeTags: Record<Locale, string> = {
   he: "he-IL",
 };
 
-export const siteUrl = "https://roaslyads.co.il";
+export const siteUrl = "https://www.roaslyads.co.il";

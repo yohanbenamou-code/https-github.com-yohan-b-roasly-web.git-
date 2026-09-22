@@ -25,13 +25,13 @@ export default function Footer({
 
           <nav className="flex flex-col gap-2.5">
             {content.nav.links.map((link) => (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
+                href={`/${locale}${link.href}`}
                 className="text-sm text-paper/55 transition-colors hover:text-paper"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
 

@@ -2,9 +2,9 @@ import type { SiteContent } from "./types";
 
 export const he: SiteContent = {
   meta: {
-    title: "סוכנות שיווק דיגיטלי בישראל | Google Ads ו-Meta Ads | Roasly",
+    title: "סוכנות שיווק דיגיטלי בישראל | Roasly",
     description:
-      "סוכנות שיווק דיגיטלי בישראל: קמפיינים של שיווק דיגיטלי ב-Google Ads, Meta Ads, Bing Ads ו-TikTok Ads המאוחדים במערכת רכישה שלמה, עם דאשבורד בזמן אמת. לעסקים ועצמאים דוברי עברית, צרפתית וספרדית, מתל אביב ועד ירושלים. אבחון חינם.",
+      "סוכנות שיווק דיגיטלי בישראל: קמפיינים ב-Google Ads ו-Meta Ads עם דשבורד בזמן אמת. אבחון חינם.",
   },
   nav: {
     links: [
