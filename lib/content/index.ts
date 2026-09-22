@@ -14,4 +14,5 @@ export const contact = {
   email: "yohan.b@roaslyads.com",
   whatsapp: "058 741 87 89",
   whatsappHref: "https://wa.me/972587418789",
+  linkedin: "https://www.linkedin.com/company/roasly/",
 };

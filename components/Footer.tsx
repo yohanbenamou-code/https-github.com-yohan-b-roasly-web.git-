@@ -80,10 +80,21 @@ export default function Footer({
 
         <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-paper/40 sm:flex-row sm:items-center sm:justify-between">
           <p>{content.footer.copyright}</p>
-          <div className="flex gap-4">
+          <div className="flex items-center gap-4">
             {content.footer.legal.map((item) => (
               <span key={item}>{item}</span>
             ))}
+            <a
+              href={contact.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Roasly"
+              className="text-paper/40 transition-colors hover:text-paper"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>

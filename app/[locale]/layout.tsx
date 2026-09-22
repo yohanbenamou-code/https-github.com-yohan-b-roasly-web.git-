@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Heebo, JetBrains_Mono, Sora } from "next/font/google";
 import "../globals.css";
 import { locales, localeTags, isRtl, siteUrl, assertValidLocale, type Locale } from "@/lib/i18n";
@@ -153,6 +154,15 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-W85VQ4K1KP" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-W85VQ4K1KP');
+          `}
+        </Script>
       </head>
       <body className="font-body antialiased">{children}</body>
     </html>
