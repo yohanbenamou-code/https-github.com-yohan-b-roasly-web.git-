@@ -6,6 +6,12 @@ import { contact } from "@/lib/content";
 
 type Status = "idle" | "sending" | "success" | "error";
 
+// Web3Forms access keys are public by design (they ship in the client bundle).
+// Fallback so the form keeps working when the env var is missing on the host.
+const WEB3FORMS_ACCESS_KEY =
+  process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ||
+  "f24e15d6-2429-4408-90f2-6c5e07c5aa73";
+
 export default function ContactForm({ content }: { content: SiteContent }) {
   const [status, setStatus] = useState<Status>("idle");
   const { form } = content.finalCta;
@@ -14,11 +20,10 @@ export default function ContactForm({ content }: { content: SiteContent }) {
     e.preventDefault();
     setStatus("sending");
 
-    const formData = new FormData(e.currentTarget);
-    formData.append(
-      "access_key",
-      process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? ""
-    );
+    // currentTarget is null after an await — keep a reference to the form.
+    const formEl = e.currentTarget;
+    const formData = new FormData(formEl);
+    formData.append("access_key", WEB3FORMS_ACCESS_KEY);
     formData.append("subject", "Nouveau lead Roasly");
 
     try {
@@ -29,7 +34,7 @@ export default function ContactForm({ content }: { content: SiteContent }) {
       const data = await res.json();
       if (data.success) {
         setStatus("success");
-        e.currentTarget.reset();
+        formEl.reset();
       } else {
         setStatus("error");
       }
