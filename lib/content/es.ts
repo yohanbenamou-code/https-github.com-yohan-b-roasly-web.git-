@@ -25,7 +25,7 @@ export const es: SiteContent = {
     h1: "Agencia de marketing digital en Israel",
     headline: "Más clientes. En Israel y más allá.",
     subheadline:
-      "Construimos un sistema de captación completo para tu mercado en Israel, no promesas de marketing. Landing page, campañas, tracking, CRM y un dashboard conectado: ves cada shekel invertido, cada lead generado. Sin sorpresas.",
+      "Sin promesas de marketing: un verdadero sistema de captación, construido para el mercado israelí. Landing page, campañas, tracking, CRM y un dashboard conectado: ves cada shekel invertido, cada lead generado. Sin sorpresas.",
     cta: "Reservar un diagnóstico gratuito",
   },
   platforms: ["Google Ads", "Meta Ads", "Bing Ads", "TikTok Ads"],
