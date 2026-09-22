@@ -155,4 +155,9 @@ export type SiteContent = {
     copyright: string;
     contactLabel: { email: string; whatsapp: string };
   };
+  whatsappCta: {
+    label: string;
+    ariaLabel: string;
+    message: string;
+  };
 };

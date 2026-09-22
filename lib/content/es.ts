@@ -510,4 +510,9 @@ export const es: SiteContent = {
     copyright: "© 2026 Roasly. Todos los derechos reservados.",
     contactLabel: { email: "Email", whatsapp: "WhatsApp" },
   },
+  whatsappCta: {
+    label: "Auditoría gratis",
+    ariaLabel: "Contáctanos por WhatsApp para una auditoría gratuita",
+    message: "Hola Roasly, me gustaría recibir una auditoría gratuita de mis campañas publicitarias.",
+  },
 };

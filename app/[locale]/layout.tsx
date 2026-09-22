@@ -4,6 +4,7 @@ import { Heebo, JetBrains_Mono, Sora } from "next/font/google";
 import "../globals.css";
 import { locales, localeTags, isRtl, siteUrl, assertValidLocale, type Locale } from "@/lib/i18n";
 import { getContent } from "@/lib/content";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const heebo = Heebo({
   subsets: ["latin", "hebrew"],
@@ -164,7 +165,10 @@ export default async function LocaleLayout({
           `}
         </Script>
       </head>
-      <body className="font-body antialiased">{children}</body>
+      <body className="font-body antialiased">
+        {children}
+        <WhatsAppButton content={content} />
+      </body>
     </html>
   );
 }

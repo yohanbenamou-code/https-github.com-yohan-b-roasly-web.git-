@@ -501,4 +501,9 @@ export const he: SiteContent = {
     copyright: "© 2026 Roasly. כל הזכויות שמורות.",
     contactLabel: { email: "אימייל", whatsapp: "וואטסאפ" },
   },
+  whatsappCta: {
+    label: "אודיט חינם",
+    ariaLabel: "צרו קשר בוואטסאפ לקבלת אודיט חינם",
+    message: "שלום Roasly, אשמח לקבל אודיט חינם לקמפיינים הפרסומיים שלי.",
+  },
 };
