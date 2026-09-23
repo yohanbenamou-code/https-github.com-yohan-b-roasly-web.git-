@@ -16,6 +16,9 @@ const landingPaths = [
 const frOnlyLandingPaths = [
   "marketing-digital-avocats",
   "marketing-digital-dentistes",
+  "marketing-digital-netanya",
+  "marketing-digital-haifa",
+  "marketing-digital-ashdod",
   "ressources",
   ...resourceArticles.map((a) => `ressources/${a.slug}`),
 ];

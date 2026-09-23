@@ -13,6 +13,9 @@ export const serviceLinks: Record<Locale, ServiceLink[]> = {
     { label: "Marketing digital à Jérusalem", href: "marketing-digital-jerusalem" },
     { label: "Marketing digital pour avocats", href: "marketing-digital-avocats" },
     { label: "Marketing digital pour cliniques dentaires", href: "marketing-digital-dentistes" },
+    { label: "Marketing digital à Netanya", href: "marketing-digital-netanya" },
+    { label: "Marketing digital à Haïfa", href: "marketing-digital-haifa" },
+    { label: "Marketing digital à Ashdod", href: "marketing-digital-ashdod" },
     { label: "Ressources", href: "ressources" },
   ],
   es: [
