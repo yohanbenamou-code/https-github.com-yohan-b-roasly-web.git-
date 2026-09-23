@@ -20,8 +20,12 @@ const fr: LandingContent = {
       body: "Landing page orientée prise de rendez-vous, tracking des appels et des formulaires relié à votre CRM, campagnes Google Ads sur les recherches à forte intention (droit du travail, immobilier, affaires, selon votre spécialité) et Meta Ads pour la notoriété locale.",
     },
     {
-      title: "Ce que dit un client du secteur",
-      body: "« Enfin une agence qui explique où va mon budget. Le dashboard en temps réel a tout changé, je vois mes leads arriver au lieu d'attendre un rapport mensuel. » — David Cohen, cabinet d'avocats à Tel Aviv, client Roasly.",
+      title: "Des résultats vérifiables, pas des promesses",
+      body: "Plutôt qu'un témoignage isolé, un cas concret d'un cabinet d'avocats accompagné par Roasly est détaillé chiffres à l'appui sur notre page Cas clients : volume de demandes, coût par contact et canaux utilisés. Les chiffres sont réels, arrondis et présentés avec leur contexte, pas une citation flatteuse sans preuve derrière.",
+    },
+    {
+      title: "Cibler par langue et par zone d'intervention",
+      body: "Un cabinet d'avocats en Israël sert souvent une clientèle francophone qui cherche en français, en plus d'une clientèle hébréophone. Nous séparons les campagnes par langue pour toucher les deux avec un message adapté, et ajustons la zone géographique selon que votre cabinet intervient localement ou dans tout le pays.",
     },
     {
       title: "Transparence sur le budget",
@@ -36,6 +40,8 @@ const fr: LandingContent = {
     "Landing page orientée prise de rendez-vous, pas un site vitrine générique",
     "Tracking des appels et formulaires relié à votre CRM",
     "Compte publicitaire à votre nom, vous en restez propriétaire",
+    "Campagnes séparées par langue, français et hébreu",
+    "Suivi hebdomadaire des campagnes, pas un bilan trimestriel",
     "Sans engagement long terme",
   ],
   ctaHeadline: "Parlons de l'acquisition de clients pour votre cabinet",
@@ -54,6 +60,11 @@ const fr: LandingContent = {
       question: "Gérez-vous aussi la confidentialité des données de mes prospects ?",
       answer:
         "Le CRM et le tracking sont configurés à votre nom et sous votre contrôle. Vous restez propriétaire de vos données à tout moment, y compris si vous arrêtez de travailler avec nous.",
+    },
+    {
+      question: "Mon cabinet intervient dans plusieurs villes, pas seulement une. C'est gérable ?",
+      answer:
+        "Oui. On structure les campagnes selon votre zone d'intervention réelle, qu'elle soit locale ou nationale, plutôt que de forcer un ciblage par ville unique qui ne correspondrait pas à votre activité.",
     },
   ],
 };

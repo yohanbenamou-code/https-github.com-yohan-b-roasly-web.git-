@@ -5,6 +5,8 @@ import { siteUrl, type Locale } from "@/lib/i18n";
 import { serviceLinks, relatedLabel } from "@/lib/content/serviceLinks";
 
 import Header from "@/components/Header";
+import Stats from "@/components/Stats";
+import Estimator from "@/components/Estimator";
 import LandingFaq from "@/components/LandingFaq";
 import FinalCta from "@/components/FinalCta";
 import Footer from "@/components/Footer";
@@ -126,6 +128,10 @@ export default function ServiceLandingPage({
             </ul>
           </div>
         </section>
+
+        <Stats content={content} />
+
+        <Estimator content={content} locale={locale} />
 
         <LandingFaq items={landing.faq} />
 

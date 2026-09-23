@@ -20,8 +20,12 @@ const fr: LandingContent = {
       body: "Landing page orientée prise de rendez-vous, tracking des appels et des formulaires relié à votre CRM, campagnes Google Ads sur les recherches locales à forte intention (urgences, implants, orthodontie selon vos soins) et Meta Ads pour la notoriété autour de votre clinique.",
     },
     {
-      title: "Ce que dit une cliente du secteur",
-      body: "« On avait déjà travaillé avec deux agences avant. Ici, on a un vrai système : landing page, CRM, campagnes, tout connecté. Le coût par lead a baissé de moitié en deux mois. » — Sarah Lévy-Azoulay, clinique dentaire à Netanya, cliente Roasly.",
+      title: "Des résultats vérifiables, pas des promesses",
+      body: "Plutôt qu'un témoignage isolé, le cas d'une clinique dentaire accompagnée par Roasly est détaillé chiffres à l'appui sur notre page Cas clients : volume de rendez-vous, coût par lead et canaux utilisés. Les chiffres sont réels, arrondis et présentés avec leur contexte, pas une citation flatteuse sans preuve derrière.",
+    },
+    {
+      title: "Cibler par langue et par quartier",
+      body: "Une clinique dentaire attire surtout des patients à proximité, et une partie d'entre eux cherche en français plutôt qu'en hébreu. Nous ciblons le quartier ou le rayon de déplacement réaliste autour de votre clinique, avec des campagnes séparées par langue pour parler directement à chaque audience.",
     },
     {
       title: "Transparence sur le budget",
@@ -36,6 +40,8 @@ const fr: LandingContent = {
     "Landing page orientée prise de rendez-vous, adaptée à votre clinique",
     "Tracking des appels et formulaires relié à votre CRM",
     "Compte publicitaire à votre nom, vous en restez propriétaire",
+    "Campagnes séparées par langue, français et hébreu",
+    "Suivi hebdomadaire des campagnes, pas un bilan trimestriel",
     "Sans engagement long terme",
   ],
   ctaHeadline: "Parlons de l'acquisition de patients pour votre clinique",
@@ -54,6 +60,11 @@ const fr: LandingContent = {
       question: "Pouvez-vous cibler une zone précise autour de ma clinique ?",
       answer:
         "Oui. Le ciblage géographique est ajusté à votre zone de chalandise réelle, pour éviter de payer des clics venant de patients trop éloignés pour se déplacer.",
+    },
+    {
+      question: "Une partie de mes patients cherche en français, une autre en hébreu. Vous gérez les deux ?",
+      answer:
+        "Oui, avec des campagnes séparées par langue plutôt qu'une seule campagne mélangée. Chaque audience reçoit un message adapté, et un suivi distinct permet de savoir laquelle génère le plus de rendez-vous.",
     },
   ],
 };
