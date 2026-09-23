@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getContent } from "@/lib/content";
 import { resourceArticles } from "@/lib/content/resources";
+import { serviceLinks, relatedLabel } from "@/lib/content/serviceLinks";
 import { siteUrl, assertValidLocale } from "@/lib/i18n";
 import Header from "@/components/Header";
 import FinalCta from "@/components/FinalCta";
@@ -49,6 +50,7 @@ export default async function ResourceArticlePage({
 
   const content = getContent(locale);
   const url = `${siteUrl}/${locale}/ressources/${slug}`;
+  const related = serviceLinks[locale].filter((link) => article.relatedLinks?.includes(link.href));
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -103,6 +105,28 @@ export default async function ResourceArticlePage({
             </div>
           </div>
         </section>
+
+        {related.length > 0 && (
+          <section className="bg-paper-raised">
+            <div className="mx-auto max-w-3xl px-6 py-12">
+              <p className="font-mono text-xs uppercase tracking-kicker text-ink/50">
+                {relatedLabel[locale]}
+              </p>
+              <ul className="mt-4 flex flex-wrap gap-2.5">
+                {related.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={`/${locale}/${link.href}`}
+                      className="rounded-full border border-ink/15 bg-paper px-4 py-2 text-sm text-ink/70 transition-colors hover:border-ink/30 hover:text-ink"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
 
         <FinalCta content={content} />
       </main>
