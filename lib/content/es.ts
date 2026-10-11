@@ -153,7 +153,7 @@ export const es: SiteContent = {
   },
   seoLinks: {
     eyebrow: "Marketing digital en Israel y a nivel internacional",
-    headline: "Roasly, el puente de marketing entre Israel, España, Francia y otros países",
+    headline: "Roasly, tu agencia de marketing digital en Israel, y el puente hacia España, Francia y otros países",
     body: "Gestionamos campañas en toda Israel — Tel Aviv, Jerusalén, Netanya, Haifa, Ashdod, Ra'anana — pero también en España, Francia y otros mercados, para empresas y autónomos de habla hispana, francesa y hebrea. ¿Estás en Israel y quieres llegar a España o Francia? ¿Estás fuera y quieres llegar a Israel? Google Ads, Meta Ads, Bing Ads, TikTok Ads y LinkedIn Ads: un solo sistema, un solo dashboard, sea cual sea el mercado.",
   },
   caseStudies: caseStudiesEs,
