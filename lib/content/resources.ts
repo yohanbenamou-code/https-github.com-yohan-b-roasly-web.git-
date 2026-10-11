@@ -35,7 +35,7 @@ export const resourceArticles: ResourceArticle[] = [
       {
         heading: "Ce que ça donne concrètement",
         paragraphs: [
-          "À ce jour, Roasly a accompagné plus de 35 projets et géré plus de 850 000₪ de budget publicitaire, pour un ROAS moyen de 3,8x généré pour ses clients. Ces chiffres varient évidemment d'un compte à l'autre selon le secteur et le budget engagé, mais ils donnent un ordre de grandeur réaliste plutôt qu'une promesse abstraite.",
+          "À ce jour, Roasly a accompagné plus de 50 projets et géré plus de 1,8 M₪ de budget publicitaire, pour un ROAS moyen de 3,8x généré pour ses clients. Ces chiffres varient évidemment d'un compte à l'autre selon le secteur et le budget engagé, mais ils donnent un ordre de grandeur réaliste plutôt qu'une promesse abstraite.",
         ],
       },
     ],

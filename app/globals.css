@@ -50,6 +50,19 @@ body {
   transform: none;
 }
 
+/* Chart bars grow in when their <Reveal> ancestor becomes visible */
+.bar-fill {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;
+}
+[dir="rtl"] .bar-fill {
+  transform-origin: right;
+}
+.is-visible .bar-fill {
+  transform: scaleX(1);
+}
+
 /* Edge-fade mask for marquee rows */
 .marquee-mask {
   -webkit-mask-image: linear-gradient(

@@ -1,250 +1,314 @@
-import type { SiteContent } from "@/lib/content/types";
+import type {
+  CaseChart,
+  CaseChartPoint,
+  CaseStudyItem,
+  SiteContent,
+} from "@/lib/content/types";
 import Reveal from "./Reveal";
+import MetaLogo from "./MetaLogo";
 
-type Proof = SiteContent["caseStudies"]["items"][number]["proof"];
+const GOOD = "#2FB98A";
+const WARN = "#F4A93C";
+const BLUE = "#3B6EF6";
 
-const KIND_STYLE: Record<
-  Proof["kind"],
-  { dot: string; label: string; accent: string }
-> = {
-  meta: { dot: "#4F8BFF", label: "Meta", accent: "#4F8BFF" },
-  google: { dot: "#34A853", label: "Google Ads", accent: "#5FE3FF" },
-  crm: { dot: "#2FB98A", label: "CRM", accent: "#2FB98A" },
-  calendar: { dot: "#F4A93C", label: "Agenda", accent: "#F4A93C" },
-};
-
-function statusTone(s: string) {
-  const v = s.toLowerCase();
-  if (/(confirm|מאושר|confirm)/.test(v)) return "bg-signal/15 text-signal";
-  if (/(nouveau|nueva|nuevo|חדש|new)/.test(v)) return "bg-blue/15 text-blue-soft";
-  return "bg-white/10 text-paper/60";
+function PlatformTag({ name }: { name: string }) {
+  const isMeta = name.toLowerCase().startsWith("meta");
+  const isGoogle = name.toLowerCase().startsWith("google");
+  return (
+    <li className="inline-flex items-center gap-1.5 rounded-full border border-line-strong bg-white px-3 py-1 text-xs font-medium text-ink/70">
+      {isMeta && <MetaLogo className="h-3.5 w-3.5" />}
+      {isGoogle && (
+        <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" aria-hidden>
+          <path fill="#4285F4" d="M22 12.2c0-.7-.06-1.4-.18-2H12v3.9h5.6a4.8 4.8 0 01-2.1 3.2v2.6h3.4c2-1.8 3.1-4.5 3.1-7.7z" />
+          <path fill="#34A853" d="M12 22c2.8 0 5.2-.9 6.9-2.5l-3.4-2.6c-.95.6-2.15 1-3.5 1a6 6 0 01-5.65-4.15H2.85v2.6A10 10 0 0012 22z" />
+          <path fill="#FBBC05" d="M6.35 13.7a6 6 0 010-3.85V7.25H2.85a10 10 0 000 9z" />
+          <path fill="#EA4335" d="M12 5.9c1.5 0 2.86.52 3.92 1.53l2.94-2.94A9.6 9.6 0 0012 2a10 10 0 00-9.15 5.25l3.5 2.6A6 6 0 0112 5.9z" />
+        </svg>
+      )}
+      {name}
+    </li>
+  );
 }
 
-function CaseProof({ proof }: { proof: Proof }) {
-  const s = KIND_STYLE[proof.kind];
-  const isSchedule = proof.kind === "calendar" || proof.kind === "crm";
+function barColor(p: CaseChartPoint, lowerIsBetter?: boolean) {
+  if (!lowerIsBetter) return BLUE;
+  if (p.good === true) return GOOD;
+  if (p.good === false) return WARN;
+  return BLUE;
+}
+
+function BarsChart({ chart }: { chart: CaseChart }) {
+  const max = Math.max(...chart.points.map((p) => p.value));
+  return (
+    <ul className="space-y-3.5">
+      {chart.points.map((p) => (
+        <li key={p.label} className="grid grid-cols-[minmax(0,8.5rem)_1fr_auto] items-center gap-x-4 gap-y-1 sm:grid-cols-[minmax(0,11rem)_1fr_auto]">
+          <span className="min-w-0">
+            <span className="block truncate text-[13px] font-medium text-ink/80">{p.label}</span>
+            {p.note && <span className="block truncate text-[11px] text-ink/40">{p.note}</span>}
+          </span>
+          <span className="h-2.5 overflow-hidden rounded-full bg-ink/[0.06]" aria-hidden>
+            <span
+              className="bar-fill block h-full rounded-full"
+              style={{
+                width: `${Math.max(4, (p.value / max) * 100)}%`,
+                background: barColor(p, chart.lowerIsBetter),
+              }}
+            />
+          </span>
+          <span className="w-16 text-end font-mono text-[13px] font-semibold text-ink ltr-nums">
+            {p.display}
+          </span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function TrendChart({ chart }: { chart: CaseChart }) {
+  const W = 420;
+  const H = 150;
+  const padX = 34;
+  const top = 30;
+  const bottom = 112;
+  const vals = chart.points.map((p) => p.value);
+  const min = Math.min(...vals);
+  const max = Math.max(...vals);
+  const span = max - min || 1;
+  const xs = chart.points.map((_, i) => padX + (i * (W - padX * 2)) / (chart.points.length - 1));
+  const ys = vals.map((v) => bottom - ((v - min) / span) * (bottom - top));
+  const line = xs.map((x, i) => `${i === 0 ? "M" : "L"}${x.toFixed(1)} ${ys[i].toFixed(1)}`).join(" ");
+  const area = `${line} L${xs[xs.length - 1]} ${bottom + 10} L${xs[0]} ${bottom + 10} Z`;
+  const last = chart.points.length - 1;
+  const improving = chart.lowerIsBetter ? vals[last] <= vals[0] : vals[last] >= vals[0];
+  const color = improving ? GOOD : WARN;
 
   return (
-    <figure className="overflow-hidden rounded-xl2 border border-white/10 bg-ink-soft shadow-liftDark">
-      <div className="flex items-center gap-2 border-b border-white/10 bg-black/20 px-4 py-3">
-        <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-        <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-        <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-        <span className="ms-2 flex items-center gap-1.5 font-mono text-[11px] text-paper/45">
-          <span className="h-1.5 w-1.5 rounded-full" style={{ background: s.dot }} />
-          {proof.title}
-        </span>
-      </div>
+    <div dir="ltr">
+      <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full" role="img" aria-label={chart.title}>
+        <defs>
+          <linearGradient id="trend-fill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor={color} stopOpacity="0.22" />
+            <stop offset="1" stopColor={color} stopOpacity="0" />
+          </linearGradient>
+        </defs>
+        <path d={area} fill="url(#trend-fill)" />
+        <path d={line} fill="none" stroke={color} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        {chart.points.map((p, i) => (
+          <g key={p.label}>
+            <circle cx={xs[i]} cy={ys[i]} r={i === last ? 5 : 3.5} fill="#fff" stroke={color} strokeWidth="2.5" />
+            <text x={xs[i]} y={ys[i] - 12} textAnchor="middle" fontSize="12" fontWeight="600" fill="#0A0E1A" fontFamily="var(--font-mono), monospace">
+              {p.display}
+            </text>
+            <text x={xs[i]} y={H - 6} textAnchor="middle" fontSize="10" fill="rgba(10,14,26,0.45)">
+              {p.label}
+            </text>
+          </g>
+        ))}
+      </svg>
+    </div>
+  );
+}
 
-      <div className="p-4">
-        {proof.kind === "google" && (
-          <svg viewBox="0 0 320 60" className="mb-3 h-14 w-full" fill="none" aria-hidden>
-            <path
-              d="M0 48 L40 40 L80 44 L120 30 L160 34 L200 20 L240 24 L280 10 L320 14"
-              stroke={s.accent}
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        )}
-
-        <div className="grid grid-cols-[1.4fr_0.8fr_0.9fr] gap-2 border-b border-white/10 pb-2 font-mono text-[10px] uppercase tracking-kicker text-paper/35">
-          <span>{proof.headers[0]}</span>
-          <span className="text-end">{proof.headers[1]}</span>
-          <span className="text-end">{proof.headers[2]}</span>
-        </div>
-
-        <ul className="divide-y divide-white/5">
-          {proof.rows.map((row, i) => (
-            <li
-              key={i}
-              className="grid grid-cols-[1.4fr_0.8fr_0.9fr] items-center gap-2 py-2.5 text-[13px]"
-            >
-              <span className="flex min-w-0 items-center gap-2 text-paper/80">
-                {isSchedule ? (
-                  <span
-                    className="h-3.5 w-1 shrink-0 rounded-full"
-                    style={{ background: s.accent }}
-                  />
-                ) : null}
-                <span className="truncate">{row[0]}</span>
-              </span>
-              {isSchedule ? (
-                <span className="truncate text-end text-paper/60">{row[1]}</span>
-              ) : (
-                <span className="text-end font-mono text-paper/70 ltr-nums">{row[1]}</span>
-              )}
-              {isSchedule ? (
-                <span className="flex justify-end">
-                  <span
-                    className={`rounded-full px-2 py-0.5 font-mono text-[10px] ${statusTone(
-                      row[2]
-                    )}`}
-                  >
-                    {row[2]}
-                  </span>
-                </span>
-              ) : (
+function CompareChart({ chart }: { chart: CaseChart }) {
+  return (
+    <ul className="space-y-5">
+      {chart.points.map((p) => {
+        const prev = p.prev ?? 0;
+        const max = Math.max(p.value, prev) || 1;
+        return (
+          <li key={p.label}>
+            <div className="flex items-center justify-between gap-3">
+              <span className="text-[13px] font-medium text-ink/80">{p.label}</span>
+              {p.delta && (
                 <span
-                  className="text-end font-mono ltr-nums"
+                  className="rounded-full px-2 py-0.5 font-mono text-[11px] font-semibold ltr-nums"
                   style={{
-                    color: row[2].startsWith("+")
-                      ? "#2FB98A"
-                      : row[2].startsWith("−") || row[2].startsWith("-")
-                        ? "#F4A93C"
-                        : s.accent,
+                    color: p.good === false ? "#B7791F" : "#1F9C72",
+                    background: p.good === false ? "rgba(244,169,60,0.14)" : "rgba(47,185,138,0.12)",
                   }}
                 >
-                  {row[2]}
+                  {p.delta}
                 </span>
               )}
-            </li>
-          ))}
-        </ul>
+            </div>
+            <div className="mt-2 space-y-1.5">
+              <div className="grid grid-cols-[1fr_auto] items-center gap-3">
+                <span className="h-2 overflow-hidden rounded-full bg-ink/[0.06]" aria-hidden>
+                  <span className="bar-fill block h-full rounded-full bg-ink/25" style={{ width: `${(prev / max) * 100}%` }} />
+                </span>
+                <span className="w-14 text-end font-mono text-[11px] text-ink/45 ltr-nums">{p.prevDisplay}</span>
+              </div>
+              <div className="grid grid-cols-[1fr_auto] items-center gap-3">
+                <span className="h-2.5 overflow-hidden rounded-full bg-ink/[0.06]" aria-hidden>
+                  <span className="bar-fill block h-full rounded-full" style={{ width: `${(p.value / max) * 100}%`, background: BLUE }} />
+                </span>
+                <span className="w-14 text-end font-mono text-[13px] font-semibold text-ink ltr-nums">{p.display}</span>
+              </div>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
 
-        {isSchedule ? (
-          <div className="mt-2 flex items-center justify-between gap-3 rounded-lg bg-white/[0.04] px-3 py-2.5 text-[13px]">
-            <span className="font-semibold text-paper/90">{proof.footer[0]}</span>
-            <span className="text-end text-paper/60">{proof.footer[1]}</span>
-          </div>
-        ) : (
-          <div className="mt-2 grid grid-cols-[1.4fr_0.8fr_0.9fr] items-center gap-2 rounded-lg bg-white/[0.04] px-2 py-2.5 text-[13px]">
-            <span className="font-semibold text-paper/90">{proof.footer[0]}</span>
-            <span className="text-end font-mono text-paper/80 ltr-nums">{proof.footer[1]}</span>
-            <span className="text-end font-mono ltr-nums" style={{ color: s.accent }}>
-              {proof.footer[2]}
-            </span>
-          </div>
-        )}
-      </div>
+function AgendaChart({ chart }: { chart: CaseChart }) {
+  return (
+    <ul className="divide-y divide-line">
+      {chart.points.map((p) => (
+        <li key={p.label + p.display} className="grid grid-cols-[3.5rem_1fr_auto] items-center gap-3 py-3 text-[13px]">
+          <span className="font-mono text-ink/45 ltr-nums">{p.label}</span>
+          <span className="font-medium text-ink/80">{p.display}</span>
+          <span
+            className="rounded-full px-2.5 py-0.5 text-[11px] font-medium"
+            style={
+              p.good
+                ? { color: "#1F9C72", background: "rgba(47,185,138,0.12)" }
+                : { color: BLUE, background: "rgba(59,110,246,0.10)" }
+            }
+          >
+            {p.note}
+          </span>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
-      <figcaption className="border-t border-white/10 px-4 py-2.5 font-mono text-[10px] text-paper/35">
-        {proof.caption}
+function Chart({ chart }: { chart: CaseChart }) {
+  return (
+    <figure className="rounded-xl2 border border-line bg-white p-5 sm:p-6">
+      <figcaption className="mb-5">
+        <p className="text-sm font-semibold text-ink">{chart.title}</p>
+        <p className="mt-0.5 text-xs text-ink/45">{chart.caption}</p>
       </figcaption>
+      {chart.kind === "bars" && <BarsChart chart={chart} />}
+      {chart.kind === "trend" && <TrendChart chart={chart} />}
+      {chart.kind === "compare" && <CompareChart chart={chart} />}
+      {chart.kind === "agenda" && <AgendaChart chart={chart} />}
     </figure>
   );
 }
 
-export default function CaseStudies({
-  content,
-  heading = "section",
+function Case({
+  item,
+  index,
+  total,
+  labels,
 }: {
-  content: SiteContent;
-  heading?: "section" | "none";
+  item: CaseStudyItem;
+  index: number;
+  total: number;
+  labels: { challenge: string; actions: string; results: string };
 }) {
-  const {
-    eyebrow,
-    headline,
-    intro,
-    disclaimer,
-    challengeLabel,
-    actionsLabel,
-    proofLabel,
-    items,
-  } = content.caseStudies;
+  const [lead, ...others] = item.metrics;
+  const tinted = index % 2 === 1;
 
   return (
-    <section id="case-studies" className="bg-paper-raised">
-      <div className="mx-auto max-w-6xl px-6 py-24">
-        {heading === "section" && (
-          <Reveal className="max-w-2xl">
-            <p className="font-mono text-xs uppercase tracking-kicker text-blue">{eyebrow}</p>
-            <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-[2.6rem]">
-              {headline}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-ink/60">{intro}</p>
-          </Reveal>
-        )}
+    <article
+      id={item.id}
+      className={`scroll-mt-24 border-t border-line ${tinted ? "bg-paper-raised" : "bg-white"}`}
+    >
+      <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
+        <Reveal>
+          <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
+            <div>
+              <p className="font-mono text-xs tracking-kicker text-ink/35 ltr-nums">
+                {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
+              </p>
+              <h2 className="mt-3 font-display text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
+                {item.sector}
+              </h2>
+              <p className="mt-2 text-sm text-ink/50">
+                {[item.client, item.market, item.timeframe].filter(Boolean).join("  ·  ")}
+              </p>
+            </div>
+            <ul className="flex flex-wrap gap-2">
+              {item.platforms.map((p) => (
+                <PlatformTag key={p} name={p} />
+              ))}
+            </ul>
+          </div>
 
-        <div className={`${heading === "section" ? "mt-14" : ""} space-y-8`}>
-          {items.map((item, i) => (
-            <Reveal
-              key={item.sector + i}
-              as="article"
-              delay={i * 60}
-              className="overflow-hidden rounded-xl2 border border-line bg-white p-6 sm:p-9"
-            >
-              <div className="flex flex-wrap items-start justify-between gap-4">
-                <div className="flex items-start gap-4">
-                  <span className="font-mono text-lg font-semibold text-ink/20">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <h3 className="font-display text-xl font-bold leading-snug text-ink">
-                      {item.sector}
-                    </h3>
-                    <p className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-ink/45">
-                      {item.client && (
-                        <span className="font-semibold text-ink/70">{item.client}</span>
-                      )}
-                      {item.client && <span aria-hidden>·</span>}
-                      <span>{item.timeframe}</span>
-                    </p>
-                  </div>
-                </div>
-                <ul className="flex flex-wrap gap-1.5">
-                  {item.platforms.map((p) => (
-                    <li
-                      key={p}
-                      className="rounded-full border border-line bg-paper-raised px-2.5 py-1 font-mono text-[10px] text-ink/55"
-                    >
-                      {p}
-                    </li>
-                  ))}
-                </ul>
+          <p className="mt-8 max-w-3xl text-xl font-medium leading-snug text-ink/85 sm:text-2xl">
+            {item.headline}
+          </p>
+
+          <dl className="mt-10 grid grid-cols-2 gap-x-8 gap-y-8 border-t-2 border-ink pt-6 lg:grid-cols-4">
+            <div className="col-span-2 lg:col-span-1">
+              <dd className="font-display text-5xl font-extrabold leading-none tracking-tight text-blue ltr-nums tabular-nums sm:text-6xl">
+                {lead.value}
+              </dd>
+              <dt className="mt-3 text-sm leading-snug text-ink/55">{lead.label}</dt>
+            </div>
+            {others.map((m) => (
+              <div key={m.label} className="lg:border-s lg:border-line lg:ps-8">
+                <dd className="font-display text-3xl font-bold leading-none tracking-tight text-ink ltr-nums tabular-nums sm:text-[2.1rem]">
+                  {m.value}
+                </dd>
+                <dt className="mt-2 text-sm leading-snug text-ink/55">{m.label}</dt>
               </div>
+            ))}
+          </dl>
+        </Reveal>
 
-              <div className="mt-7 grid gap-4 sm:grid-cols-3">
-                {item.metrics.map((m) => (
-                  <div key={m.label} className="rounded-card bg-ink p-5 text-paper">
-                    <p className="font-display text-[1.9rem] font-extrabold leading-none ltr-nums tabular-nums text-gradient sm:text-[2.1rem]">
-                      {m.value}
-                    </p>
-                    <p className="mt-2 text-[11px] leading-snug text-paper/55">{m.label}</p>
-                  </div>
+        <div className="mt-14 grid gap-12 lg:grid-cols-[5fr_7fr] lg:gap-16">
+          <Reveal className="space-y-10">
+            <div>
+              <h3 className="font-mono text-[11px] uppercase tracking-kicker text-ink/40">
+                {labels.challenge}
+              </h3>
+              <p className="mt-3 text-[15px] leading-relaxed text-ink/70">{item.challenge}</p>
+            </div>
+            <div>
+              <h3 className="font-mono text-[11px] uppercase tracking-kicker text-ink/40">
+                {labels.actions}
+              </h3>
+              <ul className="mt-4 border-s border-line-strong">
+                {item.actions.map((a, i) => (
+                  <li key={i} className="relative ps-6 pb-5 text-[15px] leading-relaxed text-ink/70 last:pb-0">
+                    <span
+                      className="absolute -start-[5px] top-[9px] h-2.5 w-2.5 rounded-full border-2 border-blue bg-white"
+                      aria-hidden
+                    />
+                    {a}
+                  </li>
                 ))}
-              </div>
+              </ul>
+            </div>
+          </Reveal>
 
-              <div className="mt-8 grid gap-8 border-t border-line pt-8 lg:grid-cols-[1fr_1fr]">
-                <div className="space-y-6">
-                  <div>
-                    <p className="font-mono text-[10px] uppercase tracking-kicker text-ink/40">
-                      {challengeLabel}
-                    </p>
-                    <p className="mt-2 text-sm leading-relaxed text-ink/65">{item.challenge}</p>
-                  </div>
-                  <div>
-                    <p className="font-mono text-[10px] uppercase tracking-kicker text-ink/40">
-                      {actionsLabel}
-                    </p>
-                    <ol className="mt-3 space-y-2.5">
-                      {item.actions.map((a, ai) => (
-                        <li key={ai} className="flex gap-3 text-sm leading-relaxed text-ink/70">
-                          <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue/10 font-mono text-[10px] font-bold text-blue">
-                            {ai + 1}
-                          </span>
-                          <span>{a}</span>
-                        </li>
-                      ))}
-                    </ol>
-                  </div>
-                </div>
-
-                <div>
-                  <p className="font-mono text-[10px] uppercase tracking-kicker text-ink/40">
-                    {proofLabel}
-                  </p>
-                  <div className="mt-3">
-                    <CaseProof proof={item.proof} />
-                  </div>
-                </div>
-              </div>
-            </Reveal>
-          ))}
+          <Reveal delay={80} className="space-y-5">
+            <h3 className="font-mono text-[11px] uppercase tracking-kicker text-ink/40">
+              {labels.results}
+            </h3>
+            {item.charts.map((c) => (
+              <Chart key={c.title} chart={c} />
+            ))}
+            {item.takeaway && (
+              <p className="border-s-2 border-signal ps-4 text-[15px] font-medium leading-relaxed text-ink/80">
+                {item.takeaway}
+              </p>
+            )}
+          </Reveal>
         </div>
+      </div>
+    </article>
+  );
+}
 
-        <p className="mt-8 max-w-2xl text-xs leading-relaxed text-ink/40">{disclaimer}</p>
+export default function CaseStudies({ content }: { content: SiteContent }) {
+  const { items, challengeLabel, actionsLabel, resultsLabel, disclaimer } = content.caseStudies;
+  const labels = { challenge: challengeLabel, actions: actionsLabel, results: resultsLabel };
+
+  return (
+    <section id="case-studies">
+      {items.map((item, i) => (
+        <Case key={item.id} item={item} index={i} total={items.length} labels={labels} />
+      ))}
+      <div className="border-t border-line bg-white">
+        <p className="mx-auto max-w-6xl px-6 py-8 text-xs leading-relaxed text-ink/40">{disclaimer}</p>
       </div>
     </section>
   );

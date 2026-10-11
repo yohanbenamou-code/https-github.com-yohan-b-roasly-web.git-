@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import MetaLogo from "./MetaLogo";
 
 type PlatformKey = "google" | "meta" | "tiktok";
 
@@ -38,20 +39,13 @@ const platforms: Platform[] = [
   {
     key: "meta",
     name: "Meta Ads",
-    accent: "#7C6FF0",
+    accent: "#1877F2",
     leads: 274,
     ctr: "4.1%",
     roas: "4.4x",
     cpl: "₪41",
     path: "M0 40 L20 44 L40 30 L60 34 L80 18 L100 24 L120 10 L140 16 L160 4",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none">
-        <path
-          d="M6 12c0-3 1.5-6 3.2-6 1.6 0 2.4 1.9 3 3.9.6-2 1.4-3.9 3-3.9C17 6 18 9 18 12s-1 6-2.8 6c-1.6 0-2.4-1.9-3-3.9-.6 2-1.4 3.9-3 3.9C7 18 6 15 6 12z"
-          fill="#7C6FF0"
-        />
-      </svg>
-    ),
+    icon: <MetaLogo className="h-[18px] w-[18px]" />,
   },
   {
     key: "tiktok",
