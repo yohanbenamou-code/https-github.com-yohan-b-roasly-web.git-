@@ -5,7 +5,7 @@ export const fr: SiteContent = {
   meta: {
     title: "Agence de marketing digital en Israël | Roasly",
     description:
-      "Agence de marketing digital en Israël : Google Ads, Meta Ads et système d'acquisition complet avec dashboard en temps réel. Diagnostic gratuit.",
+      "Agence de marketing digital en Israël et à l'international : Google Ads, Meta Ads et système d'acquisition complet entre Israël, la France et d'autres pays, avec dashboard en temps réel. Diagnostic gratuit.",
   },
   nav: {
     links: [
@@ -26,7 +26,7 @@ export const fr: SiteContent = {
     h1: "Agence de marketing digital en Israël",
     headline: "Plus de clients. En Israël et au-delà.",
     subheadline:
-      "Pas de promesses marketing : un vrai système d'acquisition, construit pour le marché israélien. Landing page, campagnes, tracking, CRM et un dashboard connecté : vous voyez chaque shekel investi, chaque lead généré. Sans surprises.",
+      "Pas de promesses marketing : un vrai système d'acquisition, pensé pour le marché israélien et pour les entreprises qui font le pont entre Israël, la France et d'autres pays. Landing page, campagnes, tracking, CRM et un dashboard connecté : vous voyez chaque shekel investi, chaque lead généré. Sans surprises.",
     cta: "Réserver un diagnostic gratuit",
   },
   platforms: ["Google Ads", "Meta Ads", "Bing Ads", "TikTok Ads"],
@@ -152,9 +152,9 @@ export const fr: SiteContent = {
     ],
   },
   seoLinks: {
-    eyebrow: "Marketing digital en Israël",
-    headline: "Roasly, votre agence de marketing digital partout en Israël",
-    body: "Nous pilotons des campagnes de marketing digital dans toute Israël — Tel Aviv, Jérusalem, Netanya, Haïfa, Ashdod, Ra'anana — pour les entreprises et indépendants francophones, hispanophones et hébréophones. Google Ads, Meta Ads, Bing Ads et TikTok Ads : un seul système, un seul dashboard, où que vous soyez dans le pays.",
+    eyebrow: "Marketing digital en Israël et à l'international",
+    headline: "Roasly, le pont marketing entre Israël, la France et d'autres pays",
+    body: "Nous pilotons des campagnes dans toute Israël — Tel Aviv, Jérusalem, Netanya, Haïfa, Ashdod, Ra'anana — mais aussi en France et sur d'autres marchés, pour les entreprises et indépendants francophones, hispanophones et hébréophones. Vous êtes en Israël et vous visez la France ? Vous êtes en France et vous voulez toucher Israël ? Google Ads, Meta Ads, Bing Ads, TikTok Ads et LinkedIn Ads : un seul système, un seul dashboard, quel que soit le marché ciblé.",
   },
   caseStudies: caseStudiesFr,
   estimator: {
@@ -245,7 +245,7 @@ export const fr: SiteContent = {
         name: "Yohan Benamou",
         role: "Fondateur",
         location: "Israël",
-        bio: "Plus de 15 ans dans le marketing digital, entre Madrid, Paris et Jérusalem, avec plus de 2 M$ de budget publicitaire géré au fil des années sur Google Ads, Meta Ads, Bing, TikTok et LinkedIn Ads. J'accompagne les entreprises et indépendants francophones, hispanophones et hébréophones en Israël qui veulent un système d'acquisition clair, pas des promesses. Landing page, campagnes, tracking, CRM et dashboard en temps réel : je construis l'ensemble avec vous et je l'optimise chaque semaine sur données réelles. Quand vous appelez, vous parlez à la personne qui gère réellement vos campagnes.",
+        bio: "Plus de 15 ans dans le marketing digital, entre Madrid, Paris et Jérusalem, avec plus de 2 M$ de budget publicitaire géré au fil des années sur Google Ads, Meta Ads, Bing, TikTok et LinkedIn Ads. J'accompagne les entreprises et indépendants francophones, hispanophones et hébréophones, en Israël comme entre Israël, la France et d'autres pays, qui veulent un système d'acquisition clair, pas des promesses. Landing page, campagnes, tracking, CRM et dashboard en temps réel : je construis l'ensemble avec vous et je l'optimise chaque semaine sur données réelles. Quand vous appelez, vous parlez à la personne qui gère réellement vos campagnes.",
         tags: ["Google Ads","Meta Ads","Bing Ads","TikTok Ads","LinkedIn Ads","FR · ES · HE · EN"],
       },
     ],
@@ -262,7 +262,12 @@ export const fr: SiteContent = {
       {
         question: "Travaillez-vous avec des entreprises et indépendants francophones basés en Israël ?",
         answer:
-          "Oui, c'est notre cœur de métier. Nous accompagnons des entrepreneurs, indépendants et PME francophones installés en Israël qui veulent générer des clients localement, ainsi que des entreprises en France qui souhaitent toucher la communauté francophone d'Israël.",
+          "Oui, c'est notre cœur de métier. Nous accompagnons des entrepreneurs, indépendants et PME francophones installés en Israël qui veulent générer des clients localement, ainsi que des entreprises en France ou ailleurs qui souhaitent toucher la communauté francophone d'Israël.",
+      },
+      {
+        question: "Faites-vous aussi des campagnes en dehors d'Israël, par exemple en France ?",
+        answer:
+          "Oui. Nous faisons le pont entre Israël et d'autres pays : campagnes pour le marché israélien, pour la France, l'Espagne ou d'autres marchés, ou pour plusieurs à la fois. Le ciblage, la langue des annonces et les pages d'atterrissage sont adaptés à chaque pays, et tout remonte dans un seul dashboard.",
       },
       {
         question: "Combien coûte une agence de publicité en ligne en Israël ?",
@@ -335,7 +340,7 @@ export const fr: SiteContent = {
   },
   footer: {
     tagline:
-      "Roasly, agence de marketing digital basée à Tel Aviv, spécialisée en Google Ads, Meta Ads, Bing Ads et TikTok Ads pour les entreprises en Israël.",
+      "Roasly, agence de marketing digital basée à Tel Aviv, spécialisée en Google Ads, Meta Ads, Bing Ads et TikTok Ads pour les entreprises en Israël et entre Israël et l'international.",
     legal: ["Mentions légales", "Politique de confidentialité"],
     copyright: "© 2026 Roasly. Tous droits réservés.",
     contactLabel: { email: "Email", whatsapp: "WhatsApp" },
