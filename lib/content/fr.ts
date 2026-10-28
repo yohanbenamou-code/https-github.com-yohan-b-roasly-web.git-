@@ -12,6 +12,7 @@ export const fr: SiteContent = {
       { label: "Accueil", href: "#home" },
       { label: "Ce que nous faisons", href: "#services" },
       { label: "Comment ça marche", href: "#how-it-works" },
+      { label: "Secteurs", href: "/secteurs" },
       { label: "Cas clients", href: "/cas-clients" },
       { label: "Estimateur", href: "#estimator" },
       { label: "Équipe", href: "#team" },

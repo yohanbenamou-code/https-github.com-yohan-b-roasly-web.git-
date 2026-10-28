@@ -12,10 +12,19 @@ const landingPaths = [
   "marketing-digital-jerusalem",
 ];
 
+// French-only sector pages and their hub: they carry the sector-level queries, so a higher priority.
+const frSectorPaths = [
+  "secteurs",
+  "marketing-digital-avocats",
+  "marketing-digital-immobilier",
+  "marketing-digital-dentistes",
+  "marketing-digital-traiteurs",
+  "generation-de-leads",
+  "generation-de-leads-energie-france",
+];
+
 // French-only pages: no es/he content exists for these yet.
 const frOnlyLandingPaths = [
-  "marketing-digital-avocats",
-  "marketing-digital-dentistes",
   "marketing-digital-netanya",
   "marketing-digital-haifa",
   "marketing-digital-ashdod",
@@ -45,7 +54,8 @@ function buildEntries(
 export default function sitemap(): MetadataRoute.Sitemap {
   const homeEntries = buildEntries("", 1);
   const landingEntries = landingPaths.flatMap((path) => buildEntries(path, 0.8));
+  const frSectorEntries = frSectorPaths.flatMap((path) => buildEntries(path, 0.8, ["fr"]));
   const frOnlyEntries = frOnlyLandingPaths.flatMap((path) => buildEntries(path, 0.7, ["fr"]));
 
-  return [...homeEntries, ...landingEntries, ...frOnlyEntries];
+  return [...homeEntries, ...landingEntries, ...frSectorEntries, ...frOnlyEntries];
 }

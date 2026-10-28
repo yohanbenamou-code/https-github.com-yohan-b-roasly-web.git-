@@ -1,19 +1,37 @@
 # Roasly
 
-> Agence de marketing digital basée en Israël, spécialisée en Google Ads, Meta Ads, Bing Ads et TikTok Ads. Roasly conçoit un système d'acquisition complet (landing page, tracking, CRM, campagnes) pour les entreprises et indépendants francophones, hispanophones et hébréophones en Israël, avec un dashboard de suivi en temps réel.
+> Agence de marketing digital basée en Israël, spécialisée en Google Ads, Meta Ads, Bing Ads, TikTok Ads et LinkedIn Ads. Roasly conçoit un système d'acquisition complet (landing page, tracking, CRM, campagnes) pour les entreprises et indépendants francophones, hispanophones et hébréophones, en Israël comme entre Israël, la France et d'autres pays, avec un dashboard de suivi en temps réel.
 
 ## Pages principales
 
 - [Accueil (FR)](https://www.roaslyads.co.il/fr): Présentation de l'agence, méthode en 4 étapes, estimateur de budget, équipe.
-- [Cas clients](https://www.roaslyads.co.il/fr/cas-clients): Résultats réels de campagnes (immobilier, droit, e-commerce, énergie, santé).
+- [Cas clients](https://www.roaslyads.co.il/fr/cas-clients): Résultats réels de campagnes avec budget, volume de leads et coût par lead (maisons de retraite, immobilier, droit, e-commerce santé, énergie, clinique dentaire).
+- [Secteurs](https://www.roaslyads.co.il/fr/secteurs): Marketing digital métier par métier.
+
+## Marketing digital par secteur
+
+- [Marketing digital pour avocats](https://www.roaslyads.co.il/fr/marketing-digital-avocats): Demandes de consultation qualifiées pour cabinets d'avocats, en Israël et vers la France.
+- [Marketing digital immobilier](https://www.roaslyads.co.il/fr/marketing-digital-immobilier): Leads acheteurs qualifiés pour agences, promoteurs et investisseurs.
+- [Marketing digital pour cliniques dentaires](https://www.roaslyads.co.il/fr/marketing-digital-dentistes): Rendez-vous qualifiés pour cabinets et cliniques dentaires.
+- [Marketing digital pour traiteurs](https://www.roaslyads.co.il/fr/marketing-digital-traiteurs): Demandes de devis avant les fêtes, mariages et événements.
+- [Génération de leads](https://www.roaslyads.co.il/fr/generation-de-leads): Système de génération de leads qualifiés en Israël et à l'international.
+- [Génération de leads énergie pour la France](https://www.roaslyads.co.il/fr/generation-de-leads-energie-france): Demandes de devis solaire, pompe à chaleur et isolation pour installateurs en France, pilotées depuis Israël.
+
+## Marketing digital par ville
+
 - [Google Ads à Tel Aviv](https://www.roaslyads.co.il/fr/google-ads-tel-aviv)
 - [Google Ads à Jérusalem](https://www.roaslyads.co.il/fr/google-ads-jerusalem)
 - [Meta Ads à Tel Aviv](https://www.roaslyads.co.il/fr/meta-ads-tel-aviv)
 - [Meta Ads à Jérusalem](https://www.roaslyads.co.il/fr/meta-ads-jerusalem)
 - [Marketing digital à Tel Aviv](https://www.roaslyads.co.il/fr/marketing-digital-tel-aviv)
 - [Marketing digital à Jérusalem](https://www.roaslyads.co.il/fr/marketing-digital-jerusalem)
-- [Marketing digital pour avocats](https://www.roaslyads.co.il/fr/marketing-digital-avocats)
-- [Marketing digital pour cliniques dentaires](https://www.roaslyads.co.il/fr/marketing-digital-dentistes)
+- [Marketing digital à Netanya](https://www.roaslyads.co.il/fr/marketing-digital-netanya)
+- [Marketing digital à Haïfa](https://www.roaslyads.co.il/fr/marketing-digital-haifa)
+- [Marketing digital à Ashdod](https://www.roaslyads.co.il/fr/marketing-digital-ashdod)
+
+## Ressources
+
+- [Ressources](https://www.roaslyads.co.il/fr/ressources): Guides pratiques sur la publicité en ligne pour entrepreneurs francophones en Israël.
 
 ## Autres langues
 

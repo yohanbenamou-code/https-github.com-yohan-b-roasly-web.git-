@@ -117,6 +117,12 @@ export default async function LocaleLayout({
           "Bing Ads",
           "TikTok Ads",
           "Acquisition de leads",
+          "Génération de leads",
+          "Génération de leads énergie France",
+          "Marketing digital pour avocats",
+          "Marketing digital immobilier",
+          "Marketing digital pour cliniques dentaires",
+          "Marketing digital pour traiteurs",
         ],
         founder: {
           "@type": "Person",

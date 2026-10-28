@@ -1,7 +1,7 @@
 import type { SiteContent } from "@/lib/content/types";
 import { contact } from "@/lib/content";
 import { locales, type Locale } from "@/lib/i18n";
-import { serviceLinks } from "@/lib/content/serviceLinks";
+import { groupServiceLinks } from "@/lib/content/serviceLinks";
 import Link from "next/link";
 import Logo from "./Logo";
 
@@ -15,67 +15,72 @@ export default function Footer({
   return (
     <footer className="border-t border-white/10 bg-ink text-paper">
       <div className="mx-auto max-w-6xl px-6 py-14">
-        <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
-          <div className="max-w-sm">
+        <div className="grid gap-12 lg:grid-cols-[17rem_1fr] lg:gap-16">
+          <div>
             <Logo className="text-xl text-paper" onDark />
             <p className="mt-3 text-sm leading-relaxed text-paper/55">
               {content.footer.tagline}
             </p>
+            <div className="mt-6 font-mono text-sm text-paper/55">
+              <p>
+                {content.footer.contactLabel.email}:{" "}
+                <a href={`mailto:${contact.email}`} className="ltr-nums break-all transition-colors hover:text-paper">
+                  {contact.email}
+                </a>
+              </p>
+              <p className="mt-1">
+                {content.footer.contactLabel.whatsapp}:{" "}
+                <a href={contact.whatsappHref} className="ltr-nums transition-colors hover:text-paper">
+                  {contact.whatsapp}
+                </a>
+              </p>
+              <div className="mt-4 flex gap-1">
+                {locales.map((l) => (
+                  <Link
+                    key={l}
+                    href={`/${l}`}
+                    className={`rounded-full px-2.5 py-1 text-xs transition-colors ${
+                      l === locale
+                        ? "bg-white/15 text-paper"
+                        : "text-paper/45 hover:text-paper"
+                    }`}
+                  >
+                    {l === "he" ? "עב" : l.toUpperCase()}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
 
-          <nav className="flex flex-col gap-2.5">
-            {content.nav.links.map((link) => (
-              <Link
-                key={link.href}
-                href={`/${locale}${link.href}`}
-                className="text-sm text-paper/55 transition-colors hover:text-paper"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-
-          <nav className="flex flex-col gap-2.5">
-            {serviceLinks[locale].map((link) => (
-              <Link
-                key={link.href}
-                href={`/${locale}/${link.href}`}
-                className="text-sm text-paper/55 transition-colors hover:text-paper"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-
-          <div className="font-mono text-sm text-paper/55">
-            <p>
-              {content.footer.contactLabel.email}:{" "}
-              <a href={`mailto:${contact.email}`} className="ltr-nums transition-colors hover:text-paper">
-                {contact.email}
-              </a>
-            </p>
-            <p className="mt-1">
-              {content.footer.contactLabel.whatsapp}:{" "}
-              <a href={contact.whatsappHref} className="ltr-nums transition-colors hover:text-paper">
-                {contact.whatsapp}
-              </a>
-            </p>
-            <div className="mt-4 flex gap-1">
-              {locales.map((l) => (
+          <nav className="grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-[auto_1fr_1fr_auto]">
+            <div className="flex flex-col gap-2.5">
+              {content.nav.links.map((link) => (
                 <Link
-                  key={l}
-                  href={`/${l}`}
-                  className={`rounded-full px-2.5 py-1 text-xs transition-colors ${
-                    l === locale
-                      ? "bg-white/15 text-paper"
-                      : "text-paper/45 hover:text-paper"
-                  }`}
+                  key={link.href}
+                  href={`/${locale}${link.href}`}
+                  className="text-sm text-paper/55 transition-colors hover:text-paper"
                 >
-                  {l === "he" ? "עב" : l.toUpperCase()}
+                  {link.label}
                 </Link>
               ))}
             </div>
-          </div>
+            {groupServiceLinks(locale).map((group) => (
+              <div key={group.group} className="flex flex-col gap-2.5">
+                <p className="font-mono text-[11px] uppercase tracking-kicker text-paper/35">
+                  {group.label}
+                </p>
+                {group.links.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={`/${locale}/${link.href}`}
+                    className="text-sm text-paper/55 transition-colors hover:text-paper"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            ))}
+          </nav>
         </div>
 
         <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-paper/40 sm:flex-row sm:items-center sm:justify-between">

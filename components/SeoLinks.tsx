@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { SiteContent } from "@/lib/content/types";
 import type { Locale } from "@/lib/i18n";
-import { serviceLinks } from "@/lib/content/serviceLinks";
+import { serviceLinks, groupServiceLinks } from "@/lib/content/serviceLinks";
 import Reveal from "./Reveal";
 
 export default function SeoLinks({
@@ -11,8 +11,11 @@ export default function SeoLinks({
   content: SiteContent;
   locale: Locale;
 }) {
-  const links = serviceLinks[locale].filter((l) => l.href !== "ressources");
-  if (links.length === 0) return null;
+  const groups = groupServiceLinks(
+    locale,
+    serviceLinks[locale].filter((l) => l.href !== "ressources")
+  );
+  if (groups.length === 0) return null;
 
   return (
     <section className="bg-paper">
@@ -29,25 +32,34 @@ export default function SeoLinks({
           </p>
         </Reveal>
 
-        <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {links.map((link, i) => (
-            <Reveal key={link.href} as="li" delay={i * 40}>
-              <Link
-                href={`/${locale}/${link.href}`}
-                className="group flex items-center justify-between gap-3 rounded-card border border-line bg-paper-raised px-5 py-4 text-sm font-medium text-ink/75 transition-colors hover:border-blue/30 hover:text-ink"
-              >
-                {link.label}
-                <svg
-                  viewBox="0 0 20 20"
-                  className="h-4 w-4 shrink-0 text-ink/30 transition-transform group-hover:translate-x-0.5 group-hover:text-blue rtl:rotate-180 rtl:group-hover:-translate-x-0.5"
-                  fill="none"
-                >
-                  <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </Link>
-            </Reveal>
-          ))}
-        </ul>
+        {groups.map((group) => (
+          <div key={group.group} className="mt-10">
+            {groups.length > 1 && (
+              <p className="font-mono text-[11px] uppercase tracking-kicker text-ink/45">
+                {group.label}
+              </p>
+            )}
+            <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {group.links.map((link, i) => (
+                <Reveal key={link.href} as="li" delay={i * 40}>
+                  <Link
+                    href={`/${locale}/${link.href}`}
+                    className="group flex items-center justify-between gap-3 rounded-card border border-line bg-paper-raised px-5 py-4 text-sm font-medium text-ink/75 transition-colors hover:border-blue/30 hover:text-ink"
+                  >
+                    {link.label}
+                    <svg
+                      viewBox="0 0 20 20"
+                      className="h-4 w-4 shrink-0 text-ink/30 transition-transform group-hover:translate-x-0.5 group-hover:text-blue rtl:rotate-180 rtl:group-hover:-translate-x-0.5"
+                      fill="none"
+                    >
+                      <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
+                </Reveal>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );
